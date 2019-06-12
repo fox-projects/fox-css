@@ -1,0 +1,27 @@
+{
+  "name": "fox-css",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "serve": "gulp serve",
+    "build": "gulp build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eankeen/fox-css.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/eankeen/fox-css/issues"
+  },
+  "homepage": "https://github.com/eankeen/fox-css#readme",
+  "devDependencies": {
+    "browser-sync": "^2.26.7",
+    "gulp": "^4.0.2",
+    "gulp-postcss": "^8.0.0",
+    "postcss-scss": "^2.0.0"
+  }
+}
