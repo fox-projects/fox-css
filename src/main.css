@@ -1,4 +1,5 @@
 html {
   color: red;
   background-color: blue;
+  filter: blue(2px);
 }

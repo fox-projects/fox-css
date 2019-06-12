@@ -1,7 +1,12 @@
 let { dest, parallel, series, src, watch } = require("gulp");
 let concat = require("gulp-concat");
 let postcss = require("gulp-postcss");
+let autoprefixer = require("autoprefixer");
 let browserSync = require("browser-sync").create();
+
+let postCssPlugins = [
+  autoprefixer()
+];
 
 async function init() {
   browserSync.init({ server: "samples" });
@@ -17,7 +22,7 @@ async function cssInject() {
   watch("src/**/*.css", { ignoreInitial: false }, async () => {
     src("src/**/*.css")
       .pipe(concat("fox.css"))
-      .pipe(postcss())
+      .pipe(postcss(postCssPlugins))
       .pipe(dest("samples/styles"))
       .pipe(browserSync.stream());
   })
