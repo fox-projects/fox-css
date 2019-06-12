@@ -1,5 +1,8 @@
+$orange: purple;
+$cyan: cyan;
+
+
 html {
-  color: red;
-  background-color: blue;
-  filter: blue(2px);
+  color: $orange;
+  background-color: $cyan;
 }

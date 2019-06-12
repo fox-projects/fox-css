@@ -1,11 +1,17 @@
 let { dest, parallel, series, src, watch } = require("gulp");
 let concat = require("gulp-concat");
+
 let postcss = require("gulp-postcss");
+let postcssPresetEnv = require("postcss-preset-env");
+let postCssSimpleVars = require("postcss-simple-vars");
 let autoprefixer = require("autoprefixer");
+
 let browserSync = require("browser-sync").create();
 
 let postCssPlugins = [
-  autoprefixer()
+  autoprefixer(),
+  postcssPresetEnv(),
+  postCssSimpleVars()
 ];
 
 async function init() {
