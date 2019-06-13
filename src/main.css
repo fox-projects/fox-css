@@ -1,6 +1,7 @@
+@import "normalize.css";
 @import "open-color.css";
 
 html {
   color: $oc-gray-9;
-  background-color: $oc-white;
+  background-color: $oc-gray-0;
 }
