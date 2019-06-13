@@ -5,14 +5,16 @@
   "main": "index.js",
   "scripts": {
     "serve": "gulp serve",
-    "build": "gulp build"
+    "build": "gulp build",
+    "size": "node size"
   },
+  "precommit": ["build"],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/eankeen/fox-css.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "Edwin Kofler",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/eankeen/fox-css/issues"
@@ -21,6 +23,8 @@
   "devDependencies": {
     "autoprefixer": "^9.6.0",
     "browser-sync": "^2.26.7",
+    "cssnano": "^4.1.10",
+    "del": "^4.1.1",
     "gulp": "^4.0.2",
     "gulp-concat": "^2.6.1",
     "gulp-plumber": "^1.2.1",
@@ -29,6 +33,7 @@
     "postcss-import": "^12.0.1",
     "postcss-preset-env": "^6.6.0",
     "postcss-scss": "^2.0.0",
-    "postcss-simple-vars": "^5.0.2"
+    "postcss-simple-vars": "^5.0.2",
+    "pre-commit": "^1.2.2"
   }
 }
