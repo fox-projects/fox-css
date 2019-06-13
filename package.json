@@ -1,7 +1,7 @@
 {
-  "name": "fox-css",
-  "version": "1.0.0",
-  "description": "",
+  "name": "@eankeen/fox-css",
+  "version": "0.1.0",
+  "description": "quickly style semantic html without the hassle",
   "main": "index.js",
   "scripts": {
     "serve": "gulp serve",
@@ -15,7 +15,7 @@
     "type": "git",
     "url": "git+https://github.com/eankeen/fox-css.git"
   },
-  "keywords": [],
+  "keywords": ["css", "semantic", "fox"],
   "author": "Edwin Kofler",
   "license": "ISC",
   "bugs": {
