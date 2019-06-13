@@ -14,7 +14,7 @@ let postCssPlugins = [
 async function build() {
   del.sync(["dist/*", "!dist"]);
 
-  src("src/**/*.css")
+  src("src/main/*.css")
     .pipe(concat("fox.min.css"))
     .pipe(postcss(postCssPlugins))
     .pipe(dest("dist"))

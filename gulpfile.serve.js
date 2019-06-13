@@ -23,7 +23,7 @@ async function htmlReload() {
 
 async function cssInject() {
   watch("src/**/*.css", { ignoreInitial: false }, async () => {
-    src("src/**/*.css")
+    src("src/main.css")
       .pipe(plumber())
       .pipe(concat("fox.css"))
       .pipe(postcss(postCssPlugins))

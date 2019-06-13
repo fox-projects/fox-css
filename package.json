@@ -8,7 +8,9 @@
     "build": "gulp build",
     "size": "node size"
   },
-  "precommit": ["build"],
+  "precommit": [
+    "build"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/eankeen/fox-css.git"
@@ -29,7 +31,6 @@
     "gulp-concat": "^2.6.1",
     "gulp-plumber": "^1.2.1",
     "gulp-postcss": "^8.0.0",
-    "normalize.css": "^8.0.1",
     "postcss-import": "^12.0.1",
     "postcss-preset-env": "^6.6.0",
     "postcss-scss": "^2.0.0",

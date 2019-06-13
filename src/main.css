@@ -1,11 +1,50 @@
 @import "normalize.css";
 @import "open-color.css";
 
+* {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
 html {
+  height: 100%;
   color: $oc-gray-9;
   background-color: $oc-gray-0;
 }
 
 body {
-  font-family: system-ui -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif
+  font-family: system-ui -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  margin: 10px;
+}
+
+main {
+  margin: 5px 0;
+}
+
+img {
+  border-radius: 5px;
+}
+
+img,
+video {
+  height: auto;
+  max-width: 100%;
+}
+
+iframe {
+  border: 0;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td,
+th {
+  padding: 0;
+  text-align: left;
 }
