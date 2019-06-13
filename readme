@@ -1,3 +1,10 @@
 fox-css
 
-quickly style content on a page without the hassle. choose the bundle that is right for you
+introduction
+quickly style semantic html without the hassle. choose the bundle that is right for you
+
+contributing
+git clone https://github.com/eankeen/fox-css
+cd fox-css
+npm install
+npm run serve
