@@ -1,6 +1,11 @@
 let fs = require("fs");
 
-let date = Date.now();
-let size = fs.statSync("dist/fox.min.css").size;
+let date, size;
+let files = ["fox.min.css"];
 
-fs.appendFileSync("size.txt", date + " " + size);
+
+files.forEach(file => {
+  date = Date.now();
+  size = fs.statSync(`dist/${file}`).size;
+  fs.appendFileSync("size.txt", file + " " + date + " " + size);
+});
