@@ -17,14 +17,6 @@ html {
    ========================================================================== */
 
 /**
- * Remove the margin in all browsers.
- */
-
-body {
-  margin: 0;
-}
-
-/**
  * Render the `main` element consistently in IE.
  */
 
@@ -68,14 +60,6 @@ pre {
 
 /* Text-level semantics
    ========================================================================== */
-
-/**
- * Remove the gray background on active links in IE 10.
- */
-
-a {
-  background-color: transparent;
-}
 
 /**
  * 1. Remove the bottom border in Chrome 57-
@@ -136,17 +120,6 @@ sub {
 
 sup {
   top: -0.5em;
-}
-
-/* Embedded content
-   ========================================================================== */
-
-/**
- * Remove the border on images inside links in IE 10.
- */
-
-img {
-  border-style: none;
 }
 
 /* Forms
@@ -263,17 +236,6 @@ textarea {
 }
 
 /**
- * 1. Add the correct box sizing in IE 10.
- * 2. Remove the padding in IE 10.
- */
-
-[type="checkbox"],
-[type="radio"] {
-  box-sizing: border-box; /* 1 */
-  padding: 0; /* 2 */
-}
-
-/**
  * Correct the cursor style of increment and decrement buttons in Chrome.
  */
 
@@ -337,13 +299,5 @@ summary {
  */
 
 template {
-  display: none;
-}
-
-/**
- * Add the correct display in IE 10.
- */
-
-[hidden] {
   display: none;
 }
