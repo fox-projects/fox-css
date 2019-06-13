@@ -5,10 +5,10 @@ let postcss = require("gulp-postcss");
 let browserSync = require("browser-sync").create();
 
 let postCssPlugins = [
-  require("postcss-import"),
-  require("postcss-preset-env"), // css future
-  require("postcss-simple-vars"), // sass-like variables
-  require("autoprefixer")
+  require("postcss-import")(),
+  require("postcss-preset-env")(), // css future
+  require("postcss-simple-vars")(), // sass-like variables
+  require("autoprefixer")()
 ];
 
 async function init() {
