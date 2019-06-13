@@ -15,7 +15,7 @@ async function build() {
   del.sync(["dist/*", "!dist"]);
 
   src("src/**/*.css")
-    .pipe(concat("fox.css"))
+    .pipe(concat("fox.min.css"))
     .pipe(postcss(postCssPlugins))
     .pipe(dest("dist"))
 }
