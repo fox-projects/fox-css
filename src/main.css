@@ -5,3 +5,7 @@ html {
   color: $oc-gray-9;
   background-color: $oc-gray-0;
 }
+
+body {
+  font-family: system-ui -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif
+}
