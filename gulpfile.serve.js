@@ -4,11 +4,13 @@ let concat = require("gulp-concat");
 let postcss = require("gulp-postcss");
 let postcssPresetEnv = require("postcss-preset-env");
 let postCssSimpleVars = require("postcss-simple-vars");
+let postcssImport = require("postcss-import");
 let autoprefixer = require("autoprefixer");
 
 let browserSync = require("browser-sync").create();
 
 let postCssPlugins = [
+  postcssImport(),
   autoprefixer(),
   postcssPresetEnv(),
   postCssSimpleVars()

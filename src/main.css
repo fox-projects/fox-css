@@ -1,8 +1,6 @@
-$orange: purple;
-$cyan: cyan;
-
+@import "open-color.css";
 
 html {
-  color: $orange;
-  background-color: $cyan;
+  color: $oc-gray-9;
+  background-color: $oc-white;
 }
