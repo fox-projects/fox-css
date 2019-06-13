@@ -1,5 +1,6 @@
 let { dest, parallel, series, src, watch } = require("gulp");
 let concat = require("gulp-concat");
+let plumber = require("gulp-plumber");
 let postcss = require("gulp-postcss");
 let browserSync = require("browser-sync").create();
 
@@ -23,6 +24,7 @@ async function htmlReload() {
 async function cssInject() {
   watch("src/**/*.css", { ignoreInitial: false }, async () => {
     src("src/**/*.css")
+      .pipe(plumber())
       .pipe(concat("fox.css"))
       .pipe(postcss(postCssPlugins))
       .pipe(dest("samples/styles"))
