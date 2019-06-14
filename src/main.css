@@ -26,7 +26,8 @@ nav {
 
 hr {
   border: none;
-  height: 3px;
+  height: 2px;
+  border-radius: 2px;
   background-color: $oc-gray-2;
 }
 // other
@@ -47,11 +48,22 @@ article, aside, section {
   background-color: $oc-gray-1;
 }
 
-article aside, section aside {
+aside {
   width: auto;
   max-width: 35%;
   margin: 10px;
   float: right;
+  background-color: $oc-gray-1;
+}
+
+@media(max-width: 700px) {
+  aside {
+    float: none;
+    display: none;
+  }
+}
+
+article aside, section aside {
   background-color: $oc-gray-2;
 }
 
@@ -178,6 +190,10 @@ ins {
   background-color: $oc-green-2;
 }
 
+del, ins {
+  border-radius: 5px;
+}
+
 /*
 table {
   border-collapse: collapse;
@@ -190,3 +206,39 @@ th {
   text-align: left;
 }
 */
+
+form {
+  border-radius: 5px;
+  padding: 5px;
+}
+button {
+  padding: 10px;
+  border: 0;
+  border-radius: 5px;
+  background-color: $oc-gray-2;
+}
+
+kbd {
+  background-color: $oc-gray-2;
+  border-radius: 5px;
+  padding: 2px;
+}
+
+input {
+  padding: 2px;
+  margin: 2px;
+  background-color: $oc-gray-1;
+  border: 1px solid $oc-gray-3;
+}
+
+input[type='checkbox'] {
+  border-radius: 5px;
+  padding: 5px;
+  background-color: $oc-gray-1;
+}
+
+meter {
+  background-color: $oc-gray-1;
+  border-radius: 10px;
+  padding: 5px;
+}
