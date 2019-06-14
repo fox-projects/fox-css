@@ -1,31 +1,17 @@
 fox-css
 
 INTRODUCTION
+
 quickly style semantic html without the hassle. choose the bundle that is right for you
 
+USAGE
+
+npm i -S fox-css
+
+
 CONTRIBUTING
+
 git clone https://github.com/eankeen/fox-css
 cd fox-css
 npm install
 npm run serve
-
-USAGE
-if you write semantic html, you already know how to use this library
-
-1. other
-# main
-$
-
-& actual usage
-wrap crap in <main>
-- gives it extra margin
-
-2. sectioning content
-# article, aside, nav, section
-$ can contain header, footer, heading content
-
-% actual usage
-<article>, <section> can have any child content
-
-
-
