@@ -20,24 +20,165 @@ body {
   margin: 10px;
 }
 
+nav {
+ 
+}
+
+hr {
+  border: none;
+  height: 3px;
+  background-color: $oc-gray-2;
+}
+// other
 main {
+  margin: 5px;
+}
+
+header, footer {
+  padding: 5px 0;
+}
+
+// sectioning content
+article, aside, section {
+  padding: 5px;
+  margin: 0 0 10px;
+  border-radius: 5px;
+  overflow: auto;
+  background-color: $oc-gray-1;
+}
+
+article aside, section aside {
+  width: auto;
+  max-width: 35%;
+  margin: 10px;
+  float: right;
+  background-color: $oc-gray-2;
+}
+
+
+// heading content
+h1, h2, h3, h4, h5, h6 {
   margin: 5px 0;
 }
 
-img {
-  border-radius: 5px;
+p {
+  margin: 10px 0;
+}
+
+figure {
+  margin: 5px;
 }
 
 img,
 video {
   height: auto;
   max-width: 100%;
+  border-radius: 5px;
+}
+
+
+dl {
+  border: 1px solid $oc-gray-3;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+dt {
+  border-bottom: 2px solid $oc-gray-2;
+  padding: 0 0 2px;
+  margin: 0 0 5px;
+}
+
+dd {
+  margin: 10px 10px 10px 40px;
 }
 
 iframe {
   border: 0;
 }
 
+// specifically scoped
+blockquote {
+  background-color: $oc-gray-1;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+blockquote footer {
+
+}
+
+blockquote p::before {
+    content: '\201C';
+}
+
+blockquote p::after {
+    content: '\201D';
+}
+
+u {
+  text-decoration: $oc-orange-4 wavy underline;
+}
+
+video, audio {
+  border-radius: 5px;
+}
+
+a {
+  color: $oc-indigo-7;
+}
+
+a:hover {
+  color: $oc-grape-7;
+}
+
+a:visited {
+  color: $oc-grape-7;
+}
+
+a:active {
+  color: $oc-red-7;
+}
+
+ul, ol {
+  padding: 0 0 0 20px;
+  margin: 15px 15px 15px 0;
+
+  border: 2px solid $oc-gray-2;
+  border-radius: 5px;
+}
+
+li {
+  margin: 10px;
+}
+
+textarea {
+  width: 90%;
+  border-radius: 5px;
+  border: 2px solid $oc-gray-2;
+}
+
+pre {
+  border-radius: 5px;
+  background-color: $oc-gray-1;
+}
+
+mark {
+  background: $oc-yellow-2;
+  border-radius: 4px;
+}
+
+del {
+  text-decoration: line-through;
+  background-color: $oc-red-2;
+}
+
+ins {
+  text-decoration: none;
+  background-color: $oc-green-2;
+}
+
+/*
 table {
   border-collapse: collapse;
   border-spacing: 0;
@@ -48,3 +189,4 @@ th {
   padding: 0;
   text-align: left;
 }
+*/
