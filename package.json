@@ -5,8 +5,7 @@
   "main": "index.js",
   "scripts": {
     "serve": "gulp serve",
-    "build": "gulp build",
-    "version": "node size"
+    "build": "gulp build"
   },
   "precommit": [
     "build"
