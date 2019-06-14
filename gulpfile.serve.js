@@ -2,10 +2,12 @@ let { dest, parallel, series, src, watch } = require("gulp");
 let concat = require("gulp-concat");
 let plumber = require("gulp-plumber");
 let postcss = require("gulp-postcss");
+let scss = require("postcss-scss");
 let browserSync = require("browser-sync").create();
 
 let postCssPlugins = [
   require("postcss-import")(),
+  require("postcss-strip-inline-comments")(),
   require("postcss-preset-env")(), // css future
   require("postcss-simple-vars")(), // sass-like variables
   require("autoprefixer")()
@@ -26,7 +28,7 @@ async function cssInject() {
     src("src/main.css")
       .pipe(plumber())
       .pipe(concat("fox.css"))
-      .pipe(postcss(postCssPlugins))
+      .pipe(postcss(postCssPlugins, { syntax: scss }))
       .pipe(dest("samples/styles"))
       .pipe(browserSync.stream());
   })
