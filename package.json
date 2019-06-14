@@ -6,9 +6,6 @@
     "serve": "gulp serve",
     "build": "gulp build"
   },
-  "precommit": [
-    "build"
-  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/eankeen/fox-css.git"

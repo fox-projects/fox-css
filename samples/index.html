@@ -57,9 +57,10 @@
     <h2>level 2</h2>
     <h3>level 3</h3>
     <h4>level 4</h4>
-    <p>using various heading levels look very fine. remember, this library is not meant to look spectacular, just bearable</p>
+    <p>using various heading levels looks very fine. remember, this library is not meant to look spectacular, just bearable</p>
   </section>
 
+  <h2>divs and spans</h2>
 
   <h2>quoting</h2>
   <blockquote cite="https://www.huxley.net/bnw/four.html">
@@ -249,11 +250,11 @@ __-' { |          \
 
   <h2>forms</h2>
   <form action="" method="get" class="form-example">
-    <div class="form-example">
+    <div>
       <label for="name">enter your name</label>
       <input type="text" name="name" id="name" required>
     </div>
-    <div class="form-example">
+    <div>
       <label for="email">enter your email</label>
       <input type="email" name="email" id="email" required>
     </div>
@@ -263,17 +264,16 @@ __-' { |          \
   </form>
 
   <h2>form elements</h2>
+  <h3>text</h3>
   <input type="text" id="name" name="name" required minlength="4" maxlength="8" size="10">
-  <div>
-    <label for="cheese">do you like cheese?</label>
-    <input type="checkbox" name="cheese" id="cheese">
-  </div>
-  <div>
-    <label for="peas">do you like peas?</label>
-    <input type="checkbox" name="peas" id="peas">
-  </div>
-  <select id="pet-select">
-    <option value="">--please choose an option--</option>
+
+  <h3>checkbox</h3>
+  <input type="checkbox" name="cheese" id="cheese">
+  <input type="checkbox" name="peas" id="peas">
+
+  <h3>select</h3>
+  <select>
+    <option value="">please choose an option</option>
     <option value="dog">dog</option>
     <option value="cat">cat</option>
     <option value="hamster">hamster</option>
@@ -281,7 +281,8 @@ __-' { |          \
     <option value="spider">spider</option>
     <option value="goldfish">goldfish</option>
   </select>
-  <select id="dino-select">
+
+  <select>
     <optgroup label="theropods">
         <option>tyrannosaurus</option>
         <option>velociraptor</option>
@@ -293,26 +294,28 @@ __-' { |          \
         <option>apatosaurus</option>
     </optgroup>
   </select>
+
+  <h3>output</h3>
   <output name="result">60</output>
 
 
+  <h3>textarea</h3>
   <textarea id="story" name="story" rows="5" cols="33">it was a dark and stormy night...</textarea>
 
-  <h1>details, summary</h1>
+  <h2>details, summary</h2>
   <details>
     <summary>Details</summary>
     Something small enough to escape casual notice.
   </details>
 
-  <h1>meter</h1>
-  <label for="fuel">fuel level:</label>
-  <meter id="fuel" name="fuel" min="0" max="100" low="33" high="66" optimum="80" value="50">at 50/100</meter>
-
-  <h1>progress</h1>
-  <label for="file">file progress:</label>
-  <progress id="file" max="100" value="70">70%</progress>
 
   <h1>not listed</h1>
-  <p>footer, header, main, nav, div, span</p>
+  <p>footer, header, main, nav</p>
+
+  <footer>
+    <div>main</div>
+    <div>about</div>
+    <div>content</div>
+  </footer>
 </body>
 </html>
