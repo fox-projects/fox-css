@@ -1,0 +1,29 @@
+
+img,
+video {
+  height: auto;
+  max-width: 100%;
+  border-radius: 5px;
+}
+
+iframe {
+  border: 0;
+}
+
+video, audio {
+  border-radius: 5px;
+}
+
+figure {
+  margin: 5px;
+}
+
+fieldset {
+  border: 2px solid $oc-gray-3;
+  border-radius: 5px;
+  margin: 0;
+}
+
+legend {
+  padding: 5px;
+}

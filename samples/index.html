@@ -39,6 +39,9 @@
     <h2>using asides plus</h2>
     <p>you can use asides however you want. place figures or subarticles inside it or whatever.</p>
     <p>lorem ipsum dolor sit amet consectetur adipisicing elit. nobis nemo, eos quos vel obcaecati, dolores et nihil accusantium consequuntur reprehenderit quis nesciunt doloremque necessitatibus odit, dicta sit fugit. magni, impedit!</p>
+    <p>html offers many tags that help format text. using the <b>bring attention to</b> or <strong>strong</strong> elements created a bolface around the text. additionally, use the <i>italicized</i> or the <em>emphasized</em> elements to italicize text. this library also styles the <u>unarticulated annotation</u> element. furthermore, use the <q>inline quotation</q> element if you have a brief quote. consider using the <small>small</small> tags to create smaller sized words. on the other hand, use the <mark>mark</mark> element to highlight the word. small snippets of code are displayed as the following <code>new Promise(r => setTimeout(r, 500))</code>. the keyboard input element, <kbd>ctrl</kbd>, also has some styling.</p>
+
+
   </article>
   
   <h2>just sections</h2>
@@ -125,9 +128,8 @@ __-' { |          \
 
 
   <h2>text</h2>
-  <p>html offers many tags that help format text. using the <b>bring attention to</b> or <strong>strong</strong> elements created a bolface around the text. additionally, use the <i>italicized</i> or the <em>emphasized</em> elements to italicize text. this library also styles the <u>unarticulated annotation</u> element. furthermore, use the <q>inline quotation</q> element if you have a brief quote. consider using the <small>small</small> tags to create smaller sized words. on the other hand, use the <mark>mark</mark> element to highlight the word. small snippets of code are displayed as the following <code>new Promise(r => setTimeout(r, 500))</code>. the keyboard input element, <kbd>ctrl</kbd>, also has some styling.</p>
 
-  , <abbr title="abbreviated">ab</abbr>,
+  <abbr title="abbreviated">ab</abbr>,
   <p>here is some <br><samp>Keyboard not found <br>Press F1 to continue</samp><br>code</p>
   <p>Almost every developer's favorite molecule is C<sub>8</sub>H<sub>10</sub>N<sub>4</sub>O<sub>2</sub>, also known as "caffeine."</p>
   <p>The <b>Pythagorean theorem</b> is often expressed as the following equation:
@@ -138,8 +140,7 @@ __-' { |          \
   <a target="_blank" href="https://developer.mozilla.org">mdn</a>
   <a target="_blank" href="https://example.com">example</a>
 
-
-  <h2>del, ins</h2>
+  <h3>del, ins</h3>
   <blockquote>
     there is <del>nothing</del> <ins>no code</ins> either good or bad, but <del>thinking</del> <ins>running it</ins> makes it so.
   </blockquote>
@@ -149,42 +150,42 @@ __-' { |          \
   <h2>tables</h2>
   <h3>table 1</h2>
   <table>
-      <caption>he-man and skeletor facts</caption>
-      <thead>
-        <tr>
-          <th colspan="2">the table header</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>the table body</td>
-          <td>with two columns</td>
-        </tr>
-      </tbody>
+    <caption>he-man and skeletor facts</caption>
+    <thead>
+      <tr>
+        <th colspan="2">the table header</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>the table body</td>
+        <td>with two columns</td>
+      </tr>
+    </tbody>
   </table>
 
   <h3>table 2</h3>
   <table>
-      <caption>superheros and sidekicks</caption>
-      <colgroup>
-        <col>
-        <col span="2" class="batman">
-        <col span="2" class="flash">
-      </colgroup>
-      <tr>
-        <td> </td>
-        <th scope="col">batman</th>
-        <th scope="col">robin</th>
-        <th scope="col">the flash</th>
-        <th scope="col">kid flash</th>
-      </tr>
-      <tr>
-        <th scope="row">skill</th>
-        <td>smarts</td>
-        <td>dex, acrobat</td>
-        <td>super speed</td>
-        <td>super speed</td>
-      </tr>
+    <caption>superheros and sidekicks</caption>
+    <colgroup>
+      <col>
+      <col span="2" class="batman">
+      <col span="2" class="flash">
+    </colgroup>
+    <tr>
+      <td> </td>
+      <th scope="col">batman</th>
+      <th scope="col">robin</th>
+      <th scope="col">the flash</th>
+      <th scope="col">kid flash</th>
+    </tr>
+    <tr>
+      <th scope="row">skill</th>
+      <td>smarts</td>
+      <td>dex, acrobat</td>
+      <td>super speed</td>
+      <td>super speed</td>
+    </tr>
   </table>
 
   <h3>table 3</h3>
@@ -214,24 +215,7 @@ __-' { |          \
   </table>
 
 
-  <h2>button</h2>
-  <button class="favorite styled" type="button">add to favorites</button>
-
-
-  <h2>datalist</h2>
-  <label for="ice-cream-choice">choose a flavor</label>
-  <br>
-  <input list="ice-cream-flavors" id="ice-cream-choice" name="ice-cream-choice">
-  <datalist id="ice-cream-flavors">
-    <option value="chocolate">
-    <option value="coconut">
-    <option value="mint">
-    <option value="strawberry">
-    <option value="vanilla">
-  </datalist>
-
-
-  <h2>fieldset, legend</h2>
+  <h2>fieldsets</h2>
   <form>
     <fieldset>
       <legend>choose your favorite monster</legend>
@@ -294,6 +278,22 @@ __-' { |          \
         <option>apatosaurus</option>
     </optgroup>
   </select>
+
+  <h3>button</h3>
+  <button class="favorite styled" type="button">add to favorites</button>
+
+
+  <h3>datalist</h3>
+  <label for="ice-cream-choice">choose a flavor</label>
+  <br>
+  <input list="ice-cream-flavors" id="ice-cream-choice" name="ice-cream-choice">
+  <datalist id="ice-cream-flavors">
+    <option value="chocolate">
+    <option value="coconut">
+    <option value="mint">
+    <option value="strawberry">
+    <option value="vanilla">
+  </datalist>
 
   <h3>output</h3>
   <output name="result">60</output>
