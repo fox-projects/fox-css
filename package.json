@@ -6,8 +6,7 @@
   "scripts": {
     "serve": "gulp serve",
     "build": "gulp build",
-    "size": "node size",
-    "version": "npm run build"
+    "version": "node size"
   },
   "precommit": [
     "build"
