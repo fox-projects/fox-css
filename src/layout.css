@@ -3,9 +3,44 @@ body {
   margin: 10px;
 }
 
+// generic
+div, span {
+  margin: 10px;
+}
+
+// aside view
+aside {
+  width: auto;
+  max-width: 35%;
+  margin: 10px;
+  float: right;
+  background-color: $oc-gray-1;
+}
+
+article aside, section aside {
+  background-color: $oc-gray-2;
+}
+
+// split view
+section > span {
+  display: inline-flex;
+  flex-direction: column;
+  width: calc(50% - 35px);
+  background-color: $oc-gray-2;
+  border-radius: 5px;
+  padding: 5px;
+  /* height: 100%; */
+
+}
+
+// footer
 body > footer {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+}
+
+body > footer a {
+  text-decoration: none;
 }
 
 header, footer, nav {
@@ -22,25 +57,12 @@ footer > div, footer > span {
   border-radius: 5px;
 }
 
-
 article, aside, section {
   padding: 5px;
   margin: 0 0 10px;
   border-radius: 5px;
   overflow: auto;
   background-color: $oc-gray-1;
-}
-
-aside {
-  width: auto;
-  max-width: 35%;
-  margin: 10px;
-  float: right;
-  background-color: $oc-gray-1;
-}
-
-article aside, section aside {
-  background-color: $oc-gray-2;
 }
 
 @media(max-width: 700px) {

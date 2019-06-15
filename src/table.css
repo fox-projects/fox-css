@@ -1,10 +1,13 @@
 table {
+  width: 100%;
   border-collapse: collapse;
   border-spacing: 0;
+  border: 2px solid $oc-gray-3;
 }
 
 td,
 th {
   padding: 0;
   text-align: left;
+  border: 2px solid $oc-gray-2;
 }

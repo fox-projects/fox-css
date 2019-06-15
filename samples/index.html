@@ -8,67 +8,119 @@
   <title>fox-css</title>
 </head>
 <body>
-  <h1>fox-css</h1>
-  <article>
-    <h2>about fox-css</h2>
-    <p>fox-css styles your html so it doesnt look like total crap. no need to remember any class names</p>
-  </article>
+  <header>
+    <h1>fox-css</h1>
+    <article>
+      <h2>about fox-css</h2>
+      <p>fox-css styles your html so it doesnt look like total crap. no need to remember any class names</p>
+      <p>header, main, nav</p>
+    </article>
+    <nav>
+      <a href='index'>index</a>
+      <a href='example1'>example 1</a>
+    </nav>
+  </header>
+
 
   <hr>
 
-  <h2>articles and sections</h2>
+  <h1>basics</h1>
+  <p>fox-css styles all html elements to make them look adequate. nothing fancy. we recommend you place content inside article and section elements. like shown below, article and section elements have a slightly darker background</p>
+  
+  <h1>asides</h1>
+  <h2>aside example 1</h2>
   <article>
     <h3>using asides</h3>
     <aside>
       <h4>aside elements</h4>
-      <p>any aside element with a parent article or parent section will be floated right. it will have a width of 35% of its parent container</p>
+      <p>any aside element with a parent article or parent section will be floated right. it will have a width of 35% of its parent container. you can use asides however you want. place figures, images or text in them or whatever. just do not nest asides</p>
     </aside>
     <p>lorem ipsum dolor sit amet consectetur adipisicing elit. labore, modi expedita omnis ut dolorum fugiat commodi! nam a esse delectus vel repellendus modi quo, animi, architecto earum veniam cupiditate consequuntur. lorem ipsum dolor sit amet consectetur, adipisicing elit. pariatur minima consequuntur exercitationem modi neque alias nobis voluptate harum, rem quo temporibus ullam suscipit possimus beatae quibusdam similique officia debitis totam. lorem ipsum dolor sit amet consectetur, adipisicing elit. fuga delectus, tenetur aspernatur a id quaerat veritatis, pariatur quo ipsa adipisci, aut error quasi itaque corrupti provident voluptate sapiente quis maxime? lorem ipsum, dolor sit amet consectetur adipisicing elit. labore, consequuntur est? quo praesentium maxime quos quis ipsum sapiente dolore inventore, quia maiores ullam, iusto, perferendis rem? perferendis, laudantium. eligendi, amet.</p>
   </article>
 
-
+  <h2>aside example 2</h2>
   <article>
     <aside>
       <figure>
-        <img src="https://cdn.pixabay.com/photo/2016/11/29/03/28/animal-1867062_960_720.jpg" alt="fox standing">
+        <h4>aside photograph</h4>
+        <img src='https://cdn.pixabay.com/photo/2016/11/29/03/28/animal-1867062_960_720.jpg' alt='fox standing'>
         <figcaption>
           fox standing on terrain
         </figcaption>
       </figure>
     </aside>
-    <h2>using asides plus</h2>
-    <p>you can use asides however you want. place figures or subarticles inside it or whatever.</p>
-    <p>lorem ipsum dolor sit amet consectetur adipisicing elit. nobis nemo, eos quos vel obcaecati, dolores et nihil accusantium consequuntur reprehenderit quis nesciunt doloremque necessitatibus odit, dicta sit fugit. magni, impedit!</p>
-    <p>html offers many tags that help format text. using the <b>bring attention to</b> or <strong>strong</strong> elements created a bolface around the text. additionally, use the <i>italicized</i> or the <em>emphasized</em> elements to italicize text. this library also styles the <u>unarticulated annotation</u> element. furthermore, use the <q>inline quotation</q> element if you have a brief quote. consider using the <small>small</small> tags to create smaller sized words. on the other hand, use the <mark>mark</mark> element to highlight the word. small snippets of code are displayed as the following <code>new Promise(r => setTimeout(r, 500))</code>. the keyboard input element, <kbd>ctrl</kbd>, also has some styling.</p>
+    <h3>text formatting</h3>
+    <p>of course you style text. use the <b>bring attention to</b> tag or the <strong>strong</strong> tag to bring attention to or bold the text, respectively. additionally, consider using the <i>i</i> or the <em>emphasize</em> elements to emphasize text or to identify abornal text.</p>
+    <p>consider using the <u>unarticulated annotation</u> element, which squigly underlines words. use the <q>inline quotation</q> to insert brief quotes</p>
+    <p>use the <small>small</small> tags to create smaller text. use the <mark>mark</mark> element to highlight words for reference or notational purposes. press the <kbd>space</kbd> key to move down</p>
+    <p>code snippets like this <code>new Promise(r => setTimeout(r, 500))</code> also work</p>
+    <p><abbr title='mozilla developer network'>mdn</abbr> is an abbreviation</p>
 
+    <p>sample or quoted output from a computer program<br>
+      <samp>
+        Keyboard not found <br>
+        Press F1 to continue<br>
+      </samp>
+    </p>
 
-  </article>
+    <p>the chemistry molecule C<sub>8</sub>H<sub>10</sub>N<sub>4</sub>O<sub>2</sub> is caffeine</p>
+    <p>The pythagorean theorem is often expressed as
+    </p><p><var>a<sup>2</sup></var> + <var>b<sup>2</sup></var> = <var>c<sup>2</sup></var></p>
   
-  <h2>just sections</h2>
-  <aside>
-    <h3>asides without parents</h3>
-    <p>when asides do not have an article or section parent, they still work as expected. since were nto dealing with text etc. the format looks a bit broken, bit alright</p>
-  </aside>
+    <br>
+    <h4>links</h4>
+    <p>with familiar, but distinct colors</p>
+    <a target='_blank' href='https://github.com/eankeen/fox-css'>fox-css</a>
+    <a target='_blank' href='https://firefox.com'>firefox</a>
+    <a target='_blank' href='https://developer.mozilla.org'>mdn</a>
+    <a target='_blank' href='https://example.com'>example</a>
+  </article>
 
+  <h1>spans</h1>
+  <h2>span example 1</h2>
   <section>
-    <h3>section header</h3>
-    <p>lorem ipsum dolor sit amet consectetur adipisicing elit. eveniet nobis beatae odio est voluptates in reiciendis saepe, dolor soluta amet iste hic harum laudantium nesciunt officia dolores laboriosam obcaecati maxime? lorem ipsum, dolor sit amet consectetur adipisicing elit. quis modi adipisci vero ad natus sunt suscipit, dolorum nobis distinctio dolor ipsum officia est voluptatem nemo ea voluptates neque dolore veritatis!</p>
-    <address>40052 addie roads</address>
+    <span>
+      <h3>span title</h3>
+      <p>adjacent spans with a common section or article parent element will both take up 50% width</p>
+    </span>
+    <span>
+      <h3>content</h3>
+    </span>
+  </section>
+
+  <h2>span example 2</h2>
+  <section>
+    <span><h3>works with</h3></span>
+    <span><h3>three spans</h3></span>
+    <span>
+      <figure>
+          <img src='https://cdn.pixabay.com/photo/2016/01/03/06/20/red-fox-1119118_960_720.jpg' alt='fox walking through snow'>
+          <figcaption>
+            fox walking through snow
+          </figcaption>
+        </figure>
+    </span>
+  </section>
+
+  <h3>span example 3</h3>
+  <section>
+    <span>
+      <h3>single span</h3>
+      <p>if you wish to do so, use one span. this will simply emphasize the content futher with the darker backround. however, we recommend just nesting section or asides instead to achive this effect</p>
+    </span>
   </section>
 
   <section>
-    <h2>level 2</h2>
-    <h3>level 3</h3>
-    <h4>level 4</h4>
-    <p>using various heading levels looks very fine. remember, this library is not meant to look spectacular, just bearable</p>
+    <section>
+      <h3>other</h3>
+    </section>
   </section>
 
-  <h2>divs and spans</h2>
-
+  <h1>single elements</h1>
   <h2>quoting</h2>
-  <blockquote cite="https://www.huxley.net/bnw/four.html">
-    <p>Words can be like X-rays, if you use them properly—they’ll go through anything. You read and you’re pierced.</p>
-    <footer>Aldous Huxley, <cite>Brave New World</cite></footer>
+  <blockquote cite='https://www.huxley.net/bnw/four.html'>
+    <p>are you saying that because he's a sloth he can't be fast? I thought in zootopia, anyone could be anything</p>
+    <footer>nick wilde, <cite>zootopia</cite></footer>
   </blockquote>
 
 
@@ -81,16 +133,7 @@
     <dd>definition 2</dd>
   </dl>
 
-  
-  <h1>images</h1>
-  <figure>
-    <img src="https://cdn.pixabay.com/photo/2016/01/03/06/20/red-fox-1119118_960_720.jpg" alt="fox walking through snow">
-    <figcaption>
-      fox walking through snow
-    </figcaption>
-  </figure>
-
-  <h1>ul, ol, li</h1>
+  <h2>ul, ol, li</h2>
   <ol>
       <li>ordered list item 2</li>
       <li>ordered list item 1</li>
@@ -108,7 +151,7 @@
   </ul>
 
 
-  <h1>pre</h1>
+  <h2>pre</h2>
   <pre>
     _
     / \      _-'
@@ -128,32 +171,37 @@ __-' { |          \
 
 
   <h2>text</h2>
-
-  <abbr title="abbreviated">ab</abbr>,
-  <p>here is some <br><samp>Keyboard not found <br>Press F1 to continue</samp><br>code</p>
-  <p>Almost every developer's favorite molecule is C<sub>8</sub>H<sub>10</sub>N<sub>4</sub>O<sub>2</sub>, also known as "caffeine."</p>
-  <p>The <b>Pythagorean theorem</b> is often expressed as the following equation:
-  </p><p><var>a<sup>2</sup></var> + <var>b<sup>2</sup></var> = <var>c<sup>2</sup></var></p>
-
-  <a target="_blank" href="https://github.com/eankeen/fox-css">fox-css</a>
-  <a target="_blank" href="https://firefox.com">firefox</a>
-  <a target="_blank" href="https://developer.mozilla.org">mdn</a>
-  <a target="_blank" href="https://example.com">example</a>
-
   <h3>del, ins</h3>
   <blockquote>
     there is <del>nothing</del> <ins>no code</ins> either good or bad, but <del>thinking</del> <ins>running it</ins> makes it so.
   </blockquote>
 
+  
+  <h3>output</h3>
+  <output name='result'>60</output>
+
+
+  <h3>textarea</h3>
+  <textarea id='story' name='story' rows='5' cols='33'>it was a dark and stormy night...</textarea>
+
+  <h2>details, summary</h2>
+  <details>
+    <summary>Details</summary>
+    Something small enough to escape casual notice.
+  </details>
+
+  <h3>button</h3>
+  <button type='button'>add to favorites</button>
+
 
   <!-- <h2>caption, col, colgroup, table, tbody, td, tfoot, th, thead, tr</h2> -->
-  <h2>tables</h2>
-  <h3>table 1</h2>
+  <h1>tables</h1>
+  <h2>table example 1</h2>
   <table>
     <caption>he-man and skeletor facts</caption>
     <thead>
       <tr>
-        <th colspan="2">the table header</th>
+        <th colspan='2'>the table header</th>
       </tr>
     </thead>
     <tbody>
@@ -164,23 +212,23 @@ __-' { |          \
     </tbody>
   </table>
 
-  <h3>table 2</h3>
+  <h2>table example 2</h2>
   <table>
     <caption>superheros and sidekicks</caption>
     <colgroup>
       <col>
-      <col span="2" class="batman">
-      <col span="2" class="flash">
+      <col span='2' class='batman'>
+      <col span='2' class='flash'>
     </colgroup>
     <tr>
       <td> </td>
-      <th scope="col">batman</th>
-      <th scope="col">robin</th>
-      <th scope="col">the flash</th>
-      <th scope="col">kid flash</th>
+      <th scope='col'>batman</th>
+      <th scope='col'>robin</th>
+      <th scope='col'>the flash</th>
+      <th scope='col'>kid flash</th>
     </tr>
     <tr>
-      <th scope="row">skill</th>
+      <th scope='row'>skill</th>
       <td>smarts</td>
       <td>dex, acrobat</td>
       <td>super speed</td>
@@ -188,27 +236,27 @@ __-' { |          \
     </tr>
   </table>
 
-  <h3>table 3</h3>
+  <h2>table example 3</h2>
   <table>
     <thead>
       <tr>
         <th>items</th>
-        <th scope="col">expenditure</th>
+        <th scope='col'>expenditure</th>
       </tr>
     </thead>
     <tbody>
       <tr>
-        <th scope="row">donuts</th>
+        <th scope='row'>donuts</th>
         <td>3,000</td>
       </tr>
       <tr>
-        <th scope="row">stationary</th>
+        <th scope='row'>stationary</th>
         <td>18,000</td>
       </tr>
     </tbody>
     <tfoot>
       <tr>
-        <th scope="row">totals</th>
+        <th scope='row'>totals</th>
         <td>21,000</td>
       </tr>
     </tfoot>
@@ -220,102 +268,96 @@ __-' { |          \
     <fieldset>
       <legend>choose your favorite monster</legend>
   
-      <input type="radio" id="kraken" name="monster">
-      <label for="kraken">kraken</label><br/>
+      <input type='radio' id='kraken' name='monster'>
+      <label for='kraken'>kraken</label><br/>
   
-      <input type="radio" id="sasquatch" name="monster">
-      <label for="sasquatch">sasquatch</label><br/>
+      <input type='radio' id='sasquatch' name='monster'>
+      <label for='sasquatch'>sasquatch</label><br/>
   
-      <input type="radio" id="mothman" name="monster">
-      <label for="mothman">mothman</label>
+      <input type='radio' id='mothman' name='monster'>
+      <label for='mothman'>mothman</label>
     </fieldset>
   </form>
 
 
-  <h2>forms</h2>
-  <form action="" method="get" class="form-example">
+  <h1>forms</h1>
+  <h2>form example 1</h2>
+  <form action='' method='get' class='form-example'>
     <div>
-      <label for="name">enter your name</label>
-      <input type="text" name="name" id="name" required>
+      <label for='name'>enter your name</label>
+      <input type='text' name='name' required>
     </div>
     <div>
-      <label for="email">enter your email</label>
-      <input type="email" name="email" id="email" required>
+      <label for='email'>enter your email</label>
+      <input type='email' name='email' required>
     </div>
-    <div class="form-example">
-      <input type="submit" value="subscribe!">
+    <div class='form-example'>
+      <input type='submit' value='subscribe!'>
     </div>
   </form>
 
   <h2>form elements</h2>
   <h3>text</h3>
-  <input type="text" id="name" name="name" required minlength="4" maxlength="8" size="10">
+  <input type='text' name='name' required minlength='4' maxlength='8' size='10'>
 
   <h3>checkbox</h3>
-  <input type="checkbox" name="cheese" id="cheese">
-  <input type="checkbox" name="peas" id="peas">
+  <input type='checkbox' name='cheese' id='cheese'>
+  <input type='checkbox' name='peas' id='peas'>
 
   <h3>select</h3>
   <select>
-    <option value="">please choose an option</option>
-    <option value="dog">dog</option>
-    <option value="cat">cat</option>
-    <option value="hamster">hamster</option>
-    <option value="parrot">parrot</option>
-    <option value="spider">spider</option>
-    <option value="goldfish">goldfish</option>
+    <option value=''>please choose an option</option>
+    <option value='dog'>dog</option>
+    <option value='cat'>cat</option>
+    <option value='hamster'>hamster</option>
+    <option value='parrot'>parrot</option>
+    <option value='spider'>spider</option>
+    <option value='goldfish'>goldfish</option>
   </select>
 
   <select>
-    <optgroup label="theropods">
+    <optgroup label='theropods'>
         <option>tyrannosaurus</option>
         <option>velociraptor</option>
         <option>deinonychus</option>
     </optgroup>
-    <optgroup label="sauropods">
+    <optgroup label='sauropods'>
         <option>diplodocus</option>
         <option>saltasaurus</option>
         <option>apatosaurus</option>
     </optgroup>
   </select>
 
-  <h3>button</h3>
-  <button class="favorite styled" type="button">add to favorites</button>
-
 
   <h3>datalist</h3>
-  <label for="ice-cream-choice">choose a flavor</label>
+  <label for='ice-cream-choice'>choose a flavor</label>
   <br>
-  <input list="ice-cream-flavors" id="ice-cream-choice" name="ice-cream-choice">
-  <datalist id="ice-cream-flavors">
-    <option value="chocolate">
-    <option value="coconut">
-    <option value="mint">
-    <option value="strawberry">
-    <option value="vanilla">
+  <input list='ice-cream-flavors' name='ice-cream-choice'>
+  <datalist id='ice-cream-flavors'>
+    <option value='chocolate'>
+    <option value='coconut'>
+    <option value='mint'>
+    <option value='strawberry'>
+    <option value='vanilla'>
   </datalist>
 
-  <h3>output</h3>
-  <output name="result">60</output>
 
-
-  <h3>textarea</h3>
-  <textarea id="story" name="story" rows="5" cols="33">it was a dark and stormy night...</textarea>
-
-  <h2>details, summary</h2>
-  <details>
-    <summary>Details</summary>
-    Something small enough to escape casual notice.
-  </details>
-
-
-  <h1>not listed</h1>
-  <p>footer, header, main, nav</p>
-
+  <h2>footers</h2>
+  <p>nest a div or span inside of footer to get easy results</p>
   <footer>
     <div>main</div>
     <div>about</div>
     <div>content</div>
+  </footer>
+
+  <footer>
+    <span><a href='#'>main</a></span>
+    <span><a href='#'>about</a></span>
+    <span><a href='#'>content</a></span>
+  </footer>
+
+  <footer>
+    <div>© 2019 foo bar</div>
   </footer>
 </body>
 </html>
