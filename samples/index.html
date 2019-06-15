@@ -13,11 +13,15 @@
     <article>
       <h2>about fox-css</h2>
       <p>fox-css styles your html so it doesnt look like total crap. no need to remember any class names</p>
-      <p>header, main, nav</p>
+      <h3>short summary</h3>
+      <p>asides andd sections break up your content. use them. when they have children of aside or span, they get special formatting (shown below). wrap a, div, or span tags in nav or footer for navigation and footer marup, respectively. header, main, and div elements have no effect</p>
     </article>
+
+    <h1>navigation</h1>
     <nav>
-      <a href='index'>index</a>
-      <a href='example1'>example 1</a>
+      <a href='index.html'>index</a>
+      <a href='example1.html'>example 1</a>
+      <a href='example2.html'>example 2</a>
     </nav>
   </header>
 
@@ -172,10 +176,40 @@ __-' { |          \
 
   <h2>text</h2>
   <h3>del, ins</h3>
-  <blockquote>
-    there is <del>nothing</del> <ins>no code</ins> either good or bad, but <del>thinking</del> <ins>running it</ins> makes it so.
-  </blockquote>
+  <section>
+    <span>
+      <pre>
+26. &lt;script&gt;
 
+27. import NavItem from '@/components/navigation/NavItem'
+28.
+29. export defalt {
+30. name: 'Navigation',
+
+
+
+31. components: {
+32.   'nav-item': NavItem
+33. }
+      </pre>
+    </span>
+    <span>
+      <pre>
+26. &lt;script&gt;
+27. <ins>import { mapState } from 'vuex'</ins>
+28. import NavItem from '@/components/navigation/NavItem'
+29.
+30. export defalt {
+31. name: 'Navigation',
+32. <ins>computed: {</ins>
+33.     <ins>...mapState('themes/', ['currentThemes'])</ins>
+34. <ins>},</ins>
+35. components: {
+36.   'nav-item': NavItem
+37. }
+      </pre>
+    </span>
+  </section>
   
   <h3>output</h3>
   <output name='result'>60</output>
@@ -198,16 +232,15 @@ __-' { |          \
   <h1>tables</h1>
   <h2>table example 1</h2>
   <table>
-    <caption>he-man and skeletor facts</caption>
     <thead>
       <tr>
-        <th colspan='2'>the table header</th>
+        <th colspan='2'>header</th>
       </tr>
     </thead>
     <tbody>
       <tr>
-        <td>the table body</td>
-        <td>with two columns</td>
+        <td>left</td>
+        <td>right</td>
       </tr>
     </tbody>
   </table>
@@ -221,7 +254,7 @@ __-' { |          \
       <col span='2' class='flash'>
     </colgroup>
     <tr>
-      <td> </td>
+      <td></td>
       <th scope='col'>batman</th>
       <th scope='col'>robin</th>
       <th scope='col'>the flash</th>
@@ -238,28 +271,31 @@ __-' { |          \
 
   <h2>table example 3</h2>
   <table>
+    <caption>table of state nicknames</caption>
     <thead>
       <tr>
-        <th>items</th>
-        <th scope='col'>expenditure</th>
+        <th>state</th>
+        <th scope='col'>nickname</th>
       </tr>
     </thead>
     <tbody>
       <tr>
-        <th scope='row'>donuts</th>
-        <td>3,000</td>
+        <th scope='row'>alaska</th>
+        <td>the last frontier</td>
       </tr>
       <tr>
-        <th scope='row'>stationary</th>
-        <td>18,000</td>
+        <th scope='row'>arizona</th>
+        <td>the grand canyon state</td>
+      </tr>
+      <tr>
+        <th scope='row'>arkansas</th>
+        <td>natural state</td>
+      </tr>
+      <tr>
+        <th scope='row'>california</th>
+        <td>golden state</td>
       </tr>
     </tbody>
-    <tfoot>
-      <tr>
-        <th scope='row'>totals</th>
-        <td>21,000</td>
-      </tr>
-    </tfoot>
   </table>
 
 
@@ -268,13 +304,13 @@ __-' { |          \
     <fieldset>
       <legend>choose your favorite monster</legend>
   
-      <input type='radio' id='kraken' name='monster'>
+      <input type='radio' name='monster'>
       <label for='kraken'>kraken</label><br/>
   
-      <input type='radio' id='sasquatch' name='monster'>
+      <input type='radio' name='monster'>
       <label for='sasquatch'>sasquatch</label><br/>
   
-      <input type='radio' id='mothman' name='monster'>
+      <input type='radio' name='monster'>
       <label for='mothman'>mothman</label>
     </fieldset>
   </form>
@@ -282,78 +318,120 @@ __-' { |          \
 
   <h1>forms</h1>
   <h2>form example 1</h2>
-  <form action='' method='get' class='form-example'>
+  <form action='' method='get'>
     <div>
-      <label for='name'>enter your name</label>
+      <label for='name'>name</label>
+      <br>
       <input type='text' name='name' required>
     </div>
+
     <div>
-      <label for='email'>enter your email</label>
+      <label for='email'>email</label>
+      <br>
       <input type='email' name='email' required>
     </div>
-    <div class='form-example'>
-      <input type='submit' value='subscribe!'>
+    <div>
+      <input type='submit' value='submit'>
     </div>
   </form>
 
-  <h2>form elements</h2>
-  <h3>text</h3>
-  <input type='text' name='name' required minlength='4' maxlength='8' size='10'>
+  <h2>form example 2</h2>
+  <form action='' method='get'>
+    <div>
+      <label for="name">name</label>
+      <br>
+      <input type='text' name='name' required minlength='3' maxlength='12' size='15'>
+    </div>
 
-  <h3>checkbox</h3>
-  <input type='checkbox' name='cheese' id='cheese'>
-  <input type='checkbox' name='peas' id='peas'>
+    <div>
+      <label for='gender'>gender</label>
+      <br>
+      <div>
+        <input type='radio' name='gender' value='male'>
+        <label for='gender'>male</label>
+      </div>
+      <div>
+        <input type='radio' name='gender' value='female'>
+        <label for='gender'>female</label>
+      </div>
+      <div>
+        <input type='radio' name='gender' value='other'>
+        <label for='gender'>other</label>
+      </div>
+    </div>
 
-  <h3>select</h3>
-  <select>
-    <option value=''>please choose an option</option>
-    <option value='dog'>dog</option>
-    <option value='cat'>cat</option>
-    <option value='hamster'>hamster</option>
-    <option value='parrot'>parrot</option>
-    <option value='spider'>spider</option>
-    <option value='goldfish'>goldfish</option>
-  </select>
+    <div>
+      <label for='food'>favorite food</label>
+      <div>
+        <input type='checkbox' name='carrot'>
+        <label for="food">carrot</label>
+      </div>
+      <div>
+        <input type='checkbox' name='nectarine'>
+        <label for="food">nectarine</label>
+      </div>
+      <div>
+        <input type='checkbox' name='grass'>
+        <label for="food">grass</label>
+        </div>
+    </div>
 
-  <select>
-    <optgroup label='theropods'>
-        <option>tyrannosaurus</option>
-        <option>velociraptor</option>
-        <option>deinonychus</option>
-    </optgroup>
-    <optgroup label='sauropods'>
-        <option>diplodocus</option>
-        <option>saltasaurus</option>
-        <option>apatosaurus</option>
-    </optgroup>
-  </select>
+    <div>
+      <label for='color'>pets</label>
+      <div>
+        <select>
+          <optgroup label='theropods'>
+            <option>tyrannosaurus</option>
+            <option>velociraptor</option>
+            <option>deinonychus</option>
+          </optgroup>
+          <optgroup label='sauropods'>
+            <option>diplodocus</option>
+            <option>saltasaurus</option>
+            <option>apatosaurus</option>
+          </optgroup>
+        </select>
+      </div>
+    </div>
 
+    <div>
+      <label for='ice-cream-choice'>choose a flavor</label>
+      <div>
+        <input list='ice-cream-flavors' name='ice-cream-choice'>
+        <datalist id='ice-cream-flavors'>
+          <option value='chocolate'>
+          <option value='coconut'>
+          <option value='mint'>
+          <option value='strawberry'>
+          <option value='vanilla'>
+        </datalist>
+      </div>
+    </div>
 
-  <h3>datalist</h3>
-  <label for='ice-cream-choice'>choose a flavor</label>
-  <br>
-  <input list='ice-cream-flavors' name='ice-cream-choice'>
-  <datalist id='ice-cream-flavors'>
-    <option value='chocolate'>
-    <option value='coconut'>
-    <option value='mint'>
-    <option value='strawberry'>
-    <option value='vanilla'>
-  </datalist>
+    <div>
+        <label for='thoughts'>any other thoughts</label>
+      <div>
+        <textarea name='thoughts' rows='5' cols='33'></textarea>
+      </div>
+    </div>
+    <div>
+      <input type='submit' value='submit'>
+    </div>
+  </form>
 
 
   <h2>footers</h2>
   <p>nest a div or span inside of footer to get easy results</p>
   <footer>
     <div>main</div>
-    <div>about</div>
-    <div>content</div>
+    <div><a href='#''>link</a></div>
+    <div>with divs</div>
   </footer>
 
   <footer>
-    <span><a href='#'>main</a></span>
-    <span><a href='#'>about</a></span>
-    <span><a href='#'>content</a></span>
+    <span>main</span>
+    <span><a href='#'>link</a></span>
+    <span>with spans</span>
   </footer>
 
   <footer>

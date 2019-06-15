@@ -3,11 +3,19 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
   border: 2px solid $oc-gray-3;
+  border-radius: 5px;
+}
+
+caption {
+  padding: 5px;
+  background-color: $oc-gray-1;
+  border-radius: 5px;
+  margin: 10px 0;
 }
 
 td,
 th {
-  padding: 0;
+  padding: 5px;
   text-align: left;
   border: 2px solid $oc-gray-2;
 }

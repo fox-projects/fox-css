@@ -3,9 +3,54 @@ body {
   margin: 10px;
 }
 
-// generic
+// general
 div, span {
   margin: 10px;
+}
+
+header, footer, nav {
+  padding: 5px 0;
+}
+
+main {
+  margin: 5px;
+}
+
+article, aside, section {
+  padding: 5px;
+  margin: 0 0 10px;
+  border-radius: 5px;
+  overflow: auto;
+  background-color: $oc-gray-1;
+}
+
+// nav
+nav {
+  display: flex;
+}
+
+nav > * {
+  padding: 5px 10px;
+  margin: 5px;
+  border-radius: 5px;
+  background-color: $oc-gray-1;
+  text-decoration: none;
+}
+
+// footer
+body > footer {
+  display: flex;
+  justify-content: center;
+}
+
+body > footer a {
+  text-decoration: none;
+}
+
+body > footer div, body > footer span {
+  padding: 8px 15px;
+  border-radius: 5px;
+  background-color: $oc-gray-1;
 }
 
 // aside view
@@ -31,38 +76,6 @@ section > span {
   padding: 5px;
   /* height: 100%; */
 
-}
-
-// footer
-body > footer {
-  display: flex;
-  justify-content: center;
-}
-
-body > footer a {
-  text-decoration: none;
-}
-
-header, footer, nav {
-  padding: 5px 0;
-}
-
-main {
-  margin: 5px;
-}
-
-footer > div, footer > span {
-  background-color: $oc-gray-2;
-  padding: 10px 20px;
-  border-radius: 5px;
-}
-
-article, aside, section {
-  padding: 5px;
-  margin: 0 0 10px;
-  border-radius: 5px;
-  overflow: auto;
-  background-color: $oc-gray-1;
 }
 
 @media(max-width: 700px) {

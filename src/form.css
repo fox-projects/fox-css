@@ -1,11 +1,12 @@
 form {
   border-radius: 5px;
   padding: 5px;
+  border: 2px solid $oc-gray-2;
 }
 
 input {
   padding: 5px;
-  margin: 5px;
+  margin: 5px 5px 5px 0;
   background-color: $oc-gray-1;
   border: 1px solid $oc-gray-3;
 }
