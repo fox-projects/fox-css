@@ -1,44 +1,33 @@
 body {
+  margin: 10px;
+  line-height: 1.5;
   font-family: system-ui -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-  margin: 10px;
 }
 
-// general
-div {
-  margin: 10px;
-  padding: 5px;
+section, article, aside, nav, div, blockquote, span, dd, dt, samp, button {
+  padding: $ws-large;
+  margin: $ws-large;
+  border-radius: $border-radius;
+  background-color: $bg-1;
+  /* overflow: auto; */
 }
 
-header, footer, nav {
-  padding: 5px 0;
-}
-
-main {
-  margin: 5px;
-}
-
-section, article, aside {
-  padding: 5px;
-  margin: 0 0 10px;
-  border-radius: 5px;
-  overflow: auto;
-  background-color: $oc-gray-1;
-}
-
-article > section, section > article, article > aside, section > aside {
-  background-color: $oc-gray-2;
+// darken background if nested
+section > article, article > section, article > aside, section > aside, section > div, article > div {
+  background-color: $bg-2;
 }
 
 // nav
-nav {
+body > nav {
   display: flex;
 }
 
-nav * {
-  padding: 5px 10px;
-  margin: 5px;
-  border-radius: 5px;
-  background-color: $oc-gray-1;
+body > nav > * {
+  display: inline;
+  background-color: $bg-1;
+}
+
+body > nav * {
   text-decoration: none;
 }
 
@@ -48,29 +37,30 @@ body > footer {
   justify-content: center;
 }
 
-body > footer a {
-  text-decoration: none;
+body > footer > * {
+  background-color: $bg-1;
+  padding: 8px 20px;
 }
 
-body > footer div {
-  padding: 8px 15px;
-  border-radius: 5px;
-  background-color: $oc-gray-1;
+body > footer * {
+  text-decoration: none;
 }
 
 // aside view
 aside {
-  width: auto;
   max-width: 35%;
-  margin: 10px;
   float: right;
-  background-color: $oc-gray-1;
+  background-color: $bg-1;
 }
 
-@media(max-width: 700px) {
+@media(max-width: $aside-display-bounds) {
   aside {
     float: none;
     display: none;
+  }
+
+  .flex {
+    flex-direction: column;
   }
 }
 
@@ -83,12 +73,3 @@ aside {
   flex: 1;
 }
 
-.flex > * {
-  background-color: $oc-gray-2;
-  border-radius: 5px;
-}
-
-// grid
-.grid {
-  display: grid;
-}

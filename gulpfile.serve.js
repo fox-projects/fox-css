@@ -8,8 +8,8 @@ let browserSync = require("browser-sync").create();
 let postCssPlugins = [
   require("postcss-import")(),
   require("postcss-strip-inline-comments")(),
-  require("postcss-preset-env")(), // css future
   require("postcss-simple-vars")(), // sass-like variables
+  require("postcss-preset-env")(), // css future
   require("autoprefixer")()
 ];
 

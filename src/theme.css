@@ -1,0 +1,37 @@
+$html-font-color: $oc-gray-9;
+$html-bg-color: $oc-gray-0;
+
+// shared \\
+$border-radius: 5px;
+
+// the <aside> element disappears when the screen is
+// less than or equal to this pixel length
+$aside-display-bounds: 700px;
+
+// background levels (only two)
+$bg-1: $oc-gray-1;
+$bg-2: $oc-gray-2;
+
+// borders
+$border-thickness: 2px;
+$border-color-light: $oc-gray-3;
+$border-color-medium: $oc-gray-4;
+$border-color-dark: $oc-gray-8;
+
+// whitespace (not used)
+$ws-small: 5px;
+$ws-large: 10px;
+
+
+// text \\
+$a-normal: $oc-indigo-7;
+$a-hover: $oc-grape-7;
+$a-visited: $oc-grape-7;
+$a-active: $oc-red-7;
+
+$del-bg-color: $oc-red-2;
+$ins-bg-color: $oc-green-2;
+
+$mark-bg-color: $oc-yellow-2;
+
+$u-underline-color: $oc-red-4;

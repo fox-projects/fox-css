@@ -1,35 +1,19 @@
 form {
-  border-radius: 5px;
+  border-radius: $border-radius;
   padding: 5px;
-  border: 2px solid $oc-gray-2;
+  border: $border-thickness solid $border-color-medium;
 }
 
-input {
-  padding: 5px;
+input, select {
+  border: $border-thickness solid $border-color-light;
+  border-radius: $border-radius;
+  padding: 7px;
   margin: 5px 5px 5px 0;
-  background-color: $oc-gray-1;
-  border: 1px solid $oc-gray-3;
-}
-
-input[type='checkbox'] {
-  border-radius: 5px;
-  padding: 5px;
-  background-color: $oc-gray-1;
-}
-
-input[type='submit'] {
-  border-radius: 5px;
+  background: white;
 }
 
 textarea {
   width: 90%;
-  border-radius: 5px;
-  border: 2px solid $oc-gray-2;
-}
-
-button {
-  padding: 10px;
-  border: 0;
-  border-radius: 5px;
-  background-color: $oc-gray-2;
+  border-radius: $border-radius;
+  border: $border-thickness solid $bg-1;
 }

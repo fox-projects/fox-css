@@ -12,44 +12,28 @@
     <h1>fox-css</h1>
     <article>
       <h2>about fox-css</h2>
-      <p>fox-css styles your html so it doesnt look like total crap. two, useful, class names</p>
+      <p>fox-css styles your html so it doesnt look like total crap. use a single classname</p>
     </article>
 
-    <h1>navigation</h1>
-    <p><code>&lt;nav&gt;</code> has <code>display: flex;</code>. all descendents have <code>text-decoration: none;</code></p>
-    <h2>navigation example 1</h2>
+    <h2>navigation</h2>
+    <p>put <code>&lt;div&gt;</code>s in your <code>&lt;nav&gt;</code> for easy results</p>
     <nav>
-      <a href='index.html'>index</a>
-      <a href='example1.html'>example 1</a>
-      <a href='example2.html'>example 2</a>
-    </nav>
-
-    <h2>navigation example 2</h2>
-    <nav>
-      <div>
-        <a href="index.html">index</a>
-      </div>
-      <div>
-        <a href="example1.html">example 1</a>
-      </div>
-      <div>
-        <a href="example2.html">example 2</a>
-      </div>
+      <div><a href='index.html'>index</a></div>
+      <div><a href='forms.html'>forms</a></div>
+      <div><a href='tables.html'>tables</a></div>
     </nav>
   </header>
-
 
   <hr>
 
   <h1>basics</h1>
-  <p>fox-css styles all html elements to make them look adequate. nothing fancy. we recommend you place content inside article and section elements. like shown below, article and section elements have a slightly darker background</p>
-  <p>use <code>&lt;aside&gt;</code> and <code>&lt;section&gt;</code> to break up content. do not nest them. put semantic elements inside or whatever. <code>&lt;div&gt;</code>, <code>&lt;header&gt;</code>, <code>&lt;footer&gt;</code>, <code>&lt;nav&gt;</code>, <code>&lt;section&gt;</code>, <code>&lt;article&gt;</code>, <code>&lt;aside&gt;</code> get a bunch of whitespace</p>
+  <p>fox-css styles all html elements to make them look adequate. nothing fancy. we <u>recomend</u> you place content inside <code>&lt;section&gt;</code> and <code>&lt;article&gt;</code> elements
 
   <section>
-    <h2>im inside section</h2>
+    <h2>section</h2>
     <article>
-      <h3>im inside article, which is also inside section</h3>
-      <p>do not nest more than once</p>
+      <h3>article</h3>
+      <p><em>do not</em> nest more than once</p>
       <div>
         <h3>good</h3>
         <p>body &gt; section &gt; article</p>
@@ -64,15 +48,142 @@
     </article>
   </section>
   
+  <h1>single elements</h1>
+  <h2>quotes</h2>
+  <blockquote cite='https://www.huxley.net/bnw/four.html'>
+    <p>are you saying that because he's a sloth he can't be fast? i thought in zootopia, anyone could be anything</p>
+    <footer>nick wilde, <cite>zootopia</cite></footer>
+  </blockquote>
+
+
+  <h2>terms and definitions</h2>
+  <dl>
+    <dt>term 1</dt>
+    <dd>definition 1</dd>
+
+    <dt>term 2</dt>
+    <dd>definition 2</dd>
+  </dl>
+
+  <h2>lists</h2>
+  <ol>
+      <li>ordered list item 2</li>
+      <li>ordered list item 1</li>
+      <li>ordered list item 3</li>
+      <li>ordered list item 4</li>
+      <li>ordered list item 5</li>
+  </ol>
+
+  <ul>
+    <li>unordered item 1</li>
+    <li>unordered item 2</li>
+    <li>unordered item 3</li>
+    <li>unordered item 4</li>
+    <li>unordered item 5</li>
+  </ul>
+
+
+  <h2>preformatted text</h2>
+  <pre>
+    _
+    / \      _-'
+  _/|  \-''- _ /
+__-' { |          \
+/             \
+/       "o.  |o }
+|            \ ;
+              ',
+    \_         __\
+      ''-_    \.//
+        / '-____'
+      /
+    _'
+  _-'
+  </pre>
+
+
+  <h2>insertions and deletions</h2>
+  <section class='flex'>
+    <div>
+      <pre>
+26.   &lt;script&gt;
+
+27.   import navitem from '@/components/navigation/navitem'
+<del>28. - import nav from '@/components/navigation/nav'</del>
+29.
+30.   export defalt {
+<del>31. -   name: 'nav',</del>
+<del>32. -   data: {</del>
+<del>33. -     return {</del>
+<del>34. -       foo: 'bar'</del>
+<del>35. -     }</del>
+<del>36. -   },</del>
+37.     components: {
+38.       'nav-item': navitem,
+<del>39. -     'nav': nav</del>
+40. -   }
+41.   }
+42.   &lt;/script&gt;
+      </pre>
+    </div>
+    <div>
+      <pre>
+26.   &lt;script&gt;
+<ins>27.   import { mapstate } from 'vuex'</ins>
+28.   import navitem from '@/components/navigation/navitem'
+<ins>29. + import navbar from '@/components/navigation/navbar'</ins>
+30.
+31.   export defalt {
+<ins>32.     name: 'navigation',</ins>
+<ins>33. +   computed: {</ins>
+<ins>34. +       ...mapstate('themes/', ['currentthemes'])</ins>
+<ins>35. +   },</ins>
+
+
+36.     components: {
+37.       'nav-item': navitem,
+<ins>38. +     'navbar': 'navbar'</ins>
+39. +   }
+40.   }
+41.   &lt;/script&gt;
+      </pre>
+    </div>
+  </section>
+  
+  <h2>details, summary</h2>
+  <details>
+    <summary>Details</summary>
+    Something small enough to escape casual notice.
+  </details>
+
+  
+  <h2>fieldsets</h2>
+  <form>
+    <fieldset>
+      <legend>choose your favorite monster</legend>
+  
+      <input type='radio' name='monster'>
+      <label for='kraken'>kraken</label><br/>
+  
+      <input type='radio' name='monster'>
+      <label for='sasquatch'>sasquatch</label><br/>
+  
+      <input type='radio' name='monster'>
+      <label for='mothman'>mothman</label>
+    </fieldset>
+  </form>
+
+
   <h1>asides</h1>
+  <p>asides are the first of two ways to make layouts with this library. create an aside tag (idealy in a <code>&lt;article&gt;</code> or <code>&lt;section&gt;</code> tag)</p>
   <h2>aside example 1</h2>
   <article>
     <h3>using asides</h3>
     <aside>
       <h4>aside elements</h4>
-      <p>any aside element with a parent article or parent section will be floated right. it will have a width of 35% of its parent container. you can use asides however you want. place figures, images or text in them or whatever. just do not nest asides</p>
+      <p>i am floated to the right. when the width is less than or equal to 700px, <em>i disappear</em></p>
     </aside>
-    <p>lorem ipsum dolor sit amet consectetur adipisicing elit. labore, modi expedita omnis ut dolorum fugiat commodi! nam a esse delectus vel repellendus modi quo, animi, architecto earum veniam cupiditate consequuntur. lorem ipsum dolor sit amet consectetur, adipisicing elit. pariatur minima consequuntur exercitationem modi neque alias nobis voluptate harum, rem quo temporibus ullam suscipit possimus beatae quibusdam similique officia debitis totam. lorem ipsum dolor sit amet consectetur, adipisicing elit. fuga delectus, tenetur aspernatur a id quaerat veritatis, pariatur quo ipsa adipisci, aut error quasi itaque corrupti provident voluptate sapiente quis maxime? lorem ipsum, dolor sit amet consectetur adipisicing elit. labore, consequuntur est? quo praesentium maxime quos quis ipsum sapiente dolore inventore, quia maiores ullam, iusto, perferendis rem? perferendis, laudantium. eligendi, amet.</p>
+    <p>any aside element with a parent article or parent section will be floated right. it will have a width of 35% of its parent container. you can use asides however you want. place figures, images or text in them or whatever. just do not nest asides</p>
   </article>
 
   <h2>aside example 2</h2>
@@ -87,9 +198,9 @@
       </figure>
     </aside>
     <h3>text formatting</h3>
-    <p>of course you style text. use the <b>bring attention to</b> tag or the <strong>strong</strong> tag to bring attention to or bold the text, respectively. additionally, consider using the <i>i</i> or the <em>emphasize</em> elements to emphasize text or to identify abornal text.</p>
-    <p>consider using the <u>unarticulated annotation</u> element, which squigly underlines words. use the <q>inline quotation</q> to insert brief quotes</p>
-    <p>use the <small>small</small> tags to create smaller text. use the <mark>mark</mark> element to highlight words for reference or notational purposes. press the <kbd>space</kbd> key to move down</p>
+    <p>use <q>inline quotation</q> tags to insert brief quotes</p>
+    <p>the <small>small</small> element is small<p>
+    <p>using the <mark>mark</mark> element to highlight words for reference or notational purposes. press the <kbd>space</kbd> key to move down</p>
     <p>code snippets like this <code>new Promise(r => setTimeout(r, 500))</code> also work</p>
     <p><abbr title='mozilla developer network'>mdn</abbr> is an abbreviation</p>
 
@@ -112,6 +223,7 @@
     <a target='_blank' href='https://developer.mozilla.org'>mdn</a>
     <a target='_blank' href='https://example.com'>example</a>
 
+    <br>
     <button type='button'>add to favorites</button>
   </article>
 
@@ -120,11 +232,12 @@
   <h2>flex example 1</h2>
   <section class="flex">
     <div>
-      <h3>span title</h3>
-      <p>adjacent spans with a common section or article parent element will both take up 50% width</p>
+      <h3>left</h3>
+      <p>alfa</p>
     </div>
     <div>
-      <h3>content</h3>
+      <h3>right</h3>
+      <p>bravo</p>
     </div>
   </section>
 
@@ -156,472 +269,13 @@
     </div>
   </section>
 
-  <h3>span example 3</h3>
-  <section>
-    <div>
-      <h3>single span</h3>
-      <p>if you wish to do so, use one span. this will simply emphasize the content futher with the darker backround. however, we recommend just nesting section or asides instead to achive this effect</p>
-    </div>
-  </section>
-
-  <section>
-    <section>
-      <h3>other</h3>
-    </section>
-  </section>
-
-  <h1>single elements</h1>
-  <h2>quoting</h2>
-  <blockquote cite='https://www.huxley.net/bnw/four.html'>
-    <p>are you saying that because he's a sloth he can't be fast? i thought in zootopia, anyone could be anything</p>
-    <footer>nick wilde, <cite>zootopia</cite></footer>
-  </blockquote>
-
-
-  <h2>terms and definitions</h2>
-  <dl>
-    <dt>term 1</dt>
-    <dd>definition 1</dd>
-
-    <dt>term 2</dt>
-    <dd>definition 2</dd>
-  </dl>
-
-  <h2>ul, ol, li</h2>
-  <ol>
-      <li>ordered list item 2</li>
-      <li>ordered list item 1</li>
-      <li>ordered list item 3</li>
-      <li>ordered list item 4</li>
-      <li>ordered list item 5</li>
-  </ol>
-
-  <ul>
-    <li>unordered item 1</li>
-    <li>unordered item 2</li>
-    <li>unordered item 3</li>
-    <li>unordered item 4</li>
-    <li>unordered item 5</li>
-  </ul>
-
-
-  <h2>pre</h2>
-  <pre>
-    _
-    / \      _-'
-  _/|  \-''- _ /
-__-' { |          \
-/             \
-/       "o.  |o }
-|            \ ;
-              ',
-    \_         __\
-      ''-_    \.//
-        / '-____'
-      /
-    _'
-  _-'
-  </pre>
-
-
-  <h2>diffs</h2>
-  <h3>ins, del</h3>
-  <section>
-    <span>
-      <pre>
-26.   &lt;script&gt;
-
-27.   import navitem from '@/components/navigation/navitem'
-<del>28. - import nav from '@/components/navigation/nav'</del>
-29.
-30.   export defalt {
-<del>31. -   name: 'nav',</del>
-<del>32. -   data: {</del>
-<del>33. -     return {</del>
-<del>34. -       foo: 'bar'</del>
-<del>35. -     }</del>
-<del>36. -   },</del>
-37.     components: {
-38.       'nav-item': navitem,
-<del>39. -     'nav': nav</del>
-40. -   }
-41.   }
-42.   &lt;/script&gt;
-      </pre>
-    </span>
-    <span>
-      <pre>
-26.   &lt;script&gt;
-<ins>27.   import { mapstate } from 'vuex'</ins>
-28.   import navitem from '@/components/navigation/navitem'
-<ins>29. + import navbar from '@/components/navigation/navbar'</ins>
-30.
-31.   export defalt {
-<ins>32.     name: 'navigation',</ins>
-<ins>33. +   computed: {</ins>
-<ins>34. +       ...mapstate('themes/', ['currentthemes'])</ins>
-<ins>35. +   },</ins>
-
-
-36.     components: {
-37.       'nav-item': navitem,
-<ins>38. +     'navbar': 'navbar'</ins>
-39. +   }
-40.   }
-41.   &lt;/script&gt;
-      </pre>
-    </span>
-  </section>
-  
-  <h2>details, summary</h2>
-  <details>
-    <summary>Details</summary>
-    Something small enough to escape casual notice.
-  </details>
-
-  <h3>button</h3>
-
-
-  <!-- <h2>caption, col, colgroup, table, tbody, td, tfoot, th, thead, tr</h2> -->
-  <h1>tables</h1>
-  <h2>table example 1</h2>
-  <table>
-    <thead>
-      <tr>
-        <th colspan='6'>colors</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>red</td>
-        <td>orange</td>
-        <td>yellow</td>
-        <td>green</td>
-        <td>blue</td>
-        <td>purple</td>
-      </tr>
-    </tbody>
-  </table>
-
-
-  <h2>table example 3</h2>
-  <table>
-    <caption>table of state nicknames</caption>
-    <thead>
-      <tr>
-        <th>state</th>
-        <th scope='col'>nickname</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <th scope='row'>alaska</th>
-        <td>the last frontier</td>
-      </tr>
-      <tr>
-        <th scope='row'>arizona</th>
-        <td>the grand canyon state</td>
-      </tr>
-      <tr>
-        <th scope='row'>arkansas</th>
-        <td>natural state</td>
-      </tr>
-      <tr>
-        <th scope='row'>california</th>
-        <td>golden state</td>
-      </tr>
-    </tbody>
-  </table>
-
-
-  <h2>table example 2</h2>
-  <table>
-    <caption>table of foxes</caption>
-    <thead>
-      <tr>
-        <th scope='column'>name</th>
-        <th scope='column'>scientific name</th>
-        <th scope='column'>photograph</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <th scope='row'>crab-eating fox</th>
-        <td>cerdocyn thous</td>
-        <td>
-          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Crab-eating_Fox.JPG/1024px-Crab-eating_Fox.JPG" alt="">
-        </td>
-      </tr>
-      <tr>
-        <th scope='row'>andean fox</th>
-        <td>lycalopex culpeaus</td>
-        <td>
-          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Culpeo_MC.jpg/1280px-Culpeo_MC.jpg" alt="">
-        </td>
-      </tr>
-      <tr>
-        <th scope='row'>darwins fox</th>
-        <td>lycalopex fulvipes</td>
-        <td>
-          <img src="https://upload.wikimedia.org/wikipedia/commons/8/87/Pseudalopex_fulvipes.jpg" alt="">
-        </td>
-      </tr>
-      <tr>
-        <th scope='row'>south american gray fox</th>
-        <td>lycalopex griseus</td>
-        <td>
-          <img src="https://upload.wikimedia.org/wikipedia/commons/3/3f/Zorrito_Chile.JPG" alt="">
-        </td>
-      </tr>
-      <tr>
-        <th scope='row'>sechuran fox</th>
-        <td>lycalopex sechurae</td>
-        <td>
-          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Sechuran_fox.jpg/220px-Sechuran_fox.jpg" alt="">
-        </td>
-      </tr>
-      <tr>
-        <th scope='row'>hoary fox</th>
-        <td>lycalopex vetulus</td>
-        <td>
-          <img src="https://upload.wikimedia.org/wikipedia/commons/5/5a/Lycalopex_vetulus_Carlos_Henrique_2.jpeg" alt="">
-        </td>
-      </tr>
-      <tr>
-        <th scope='row'>artic fox</th>
-        <td>vulpes lagopus</td>
-        <td>
-          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Iceland-1979445_%28cropped_3%29.jpg/800px-Iceland-1979445_%28cropped_3%29.jpg" alt="">
-        </td>
-      </tr>
-      <tr>
-        <th scope='row'>red fox</th>
-        <td>vulpes vulpes</td>
-        <td>
-          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Fox_-_British_Wildlife_Centre_%2817429406401%29.jpg/1280px-Fox_-_British_Wildlife_Centre_%2817429406401%29.jpg" alt="">
-        </td>
-      </tr>
-      <tr>
-        <th scoe='row'>swift fox</th>
-        <td>vulpes velox</td>
-        <td>
-          <img src="https://upload.wikimedia.org/wikipedia/commons/c/cc/Swift_Fox_Colorado_Wolf_and_Wildlife_cropped.jpg" alt="">
-        </td>
-      </tr>
-      <tr>
-        <th scope='row'>corsac fox</th>
-        <td>vulpes corsac</td>
-        <td>
-          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Vulpes_corsac.jpg/800px-Vulpes_corsac.jpg" alt="">
-        </td>
-      </tr>
-      <tr>
-        <th scope='row'>cape fox</th>
-        <td>vulpes chama</td>
-        <td>
-          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Vulpes_chama_%28Etosha%29.jpg/1280px-Vulpes_chama_%28Etosha%29.jpg" alt="">
-        </td>
-      </tr>
-      <tr>
-        <th scope='row'>pale fox</th>
-        <td>vulpes pallida</td>
-        <td>
-          <img src="https://upload.wikimedia.org/wikipedia/commons/1/16/Keulemans_pale_fox.png" alt="">
-        </td>
-      </tr>
-      <tr>
-        <th scope='row'>bengal fox</th>
-        <td>vulpes bengalensis</td>
-        <td>
-          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Black_tailed_fox_%28Bengal_Fox%29_at_Desert_NP_%28cropped%29.jpg/1024px-Black_tailed_fox_%28Bengal_Fox%29_at_Desert_NP_%28cropped%29.jpg alt="">
-        </td>
-      </tr>
-      <tr>
-        <th scope='row'>tibetan sand fox</th>
-        <td>vulpes ferrilata</td>
-        <td>
-          <img src="https://upload.wikimedia.org/wikipedia/commons/b/b1/Tibet_Fox.jpg" alt="">
-        </td>
-      </tr>
-      <tr>
-        <th scope='row'>blandfords fox</th>
-        <td>vulpes cana</td>
-        <td>
-          <img src="https://upload.wikimedia.org/wikipedia/commons/e/eb/Blandford%27s_fox_1.jpg" alt="">
-        </td>
-      </tr>
-      <tr>
-        <th scope='row'>rüppells fox</th>
-        <td>vulpes rueppellii</td>
-        <td>
-          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/R%C3%BCppell%27s_fox.jpg/1280px-R%C3%BCppell%27s_fox.jpg" alt="">
-        </td>
-      </tr>
-      <tr>
-        <th scope='row'>fennec fox</th>
-        <td>vulpes zerda</td>
-        <td>
-          <img src="https://upload.wikimedia.org/wikipedia/commons/9/9c/Fennec_Fox.jpg" alt="">
-        </td>
-      </tr>
-      <tr>
-        <th scope='row'>gray fox</th>
-        <td>urocyon cinereoargenteus</td>
-        <td>
-          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Grey_Fox_%28Urocyon_cinereoargenteus%29.jpg/1280px-Grey_Fox_%28Urocyon_cinereoargenteus%29.jpg" alt="">
-        </td>
-      </tr>
-      <tr>
-        <th scope='row'>island fox</th>
-        <td>urocyon littoralis</td>
-        <td>
-          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Urocyon_littoralis_%28Island_fox%29_FWS_001.jpg/1280px-Urocyon_littoralis_%28Island_fox%29_FWS_001.jpg" alt="">
-        </td>
-      </tr>
-      <tr>
-        <th scope='row'>bat-eared for</th>
-        <td>otocyon megalotis</td>
-        <td>
-          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Otocyon_megalotis_-_Etosha_2014.jpg/1280px-Otocyon_megalotis_-_Etosha_2014.jpg" alt="">
-        </td>
-      </tr>
-    </tbody>
-  </table>
-
-
-
-
-  <h2>fieldsets</h2>
-  <form>
-    <fieldset>
-      <legend>choose your favorite monster</legend>
-  
-      <input type='radio' name='monster'>
-      <label for='kraken'>kraken</label><br/>
-  
-      <input type='radio' name='monster'>
-      <label for='sasquatch'>sasquatch</label><br/>
-  
-      <input type='radio' name='monster'>
-      <label for='mothman'>mothman</label>
-    </fieldset>
-  </form>
-
-
-  <h1>forms</h1>
-  <h2>form example 1</h2>
-  <form action='' method='get'>
-    <div>
-      <label for='name'>name</label>
-      <br>
-      <input type='text' name='name' required>
-    </div>
-
-    <div>
-      <label for='email'>email</label>
-      <br>
-      <input type='email' name='email' required>
-    </div>
-    <div>
-      <input type='submit' value='submit'>
-    </div>
-  </form>
-
-  <h2>form example 2</h2>
-  <form action='' method='get'>
-    <div>
-      <label for="name">name</label>
-      <br>
-      <input type='text' name='name' required minlength='3' maxlength='12' size='15'>
-    </div>
-
-    <div>
-      <label for='gender'>gender</label>
-      <br>
-      <div>
-        <input type='radio' name='gender' value='male'>
-        <label for='gender'>male</label>
-      </div>
-      <div>
-        <input type='radio' name='gender' value='female'>
-        <label for='gender'>female</label>
-      </div>
-      <div>
-        <input type='radio' name='gender' value='other'>
-        <label for='gender'>other</label>
-      </div>
-    </div>
-
-    <div>
-      <label for='food'>favorite food</label>
-      <div>
-        <input type='checkbox' name='carrot'>
-        <label for="food">carrot</label>
-      </div>
-      <div>
-        <input type='checkbox' name='nectarine'>
-        <label for="food">nectarine</label>
-      </div>
-      <div>
-        <input type='checkbox' name='grass'>
-        <label for="food">grass</label>
-        </div>
-    </div>
-
-    <div>
-      <label for='color'>pets</label>
-      <div>
-        <select>
-          <optgroup label='theropods'>
-            <option>tyrannosaurus</option>
-            <option>velociraptor</option>
-            <option>deinonychus</option>
-          </optgroup>
-          <optgroup label='sauropods'>
-            <option>diplodocus</option>
-            <option>saltasaurus</option>
-            <option>apatosaurus</option>
-          </optgroup>
-        </select>
-      </div>
-    </div>
-
-    <div>
-      <label for='ice-cream-choice'>choose a flavor</label>
-      <div>
-        <input list='ice-cream-flavors' name='ice-cream-choice'>
-        <datalist id='ice-cream-flavors'>
-          <option value='chocolate'>
-          <option value='coconut'>
-          <option value='mint'>
-          <option value='strawberry'>
-          <option value='vanilla'>
-        </datalist>
-      </div>
-    </div>
-
-    <div>
-      <output name='result'>60</output>
-    </div>
-
-    <div>
-        <label for='thoughts'>any other thoughts</label>
-      <div>
-        <textarea name='thoughts' rows='5' cols='33'></textarea>
-      </div>
-    </div>
-    <div>
-      <input type='submit' value='submit'>
-    </div>
-  </form>
-
 
   <h2>footers</h2>
-  <p>nest a div or span inside of footer to get easy results</p>
+  <p>put <code>&lt;div&gt;</code>s in your <code>&lt;footer&gt;</code> for easy results</p>
   <footer>
     <div>main</div>
     <div><a href='#''>link</a></div>
-    <div>with divs</div>
+    <div>other</div>
   </footer>
 
   <footer>

@@ -1,5 +1,6 @@
 @import 'normalize';
 @import 'open-color';
+@import 'theme';
 
 @import 'layout';
 @import 'text';
@@ -17,6 +18,6 @@
 
 html {
   height: 100%;
-  color: $oc-gray-9;
-  background-color: $oc-gray-0;
+  color: $html-font-color;
+  background-color: $html-bg-color;
 }
