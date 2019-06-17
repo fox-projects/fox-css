@@ -1,3 +1,9 @@
+hr {
+  border: none;
+  height: 2px;
+  border-radius: 2px;
+  background-color: $oc-gray-2;
+}
 
 img,
 video {

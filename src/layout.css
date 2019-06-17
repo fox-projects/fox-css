@@ -4,8 +4,9 @@ body {
 }
 
 // general
-div, span {
+div {
   margin: 10px;
+  padding: 5px;
 }
 
 header, footer, nav {
@@ -16,7 +17,7 @@ main {
   margin: 5px;
 }
 
-article, aside, section {
+section, article, aside {
   padding: 5px;
   margin: 0 0 10px;
   border-radius: 5px;
@@ -24,12 +25,16 @@ article, aside, section {
   background-color: $oc-gray-1;
 }
 
+article > section, section > article, article > aside, section > aside {
+  background-color: $oc-gray-2;
+}
+
 // nav
 nav {
   display: flex;
 }
 
-nav > * {
+nav * {
   padding: 5px 10px;
   margin: 5px;
   border-radius: 5px;
@@ -47,7 +52,7 @@ body > footer a {
   text-decoration: none;
 }
 
-body > footer div, body > footer span {
+body > footer div {
   padding: 8px 15px;
   border-radius: 5px;
   background-color: $oc-gray-1;
@@ -62,22 +67,6 @@ aside {
   background-color: $oc-gray-1;
 }
 
-article aside, section aside {
-  background-color: $oc-gray-2;
-}
-
-// split view
-section > span {
-  display: inline-flex;
-  flex-direction: column;
-  width: calc(50% - 35px);
-  background-color: $oc-gray-2;
-  border-radius: 5px;
-  padding: 5px;
-  /* height: 100%; */
-
-}
-
 @media(max-width: 700px) {
   aside {
     float: none;
@@ -85,9 +74,21 @@ section > span {
   }
 }
 
-hr {
-  border: none;
-  height: 2px;
-  border-radius: 2px;
+// flex
+.flex {
+  display: flex;
+}
+
+.flex > * {
+  flex: 1;
+}
+
+.flex > * {
   background-color: $oc-gray-2;
+  border-radius: 5px;
+}
+
+// grid
+.grid {
+  display: grid;
 }

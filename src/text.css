@@ -50,15 +50,15 @@ blockquote p::after {
 
 del, ins {
   border-radius: 5px;
+  text-decoration: none;
+  padding: 0.5px;
 }
 
 del {
-  text-decoration: line-through;
   background-color: $oc-red-2;
 }
 
 ins {
-  text-decoration: none;
   background-color: $oc-green-2;
 }
 
