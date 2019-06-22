@@ -107,3 +107,8 @@ button {
   cursor: pointer;
   padding: $ws-small $ws-large;
 }
+
+button:hover {
+  color: $oc-gray-1;
+  background: $border-color-dark;
+}
