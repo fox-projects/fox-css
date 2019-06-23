@@ -16,7 +16,7 @@
     </article>
 
     <h2>navigation</h2>
-    <p>put <code>&lt;div&gt;</code>s in your <code>&lt;nav&gt;</code> for easy results</p>
+    <p>put <code>&lt;a&gt;</code>s in your <code>&lt;nav&gt;</code> for easy results</p>
     <nav>
       <a href='index.html'>index</a>
       <a href='forms.html'>forms</a>
@@ -150,30 +150,6 @@ __-' { |          \
     </div>
   </section>
   
-  <h2>details, summary</h2>
-  <details>
-    <summary>Details</summary>
-    Something small enough to escape casual notice.
-  </details>
-
-  
-  <h2>fieldsets</h2>
-  <form>
-    <fieldset>
-      <legend>choose your favorite monster</legend>
-  
-      <input type='radio' name='monster'>
-      <label for='kraken'>kraken</label><br/>
-  
-      <input type='radio' name='monster'>
-      <label for='sasquatch'>sasquatch</label><br/>
-  
-      <input type='radio' name='monster'>
-      <label for='mothman'>mothman</label>
-    </fieldset>
-  </form>
-
-
   <h1>asides</h1>
   <p>asides are the first of two ways to make layouts with this library. create an aside tag (ideally in a <code>&lt;article&gt;</code> or <code>&lt;section&gt;</code> tag)</p>
   <h2>aside example 1</h2>
@@ -228,7 +204,7 @@ __-' { |          \
   </article>
 
   <h1>flex</h1>
-  <p>add <code>.flex</code> to split the content into segments. number of segments equal to number of children of <code>.flex</code></p>
+  <p>add <code>.flex</code> to split the content into segments. number of segments equal to number of children of <code>.flex</code>. If the width is 700px or less, <code>flex-direction</code> becomes <code>column</code>.</p>
   <h2>flex example 1</h2>
   <section class="flex">
     <div>
@@ -270,12 +246,36 @@ __-' { |          \
   </section>
 
 
+  <h2>details, summary</h2>
+  <details>
+    <summary>Details</summary>
+    Something small enough to escape casual notice.
+  </details>
+
+  
+  <h2>fieldsets</h2>
+  <form>
+    <fieldset>
+      <legend>choose your favorite monster</legend>
+  
+      <input type='radio' name='monster'>
+      <label for='kraken'>kraken</label><br/>
+  
+      <input type='radio' name='monster'>
+      <label for='sasquatch'>sasquatch</label><br/>
+  
+      <input type='radio' name='monster'>
+      <label for='mothman'>mothman</label>
+    </fieldset>
+  </form>
+
+
   <h2>footers</h2>
-  <p>put <code>&lt;div&gt;</code>s in your <code>&lt;footer&gt;</code> for easy results</p>
+  <p>put <code>&lt;a&gt;</code>s or <code>&lt;p&gt;</code>s in your <code>&lt;footer&gt;</code> for easy results</p>
   <footer>
-    <p>main</p>
-    <p><a href='#'>link</a></p>
-    <p>other</p>
+    <p>alfa</p>
+    <p><a href='#'>bravo</a></p>
+    <p>charlie</p>
   </footer>
 
   <footer>
