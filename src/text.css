@@ -103,12 +103,13 @@ samp, button {
 }
 
 button {
+  color: $html-font-color;
   background: inherit;
   cursor: pointer;
   padding: $ws-small $ws-large;
 }
 
 button:hover {
-  color: $oc-gray-1;
+  color: $bg-0;
   background: $border-color-dark;
 }

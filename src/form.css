@@ -7,13 +7,19 @@ form {
 input, select {
   border: $border-thickness solid $border-color-light;
   border-radius: $border-radius;
-  padding: 7px;
+  padding: 8px;
   margin: 5px 5px 5px 0;
-  background: white;
+  background: $form-input-bg-color;
+}
+
+input[type='submit'] {
+  cursor: pointer;
 }
 
 textarea {
   width: 90%;
+  padding: 8px;
   border-radius: $border-radius;
+  background: $form-input-bg-color;
   border: $border-thickness solid $bg-1;
 }

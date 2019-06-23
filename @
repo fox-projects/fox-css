@@ -1,0 +1,17 @@
+polish: dark theme
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+#
+# On branch dev
+# Changes to be committed:
+#	new file:   dist/fox.dark.min.css
+#	new file:   dist/fox.light.min.css
+#	modified:   dist/fox.min.css
+#	modified:   gulpfile.build.js
+#	modified:   readme.md
+#	modified:   src/form.css
+#	modified:   src/layout.css
+#	modified:   src/text.css
+#	modified:   src/theme.dark.variables.css
+#	modified:   src/theme.light.variables.css
+#
