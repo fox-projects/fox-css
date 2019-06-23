@@ -38,5 +38,3 @@ $mark-bg-color: $oc-yellow-2;
 $u-underline-color: $oc-red-4;
 
 $form-input-bg-color: $oc-white;
-
-@import 'main'
