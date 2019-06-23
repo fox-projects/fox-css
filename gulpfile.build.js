@@ -15,10 +15,15 @@ let postCssPlugins = [
 
 async function build() {
   del.sync(["dist/*", "!dist"]);
-  src("src/main.css")
-    .pipe(concat("fox.min.css"))
+  src("src/theme.light.css")
+    .pipe(concat("fox.light.min.css"))
     .pipe(postcss(postCssPlugins, { syntax: scss }))
-    .pipe(dest("dist"))
+    .pipe(dest("dist"));
+
+  src("src/theme.dark.css")
+  .pipe(concat("fox.dark.min.css"))
+  .pipe(postcss(postCssPlugins, { syntax: scss }))
+  .pipe(dest("dist"));
 }
 
 module.exports = {

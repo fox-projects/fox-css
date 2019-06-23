@@ -1,5 +1,5 @@
-$html-font-color: $oc-gray-9;
-$html-bg-color: $oc-gray-0;
+$html-font-color: $oc-gray-0;
+$html-bg-color: $oc-gray-9;
 
 // shared \\
 $border-radius: 5px;
@@ -36,3 +36,5 @@ $ins-bg-color: $oc-green-2;
 $mark-bg-color: $oc-yellow-2;
 
 $u-underline-color: $oc-red-4;
+
+@import 'main'

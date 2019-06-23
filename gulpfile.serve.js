@@ -20,18 +20,31 @@ async function init() {
 async function htmlReload() {
   watch("samples/*.html", { ignoreInitial: false }, async () => {
     browserSync.reload();
-  })
+  });
 }
 
 async function cssInject() {
+  let arg = process.argv[3];
+  let isLight = arg === '--light';
+
   watch("src/**/*.css", { ignoreInitial: false }, async () => {
-    src("src/main.css")
-      .pipe(plumber())
-      .pipe(concat("fox.css"))
-      .pipe(postcss(postCssPlugins, { syntax: scss }))
-      .pipe(dest("samples/styles"))
-      .pipe(browserSync.stream());
-  })
+    if(isLight) {
+      src(["src/theme.light.css"])
+        .pipe(plumber())
+        .pipe(concat("fox.css"))
+        .pipe(postcss(postCssPlugins, { syntax: scss }))
+        .pipe(dest("samples/styles"))
+        .pipe(browserSync.stream());
+    }
+    else {
+      src("src/theme.dark.css")
+        .pipe(plumber())
+        .pipe(concat("fox.css"))
+        .pipe(postcss(postCssPlugins, { syntax: scss }))
+        .pipe(dest("samples/styles"))
+        .pipe(browserSync.stream());
+    }
+  });
 }
 
 let serve = series(init, parallel(htmlReload, cssInject));
