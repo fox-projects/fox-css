@@ -8,6 +8,7 @@ fox-css styles your html so it doesnt look like total crap. semantic ways to aut
 
 ```sh
 npm i -S fox-css
+# css in ./dist/fox.dark.min.css
 ```
 
 ## contributing
@@ -16,8 +17,8 @@ npm i -S fox-css
 git clone https://github.com/eankeen/fox-css
 cd fox-css
 npm install
-npm run serve
-npm run serve -- --light
+npm run serve # serves dark version by default
+npm run serve -- --light # serve light version
 ```
 
 ## roadmap
