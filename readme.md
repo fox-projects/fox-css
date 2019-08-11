@@ -2,7 +2,7 @@
 
 ## introduction
 
-fox-css styles your html so it doesnt look like total crap. semantic ways to auto layout your content. one class name. light and dark.
+use fox-css to style your semantic html. no need to memorize class names. light and dark.
 
 ## usage
 
