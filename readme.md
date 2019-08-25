@@ -24,4 +24,3 @@ npm run serve -- --light # serve light version
 ## roadmap
 
 - use `postcss-calc` etc. to convert `calc($border-thickness / 2)` to `1px`
-- make links look better
