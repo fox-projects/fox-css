@@ -16,6 +16,8 @@ npm i -S fox-css
 ```sh
 git clone https://github.com/eankeen/fox-css
 cd fox-css
+
+# node >= v12.10
 yarn install
 yarn serve # serves dark version by default
 yarn serve --light

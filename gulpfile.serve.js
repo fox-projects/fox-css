@@ -14,36 +14,38 @@ let postCssPlugins = [
 ];
 
 async function init() {
-  browserSync.init({ server: "samples" });
+  browserSync.init({ server: "site" });
 }
 
 async function htmlReload() {
-  watch("samples/*.html", { ignoreInitial: false }, async () => {
+  watch(["samples/*.html"], { ignoreInitial: false }, async function htmlReloadWatchArg() {
+    src(["samples/*.html", "!samples/index.html"])
+      .pipe(dest("site/dark"))
+      .pipe(dest("site/light"));
+
+    src("samples/index.html")
+      .pipe(dest("site"));
     browserSync.reload();
   });
 }
 
 async function cssInject() {
   let arg = process.argv[3];
-  let isLight = arg === '--light';
 
-  watch("src/**/*.css", { ignoreInitial: false }, async () => {
-    if(isLight) {
-      src(["src/theme.light.css"])
-        .pipe(plumber())
-        .pipe(concat("fox.css"))
-        .pipe(postcss(postCssPlugins, { syntax: scss }))
-        .pipe(dest("samples/styles"))
-        .pipe(browserSync.stream());
-    }
-    else {
-      src("src/theme.dark.css")
-        .pipe(plumber())
-        .pipe(concat("fox.css"))
-        .pipe(postcss(postCssPlugins, { syntax: scss }))
-        .pipe(dest("samples/styles"))
-        .pipe(browserSync.stream());
-    }
+  watch("src/*.css", { ignoreInitial: false }, async function cssInjectWatchArg() {
+    src("src/theme.light.css")
+      .pipe(plumber())
+      .pipe(concat("fox.css"))
+      .pipe(postcss(postCssPlugins, { syntax: scss }))
+      .pipe(dest("site/light/styles"))
+      .pipe(browserSync.stream());
+
+    src("src/theme.dark.css")
+      .pipe(plumber())
+      .pipe(concat("fox.css"))
+      .pipe(postcss(postCssPlugins, { syntax: scss }))
+      .pipe(dest("site/dark/styles"))
+      .pipe(browserSync.stream());
   });
 }
 
