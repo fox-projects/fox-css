@@ -11,6 +11,8 @@ cp dist/* site/styles
 
 cd site
 
+cp styles/fox.dark.min.css styles/fox.css
+
 git init
 git add -A
 git commit -m deploy
