@@ -9,10 +9,18 @@ caption {
   background-color: $bg-1;
 }
 
+section caption, article caption {
+  background-color: $bg-2;
+}
+
 th,
 td {
   padding: 10px;
   border-radius: $border-radius;
   text-align: left;
   border: $border-thickness solid $border-color-light;
-} 
+}
+
+section th, section td, article th, article td {
+  border: $border-thickness solid $bg-2;
+}

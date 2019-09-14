@@ -16,8 +16,8 @@ section, article, aside, nav, div, blockquote, span, dd, dt, samp, button {
 }
 
 // darken background if nested
-section > article, article > section, article > aside, section > aside, section > div, article > div {
-  background-color: $bg-2;
+section article, article section, article aside, section aside, section div, article div {
+  background: $bg-2;
 }
 
 // nav
