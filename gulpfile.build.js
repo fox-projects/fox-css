@@ -20,7 +20,7 @@ async function build() {
     .pipe(postcss(postCssPlugins, { syntax: scss }))
     .pipe(dest("dist"));
 
-  src("src/theme.dark.css")
+  src("src/theme.daFrk.css")
   .pipe(concat("fox.dark.min.css"))
   .pipe(postcss(postCssPlugins, { syntax: scss }))
   .pipe(dest("dist"))
