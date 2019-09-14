@@ -20,12 +20,12 @@ async function build() {
     .pipe(postcss(postCssPlugins, { syntax: scss }))
     .pipe(dest("dist"));
 
-  src("src/theme.daFrk.css")
-  .pipe(concat("fox.dark.min.css"))
-  .pipe(postcss(postCssPlugins, { syntax: scss }))
-  .pipe(dest("dist"))
-  .pipe(concat("fox.min.css"))
-  .pipe(dest("dist"))
+  src("src/theme.dark.css")
+    .pipe(concat("fox.dark.min.css"))
+    .pipe(postcss(postCssPlugins, { syntax: scss }))
+    .pipe(dest("dist"))
+    .pipe(concat("fox.min.css"))
+    .pipe(dest("dist"))
 }
 
 module.exports = {

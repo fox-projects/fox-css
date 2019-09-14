@@ -22,9 +22,10 @@ async function htmlReload() {
     src(["samples/*.html", "!samples/index.html"])
       .pipe(dest("site/dark"))
       .pipe(dest("site/light"));
-
+    
     src("samples/index.html")
       .pipe(dest("site"));
+    
     browserSync.reload();
   });
 }
