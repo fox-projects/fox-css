@@ -45,6 +45,10 @@ blockquote p::after {
     content: '\201D';
 }
 
+blockquote > footer {
+  padding-left: 20px;
+}
+
 del, ins {
   border-radius: $border-radius;
   text-decoration: none;

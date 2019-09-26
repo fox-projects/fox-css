@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+  <meta charset='UTF-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+  <meta http-equiv='X-UA-Compatible' content='ie=edge'>
+  <link id='stylesheet' rel='stylesheet' href='styles/fox.css'>
+  <title>Document</title>
+</head>
+<body>
+  <header>
+    <h1>fox-css</h1>
+    <article>
+      <h2>about fox-css</h2>
+      <p>fox-css styles your html so it doesnt look like total crap. semantic ways to auto layout your content. one class name. light and dark</p>
+    </article>
+    
+    <h2>navigation</h2>
+    <nav>
+      <a href='basics.html'>basics</a>
+      <a href='flex-and-aside.html'>flex and aside</a>
+      <a href='forms.html'>forms</a>
+      <a href='tables.html'>tables</a>
+    </nav>
+  </header>
+
+  <hr>
+
+  <h1>flex</h1>
+  <p>add <code>.flex</code> to split the content into segments. number of segments equal to number of children of <code>.flex</code>. If the width is 700px or less, <code>flex-direction</code> becomes <code>column</code>.</p>
+  <h2>flex example 1</h2>
+  <section class="flex">
+    <div>
+      <h3>left</h3>
+      <p>alfa</p>
+    </div>
+    <div>
+      <h3>right</h3>
+      <p>bravo</p>
+    </div>
+  </section>
+
+  <h2>flex example 2</h2>
+  <section class="flex">
+    <div>
+      <figure>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/San_Joaquin_kit_fox_male.jpg/1280px-San_Joaquin_kit_fox_male.jpg" alt="">
+      </figure>
+      <figcaption>
+        fox waiting patiently
+      </figcaption>
+    </div>
+    <div>
+      <figure>
+          <img src='https://cdn.pixabay.com/photo/2016/01/03/06/20/red-fox-1119118_960_720.jpg' alt='fox walking through snow'>
+          <figcaption>
+            fox walking through snow
+          </figcaption>
+        </figure>
+    </div>
+    <div>
+      <figure>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Lycalopex_gymnocercus.jpg/1280px-Lycalopex_gymnocercus.jpg" alt="fox turning around">
+      </figure>
+      <figcaption>
+        fox turning around
+      </figcaption>
+    </div>
+  </section>
+
+  <h1>asides</h1>
+  <p>create an aside tag (in a <code>&lt;article&gt;</code> or <code>&lt;section&gt;</code> tag)</p>
+  <h2>aside example 1</h2>
+  <article>
+    <h3>using asides</h3>
+    <aside>
+      <h4>aside elements</h4>
+      <p>i am floated to the right. when the width is less than or equal to 700px, <em>i disappear</em></p>
+    </aside>
+    <p>any aside element with a parent article or parent section will be floated right. it will have a width of 35% of its parent container. you can use asides however you want. place figures, images or text in them or whatever. just do not nest asides</p>
+  </article>
+
+  <h2>aside example 2</h2>
+  <article>
+    <aside>
+      <figure>
+        <h4>aside photograph</h4>
+        <img src='https://cdn.pixabay.com/photo/2016/11/29/03/28/animal-1867062_960_720.jpg' alt='fox standing'>
+        <figcaption>
+          fox standing on terrain
+        </figcaption>
+      </figure>
+    </aside>
+    <h3>text formatting</h3>
+    <p>use <q>inline quotation</q> tags to insert brief quotes</p>
+    <p>the <small>small</small> element is small<p>
+    <p>using the <mark>mark</mark> element to highlight words for reference or notational purposes. press the <kbd>space</kbd> key to move down</p>
+    <p>code snippets like this <code>new Promise(r => setTimeout(r, 500))</code> also work</p>
+    <p><abbr title='mozilla developer network'>mdn</abbr> is an abbreviation</p>
+
+    <p>sample or quoted output from a computer program<br>
+      <samp>
+        Keyboard not found <br>
+        Press F1 to continue<br>
+      </samp>
+    </p>
+
+    <p>the chemistry molecule C<sub>8</sub>H<sub>10</sub>N<sub>4</sub>O<sub>2</sub> is caffeine</p>
+    <p>The pythagorean theorem is often expressed as
+    </p><p><var>a<sup>2</sup></var> + <var>b<sup>2</sup></var> = <var>c<sup>2</sup></var></p>
+  
+    <br>
+    <h4>links</h4>
+    <p>with familiar, but distinct colors</p>
+    <a target='_blank' href='https://github.com/eankeen/fox-css'>fox-css</a>
+    <a target='_blank' href='https://firefox.com'>firefox</a>
+    <a target='_blank' href='https://developer.mozilla.org'>mdn</a>
+    <a target='_blank' href='https://example.com'>example</a>
+
+    <br>
+    <button type='button'>i am a button</button>
+  </article>
+
+
+  <footer>
+    <div>© 2019 foo bar</div>
+  </footer>
+</body>
+</html>

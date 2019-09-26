@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+  <meta charset='UTF-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+  <meta http-equiv='X-UA-Compatible' content='ie=edge'>
+  <link id='stylesheet' rel='stylesheet' href='styles/fox.css'>
+  <title>fox-css</title>
+</head>
+<body>
+  <header>
+    <h1>fox-css</h1>
+    <article>
+      <h2>about fox-css</h2>
+      <p>fox-css styles your html so it doesn't look like total crap. semantic ways to auto layout your content. one class name. light and dark</p>
+    </article>
+
+    <h2>navigation</h2>
+    <nav>
+      <a href='basics.html'>basics</a>
+      <a href='flex-and-aside.html'>flex-and-aside</a>
+      <a href='forms.html'>forms</a>
+      <a href='tables.html'>tables</a>
+    </nav>
+  </header>
+
+  <hr>
+
+  <h1>basics</h1>
+  <p>fox-css styles all html elements to make them look adequate. nothing fancy. we <u>recomend</u> you place content inside <code>&lt;section&gt;</code> and <code>&lt;article&gt;</code> elements
+
+  <section>
+    <h2>section</h2>
+    <article>
+      <h3>article</h3>
+      <p><em>do not</em> nest more than once</p>
+      <div>
+        <h3>good</h3>
+<pre>
+&lt;body&gt;
+  &lt;main&gt;
+    &lt;article&gt;
+      &lt;article&gt;
+
+      &lt;article&gt;
+    &lt;article&gt;
+  &lt;main&gt;
+&lt;body&gt;
+</pre>
+      </div>
+      <div>
+        <h3>bad</h3>
+<pre>
+  &lt;body&gt;
+    &lt;article&gt;
+      &lt;article&gt;
+        &lt;article&gt;
+
+        &lt;article&gt;
+      &lt;article&gt;
+    &lt;article&gt;
+  &lt;body&gt;
+</pre>
+      </div>
+    
+    </article>
+  </section>
+  
+  <h1>single elements</h1>
+  <h2>quotes</h2>
+  <blockquote cite='https://www.huxley.net/bnw/four.html'>
+    <p>are you saying that because he's a sloth he can't be fast? i thought in zootopia, anyone could be anything</p>
+    <footer>nick wilde, <cite>zootopia</cite></footer>
+  </blockquote>
+
+
+  <h2>terms and definitions</h2>
+  <dl>
+    <dt>term 1</dt>
+    <dd>definition 1</dd>
+
+    <dt>term 2</dt>
+    <dd>definition 2</dd>
+  </dl>
+
+  <h2>lists</h2>
+  <ol>
+      <li>ordered list item 2</li>
+      <li>ordered list item 1</li>
+      <li>ordered list item 3</li>
+      <li>ordered list item 4</li>
+      <li>ordered list item 5</li>
+  </ol>
+
+  <ul>
+    <li>unordered item 1</li>
+    <li>unordered item 2</li>
+    <li>unordered item 3</li>
+    <li>unordered item 4</li>
+    <li>unordered item 5</li>
+  </ul>
+
+
+  <h2>preformatted text</h2>
+  <pre>
+    _
+    / \      _-'
+  _/|  \-''- _ /
+__-' { |          \
+/             \
+/       "o.  |o }
+|            \ ;
+              ',
+    \_         __\
+      ''-_    \.//
+        / '-____'
+      /
+    _'
+  _-'
+  </pre>
+
+
+  <h2>insertions and deletions</h2>
+  <section class='flex'>
+    <div>
+      <pre>
+26.   &lt;script&gt;
+
+27.   import navitem from '@/components/navigation/navitem'
+<del>28. - import nav from '@/components/navigation/nav'</del>
+29.
+30.   export defalt {
+<del>31. -   name: 'nav',</del>
+<del>32. -   data: {</del>
+<del>33. -     return {</del>
+<del>34. -       foo: 'bar'</del>
+<del>35. -     }</del>
+<del>36. -   },</del>
+37.     components: {
+38.       'nav-item': navitem,
+<del>39. -     'nav': nav</del>
+40. -   }
+41.   }
+42.   &lt;/script&gt;
+      </pre>
+    </div>
+    <div>
+      <pre>
+26.   &lt;script&gt;
+<ins>27.   import { mapstate } from 'vuex'</ins>
+28.   import navitem from '@/components/navigation/navitem'
+<ins>29. + import navbar from '@/components/navigation/navbar'</ins>
+30.
+31.   export defalt {
+<ins>32.     name: 'navigation',</ins>
+<ins>33. +   computed: {</ins>
+<ins>34. +       ...mapstate('themes/', ['currentthemes'])</ins>
+<ins>35. +   },</ins>
+
+
+36.     components: {
+37.       'nav-item': navitem,
+<ins>38. +     'navbar': 'navbar'</ins>
+39. +   }
+40.   }
+41.   &lt;/script&gt;
+      </pre>
+    </div>
+  </section>
+  
+
+  
+
+
+  <h2>details, summary</h2>
+  <details>
+    <summary>Details</summary>
+    Something small enough to escape casual notice.
+  </details>
+
+  
+  <h2>fieldsets</h2>
+  <form>
+    <fieldset>
+      <legend>choose your favorite monster</legend>
+  
+      <input type='radio' name='monster'>
+      <label for='kraken'>kraken</label><br/>
+  
+      <input type='radio' name='monster'>
+      <label for='sasquatch'>sasquatch</label><br/>
+  
+      <input type='radio' name='monster'>
+      <label for='mothman'>mothman</label>
+    </fieldset>
+  </form>
+
+
+  <h2>footers</h2>
+  <footer>
+    <p>foxtrot</p>
+    <p><a href='#'>link</a></p>
+    <p>quebec</p>
+  </footer>
+
+  <footer>
+    <div>© 2019 foo bar</div>
+  </footer>
+</body>
+</html>
