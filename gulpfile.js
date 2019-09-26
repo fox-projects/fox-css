@@ -1,6 +1,3 @@
-let { serve } = require("./gulpfile.serve");
-let { build } = require("./gulpfile.build");
-
-exports.serve = serve;
-exports.build = build;
-exports.default = serve;
+export { default as serve } from "./gulpfile.serve";
+export { default as build } from "./gulpfile.build";
+export { default as default } from "./gulpfile.serve";

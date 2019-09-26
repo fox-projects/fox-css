@@ -1,9 +1,11 @@
-let { dest, parallel, series, src, watch } = require("gulp");
-let concat = require("gulp-concat");
-let plumber = require("gulp-plumber");
-let postcss = require("gulp-postcss");
-let scss = require("postcss-scss");
-let browserSync = require("browser-sync").create();
+import { dest, parallel, series, src, watch } from "gulp";
+import concat from "gulp-concat";
+import postcss from "gulp-postcss";
+import plumber from "gulp-plumber";
+import scss from "postcss-scss";
+import bs from "browser-sync"
+
+const browserSync = bs.create();
 
 let postCssPlugins = [
   require("postcss-import")(),
@@ -49,6 +51,4 @@ async function cssInject() {
 
 let serve = series(init, parallel(htmlReload, cssInject));
 
-module.exports = {
-  serve
-};
+export default serve;

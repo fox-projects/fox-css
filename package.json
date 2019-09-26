@@ -3,8 +3,8 @@
   "version": "0.5.0",
   "description": "quickly style semantic html without the hassle",
   "scripts": {
-    "serve": "gulp serve",
-    "build": "gulp build"
+    "serve": "gulp --require esm serve",
+    "build": "gulp --require esm build"
   },
   "repository": {
     "type": "git",
@@ -26,6 +26,7 @@
     "browser-sync": "^2.26.7",
     "cssnano": "^4.1.10",
     "del": "^5.1.0",
+    "esm": "^3.2.25",
     "gulp": "^4.0.2",
     "gulp-concat": "^2.6.1",
     "gulp-plumber": "^1.2.1",

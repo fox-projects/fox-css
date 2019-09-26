@@ -1,8 +1,8 @@
-let { dest, src } = require("gulp");
-let concat = require("gulp-concat");
-let postcss = require("gulp-postcss");
-let scss = require("postcss-scss");
-let del = require("del");
+import { dest, src } from "gulp";
+import concat from "gulp-concat";
+import postcss from "gulp-postcss";
+import scss from "postcss-scss";
+import del from "del";
 
 let postCssPlugins = [
   require("postcss-import")(),
@@ -28,6 +28,4 @@ async function build() {
   .pipe(dest("dist"))
 }
 
-module.exports = {
-  build
-};
+export default build;
