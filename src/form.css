@@ -4,22 +4,48 @@ form {
   border: $border-thickness solid $border-color-medium;
 }
 
-input, select {
+input, select, textarea {
   border: $border-thickness solid $border-color-light;
   border-radius: $border-radius;
   padding: 8px;
   margin: 5px 5px 5px 0;
   background: $form-input-bg-color;
+  color: $html-font-color;
+}
+
+textarea {
+  width: 100%;
+}
+
+select {
+  appearance: none;
 }
 
 input[type='submit'] {
   cursor: pointer;
 }
 
-textarea {
-  width: 90%;
-  padding: 8px;
-  border-radius: $border-radius;
-  background: $form-input-bg-color;
-  border: $border-thickness solid $bg-1;
+
+input[type='radio'], input[type='checkbox'] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  position: relative;
+  top: 10px;
+  border: 0;
+  cursor: pointer;     
+  margin-right: 7px;
+  outline: none;
+}
+
+input[type='radio'] {
+  border-radius: 50px;
+}
+
+input[type='checkbox'] {
+  border-radius: 1px;
+}
+
+input[type='radio']:checked, input[type='checkbox']:checked {
+  background-color: $bg-3;
 }

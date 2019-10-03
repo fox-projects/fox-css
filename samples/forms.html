@@ -50,23 +50,40 @@
     <div>
       <label for="name">name</label>
       <br>
-      <input type='text' name='name' required minlength='3' maxlength='12' size='15'>
+      <input type='text' name='name' required>
     </div>
 
-    <div>
-      <label for='gender'>gender</label>
+    <div">
+      <label for='favorite fox'>choose your favorite fox</label>
       <br>
       <div>
         <input type='radio' name='gender' value='male'>
-        <label for='gender'>male</label>
+        <label for='gender'>red fox</label>
+        <br>
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Fox_-_British_Wildlife_Centre_%2817429406401%29.jpg/1280px-Fox_-_British_Wildlife_Centre_%2817429406401%29.jpg"
+          alt=""
+          width="100px"
+        >
       </div>
       <div>
         <input type='radio' name='gender' value='female'>
-        <label for='gender'>female</label>
+        <label for='gender'>arctic fox</label>
+        <br>
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Iceland-1979445_%28cropped_3%29.jpg/800px-Iceland-1979445_%28cropped_3%29.jpg"
+          alt=""
+          width="100px"
+        >
       </div>
       <div>
         <input type='radio' name='gender' value='other'>
-        <label for='gender'>other</label>
+        <label for='gender'>gray fox</label>
+        <br>
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Grey_Fox_%28Urocyon_cinereoargenteus%29.jpg/1280px-Grey_Fox_%28Urocyon_cinereoargenteus%29.jpg"
+          alt=""
+          width="100px"
       </div>
     </div>
 
@@ -87,33 +104,66 @@
     </div>
 
     <div>
-      <label for='color'>pets</label>
+      <label for='fox-choose-group-1'>choose a scientific groups of foxes</label>
       <div>
-        <select>
-          <optgroup label='theropods'>
-            <option>tyrannosaurus</option>
-            <option>velociraptor</option>
-            <option>deinonychus</option>
+        <select name="fox-choose-group-1">
+          <optgroup label='lycalopex'>
+            <option>lycalopex culpaeus</option>
+            <option>lycalopex fulvipes</option>
+            <option>lycalopex griseus</option>
+            <option>lycalopex gymnocercus</option>
+            <option>lycalopex sechurae</option>
+            <option>lycalopex vetulus</option>
           </optgroup>
-          <optgroup label='sauropods'>
-            <option>diplodocus</option>
-            <option>saltasaurus</option>
-            <option>apatosaurus</option>
+          <optgroup label='urocyon'>
+            <option>urocyon cinereoargenteus</option>
+            <option>urocyon littoralis</option>
+            <option>urocyon sp.</option>
+          </optgroup>
+          <optgroup label='vulpes'>
+            <option>vulpes lagopus</option>
+            <option>vulpes vulpes</option>
+            <option>vulpes velox</option>
+            <option>vulpes macrotis</option>
+            <option>vulpes corsac</option>
+            <option>vulpes chama</option>
+            <option>vulpes pallida</option>
+            <option>vulpes bengalensis</option>
+            <option>vulpes ferrilata</option>
+            <option>vulpes cana</option>
+            <option>vulpes rueppelli</option>
+            <option>vulpes zerda</option>
           </optgroup>
         </select>
       </div>
     </div>
 
     <div>
-      <label for='ice-cream-choice'>choose a flavor</label>
+      <label for='fox-choose-group-2'>type a scientific group of foxse</label>
       <div>
-        <input list='ice-cream-flavors' name='ice-cream-choice'>
-        <datalist id='ice-cream-flavors'>
-          <option value='chocolate'>
-          <option value='coconut'>
-          <option value='mint'>
-          <option value='strawberry'>
-          <option value='vanilla'>
+        <input list='fox-choose-group-list' name='fox-choose-group-2'>
+        <datalist id='fox-choose-group-list'>
+          <option value='lycalopex culpaeus'>
+          <option value='lycalopex fulvipes'>
+          <option value='lycalopex griseus'>
+          <option value='lycalopex gymnocercus'>
+          <option value="lycalopex sechurae">
+          <option value='lycalopex vetulus'>
+          <option value="urocyon cinereoargenteus">
+          <option value="urocyon littoralis">
+          <option value="urocyon sp.">
+          <option value='vulpes lagopus'>
+          <option value='vulpes vulpes'>
+          <option value='vulpes velox'>
+          <option value='vulpes macrotis'>
+          <option value='vulpes corsac'>
+          <option value='vulpes chama'>
+          <option value='vulpes pallida'>
+          <option value='vulpes bengalensis'>
+          <option value='vulpes ferrilata'>
+          <option value='vulpes cana'>
+          <option value='vulpes rueppelli'>
+          <option value='vulpes zerda'>
         </datalist>
       </div>
     </div>
