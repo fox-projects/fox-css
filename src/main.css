@@ -4,13 +4,13 @@
 @import 'form';
 @import 'misc';
 
-*, *:before, *:after {
+*, *::before, *::after {
   box-sizing: border-box;
 }
 
 html {
   height: 100%;
-  color: $html-font-color;
+  color: $html-text-color;
   background-color: $html-bg-color;
   line-height: 1.5;
   -webkit-text-size-adjust: 100%; // prevent adjustments of font size after orientation changes in iOS

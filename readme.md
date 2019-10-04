@@ -8,7 +8,7 @@ use fox-css to style your semantic html. no need to memorize class names. light 
 
 ```sh
 npm i -S fox-css
-# css in ./dist/fox.dark.min.css
+# css at ./dist/fox.dark.min.css
 ```
 
 ## contributing
@@ -19,8 +19,7 @@ cd fox-css
 
 # node >= v12.10
 yarn install
-yarn serve # serves dark version by default
-yarn serve --light
+yarn serve
 ```
 
 ## roadmap

@@ -10,7 +10,7 @@ input, select, textarea {
   padding: 8px;
   margin: 5px 5px 5px 0;
   background: $form-input-bg-color;
-  color: $html-font-color;
+  color: $html-text-color;
 }
 
 textarea {
