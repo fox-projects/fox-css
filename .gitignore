@@ -1,5 +1,10 @@
 node_modules/
 samples/styles/
 site/
+
+# std
+*.log
+
+# ide
 .vscode/
 .idea/
