@@ -1,7 +1,7 @@
 form {
   border-radius: $border-radius;
   padding: 5px;
-  border: $border-thickness solid $border-color-medium;
+  border: $border-thickness solid $border-color-light;
 }
 
 input, select, textarea {
@@ -27,15 +27,10 @@ input[type='submit'] {
 
 
 input[type='radio'], input[type='checkbox'] {
-  -webkit-appearance: none;
-  -moz-appearance: none;
   appearance: none;
   position: relative;
   top: 10px;
-  border: 0;
   cursor: pointer;     
-  margin-right: 7px;
-  outline: none;
 }
 
 input[type='radio'] {
@@ -48,4 +43,5 @@ input[type='checkbox'] {
 
 input[type='radio']:checked, input[type='checkbox']:checked {
   background-color: $bg-3;
+  transition: all 0.1s ease-in;
 }

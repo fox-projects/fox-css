@@ -17,10 +17,9 @@ $bg-3: $oc-gray-6;
 // borders
 $border-thickness: 2px;
 $border-color-light: $oc-gray-8;
-$border-color-medium: $oc-gray-6;
 $border-color-dark: $oc-gray-4;
 
-// whitespace (not used)
+// whitespace
 $ws-small: 5px;
 $ws-large: 10px;
 
@@ -31,11 +30,15 @@ $a-hover: $oc-grape-7;
 $a-visited: $oc-grape-7;
 $a-active: $oc-red-7;
 
+// ins, del
 $del-bg-color: $oc-red-8;
 $ins-bg-color: $oc-green-8;
 
+// mark
 $mark-bg-color: $oc-yellow-7;
 
+// u
 $u-underline-color: $oc-red-4;
 
+//
 $form-input-bg-color: $oc-gray-7;
