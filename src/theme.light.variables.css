@@ -1,4 +1,4 @@
-$html-font-color: $oc-gray-9;
+$html-text-color: $oc-gray-9;
 $html-bg-color: $oc-gray-0;
 
 // shared \\
@@ -26,10 +26,10 @@ $ws-large: 10px;
 
 
 // text \\
-$a-normal: $oc-indigo-7;
+$a-normal: $oc-blue-7;
 $a-hover: $oc-grape-7;
 $a-visited: $oc-grape-7;
-$a-active: $oc-red-7;
+$a-active: $oc-grape-7;
 
 // ins, del
 $del-bg-color: $oc-red-2;

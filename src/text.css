@@ -82,6 +82,7 @@ pre {
   margin: 5px;
   border-radius: 5px;
   background: $bg-1;
+  overflow: hidden;
 }
 
 mark {
@@ -107,7 +108,7 @@ samp, button {
 }
 
 button {
-  color: $html-font-color;
+  color: $html-text-color;
   background: inherit;
   cursor: pointer;
   padding: $ws-small $ws-large;
