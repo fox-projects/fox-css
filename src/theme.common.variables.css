@@ -1,0 +1,13 @@
+// shared \\
+$border-radius: 5px;
+
+// the <aside> element disappears when the screen is
+// less than or equal to this pixel length
+$aside-display-bounds: 700px;
+
+// borders
+$border-thickness: 2px;
+
+// whitespace
+$ws-small: 5px;
+$ws-large: 10px;

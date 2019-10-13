@@ -35,7 +35,6 @@
     "postcss-preset-env": "^6.7.0",
     "postcss-scss": "^2.0.0",
     "postcss-simple-vars": "^5.0.2",
-    "postcss-strip-inline-comments": "^0.1.5",
-    "pre-commit": "^1.2.2"
+    "postcss-strip-inline-comments": "^0.1.5"
   }
 }
