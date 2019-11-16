@@ -1,5 +1,5 @@
-@import 'normalize';
+@import 'modern-normalize/modern-normalize';
 @import 'open-color';
-@import 'theme.common.variables.css'
+@import 'theme.common.variables'
 @import 'theme.light.variables';
 @import 'main';

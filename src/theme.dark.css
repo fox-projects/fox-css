@@ -1,4 +1,4 @@
-@import 'normalize';
+@import 'modern-normalize/modern-normalize';
 @import 'open-color';
 @import 'theme.common.variables'
 @import 'theme.dark.variables';
