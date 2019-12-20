@@ -21,6 +21,9 @@
     "url": "https://github.com/eankeen/fox-css/issues"
   },
   "homepage": "https://github.com/eankeen/fox-css#readme",
+  "engines": {
+    "node": ">=12.10"
+  },
   "devDependencies": {
     "autoprefixer": "^9.7.3",
     "browser-sync": "^2.26.7",
