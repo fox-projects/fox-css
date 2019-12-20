@@ -33,8 +33,6 @@ async function htmlReload() {
 }
 
 async function cssInject() {
-  let arg = process.argv[3];
-
   watch("src/*.css", { ignoreInitial: false }, async function cssInjectWatchArg() {
     src("src/theme.light.css")
       .pipe(plumber())
