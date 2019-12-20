@@ -10,8 +10,8 @@ const browserSync = bs.create();
 let postCssPlugins = [
   require("postcss-import")(),
   require("postcss-strip-inline-comments")(),
-  require("postcss-simple-vars")(), // sass-like variables
-  require("postcss-preset-env")(), // css future
+  require("postcss-simple-vars")(),
+  require("postcss-preset-env")(),
   require("autoprefixer")()
 ];
 
@@ -52,6 +52,6 @@ async function cssInject() {
   });
 }
 
-let serve = series(init, parallel(htmlReload, cssInject));
+const serve = series(init, parallel(htmlReload, cssInject));
 
 export default serve;

@@ -7,8 +7,8 @@ import del from "del";
 let postCssPlugins = [
   require("postcss-import")(),
   require("postcss-strip-inline-comments"),
-  require("postcss-preset-env")(), // css future
-  require("postcss-simple-vars")(), // sass-like variables
+  require("postcss-preset-env")(),
+  require("postcss-simple-vars")(),
   require("autoprefixer")(),
   require("cssnano")()
 ];

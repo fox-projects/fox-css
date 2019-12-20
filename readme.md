@@ -18,10 +18,6 @@ git clone https://github.com/eankeen/fox-css
 cd fox-css
 
 # node >= v12.10
-yarn install
-yarn serve
+pnpm install
+pnpm run serve
 ```
-
-## roadmap
-
-- use `postcss-calc` etc. to convert `calc($border-thickness / 2)` to `1px`
