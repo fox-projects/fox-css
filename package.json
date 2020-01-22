@@ -13,7 +13,11 @@
   "keywords": [
     "css",
     "semantic",
-    "fox"
+    "fox",
+    "simple",
+    "minimal",
+    "style",
+    "modern"
   ],
   "author": "Edwin Kofler",
   "license": "MIT",
@@ -24,6 +28,10 @@
   "engines": {
     "node": ">=12.10"
   },
+  "main": "dist/fox.min.css",
+  "files": [
+    "dist"
+  ],
   "devDependencies": {
     "autoprefixer": "^9.7.3",
     "browser-sync": "^2.26.7",
