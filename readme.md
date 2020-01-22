@@ -16,6 +16,19 @@ npm i -S fox-css
 # css at ./dist/fox.dark.min.css
 ```
 
+or
+
+```html
+# default theme (dark)
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fox-css@0.7.2/dist/fox.min.css" integrity="sha256-7T0lIk+UaJ61eebH19XvYjHQIVtsxadCobuwf9mEFiY=" crossorigin="anonymous">
+
+# dark theme
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fox-css@0.7.2/dist/fox.dark.min.css" integrity="sha256-7T0lIk+UaJ61eebH19XvYjHQIVtsxadCobuwf9mEFiY=" crossorigin="anonymous">
+
+# light theme
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fox-css@0.7.2/dist/fox.light.min.css" integrity="sha256-IMm6Fro5U54vHv0T+uNm3Wx6jI52wHO3HMIA9L0aJtY=" crossorigin="anonymous">
+```
+
 ## contributing
 
 ```sh
