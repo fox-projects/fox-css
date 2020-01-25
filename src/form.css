@@ -7,8 +7,8 @@ form {
 input, select, textarea {
   border: $border-thickness solid $border-color-light;
   border-radius: $border-radius;
-  padding: 8px;
-  margin: 5px 5px 5px 0;
+  padding: calc($ws-medium * 0.8);
+  margin: $ws-small $ws-small $ws-small 0;
   background: $form-input-bg-color;
   color: $html-text-color;
 }

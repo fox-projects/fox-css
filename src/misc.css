@@ -9,7 +9,7 @@ img,
 video {
   height: auto;
   max-width: 100%;
-  border-radius: 5px;
+  border-radius: $border-radius;
 }
 
 iframe {
@@ -21,7 +21,7 @@ video, audio {
 }
 
 figure {
-  margin: 5px;
+  margin: $ws-small;
 }
 
 fieldset {
@@ -31,6 +31,9 @@ fieldset {
 }
 
 legend {
-  padding: 5px;
+  padding: $ws-small;
 }
 
+summary, details {
+  padding: $ws-small;
+}

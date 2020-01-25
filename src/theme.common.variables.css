@@ -10,4 +10,5 @@ $border-thickness: 2px;
 
 // whitespace
 $ws-small: 5px;
-$ws-large: 10px;
+$ws-medium: calc($ws-small * 2);
+$ws-large: calc($ws-medium * 2);
