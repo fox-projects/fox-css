@@ -1,9 +1,7 @@
 # project
 node_modules/
 samples/styles/
-!site/*
-site/dark/
-site/light
+site/
 
 # std
 *.log
