@@ -10,6 +10,7 @@ devDependencies:
   gulp-postcss: 8.0.0
   gulp-rename: 2.0.0
   modern-normalize: 0.5.0
+  postcss-calc: 7.0.1
   postcss-import: 12.0.1
   postcss-preset-env: 6.7.0
   postcss-scss: 2.0.0
@@ -3199,7 +3200,7 @@ packages:
   /postcss-calc/7.0.1:
     dependencies:
       css-unit-converter: 1.1.1
-      postcss: 7.0.25
+      postcss: 7.0.26
       postcss-selector-parser: 5.0.0
       postcss-value-parser: 3.3.1
     dev: true
@@ -3844,6 +3845,16 @@ packages:
       node: '>=6.0.0'
     resolution:
       integrity: sha512-NXXVvWq9icrm/TgQC0O6YVFi4StfJz46M1iNd/h6B26Nvh/HKI+q4YZtFN/EjcInZliEscO/WL10BXnc1E5nwg==
+  /postcss/7.0.26:
+    dependencies:
+      chalk: 2.4.2
+      source-map: 0.6.1
+      supports-color: 6.1.0
+    dev: true
+    engines:
+      node: '>=6.0.0'
+    resolution:
+      integrity: sha512-IY4oRjpXWYshuTDFxMVkJDtWIk2LhsTlu8bZnbEJA4+bYT16Lvpo8Qv6EvDumhYRgzjZl489pmsY3qVgJQ08nA==
   /pretty-hrtime/1.0.3:
     dev: true
     engines:
@@ -5047,6 +5058,7 @@ specifiers:
   gulp-postcss: ^8.0.0
   gulp-rename: ^2.0.0
   modern-normalize: ^0.5.0
+  postcss-calc: ^7.0.1
   postcss-import: ^12.0.1
   postcss-preset-env: ^6.7.0
   postcss-scss: ^2.0.0

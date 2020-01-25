@@ -13,6 +13,7 @@ let postCssPlugins = [
   require("postcss-strip-inline-comments")(),
   require("postcss-simple-vars")(),
   require("postcss-preset-env")(),
+  require("postcss-calc")(),
   require("autoprefixer")()
 ];
 
