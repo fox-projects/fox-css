@@ -1,6 +1,6 @@
 {
   "name": "fox-css",
-  "version": "0.7.3",
+  "version": "0.7.4",
   "description": "quickly style semantic html without the hassle",
   "scripts": {
     "serve": "gulp --require esm serve",
