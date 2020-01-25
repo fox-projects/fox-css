@@ -1,9 +1,8 @@
 # project
+site/
+
+# npm
 node_modules/
-samples/styles/
-!site/*
-site/dark/
-site/light
 
 # std
 *.log

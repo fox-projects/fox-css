@@ -6,8 +6,10 @@ devDependencies:
   esm: 3.2.25
   gulp: 4.0.2
   gulp-concat: 2.6.1
+  gulp-inject: 5.0.5
   gulp-plumber: 1.2.1
   gulp-postcss: 8.0.0
+  gulp-rename: 2.0.0
   modern-normalize: 0.5.0
   postcss-import: 12.0.1
   postcss-preset-env: 6.7.0
@@ -104,6 +106,12 @@ packages:
       node: '>=0.10.0'
     resolution:
       integrity: sha512-SFKX67auSNoVR38N3L+nvsPjOE0bybKTYbkf5tRvushrAPQ9V75huw0ZxBkKVeRU9kqH3d6HA4xTckbwZ4ixmA==
+  /ansi-colors/4.1.1:
+    dev: true
+    engines:
+      node: '>=6'
+    resolution:
+      integrity: sha512-JoX0apGbHaUJBNl6yF+p6JAFYZ666/hhCGKN5t9QFjbJQKUU/g8MNbFDbvfrgKXvI1QpZplPOnwIo99lX/AAmA==
   /ansi-cyan/0.1.1:
     dependencies:
       ansi-wrap: 0.1.0
@@ -154,6 +162,10 @@ packages:
       node: '>=0.10.0'
     resolution:
       integrity: sha1-qCJQ3bABXponyoLoLqYDu/pF768=
+  /any-promise/1.3.0:
+    dev: true
+    resolution:
+      integrity: sha1-q8av7tzqUugJzcA3au0845Y10X8=
   /anymatch/2.0.0:
     dependencies:
       micromatch: 3.1.10
@@ -289,6 +301,12 @@ packages:
     dev: true
     resolution:
       integrity: sha512-wGUIVQXuehL5TCqQun8OW81jGzAWycqzFF8lFp+GOM5BXLYj3bKNsYC4daB7n6XjCqxQA/qgTJ+8ANR3acjrog==
+  /arrify/2.0.1:
+    dev: true
+    engines:
+      node: '>=8'
+    resolution:
+      integrity: sha512-3duEwti880xqi4eAMN8AyR4a0ByT90zoYdLlevfrvU43vb0YZwZVfxOgxWrLXXXpyugL0hNZc9G6BiB5B3nUug==
   /assign-symbols/1.0.0:
     dev: true
     engines:
@@ -1404,6 +1422,12 @@ packages:
       node: '>=0.8.0'
     resolution:
       integrity: sha1-G2HAViGQqN/2rjuyzwIAyhMLhtQ=
+  /escape-string-regexp/2.0.0:
+    dev: true
+    engines:
+      node: '>=8'
+    resolution:
+      integrity: sha512-UpzcLCXolUWcNu5HtVMHYdXJjArjsF9C0aNnquZYY4uW/Vu0miy5YoWvbV345HauVvcAUnpRuhMMcqTcGOY2+w==
   /esm/3.2.25:
     dev: true
     engines:
@@ -1710,6 +1734,14 @@ packages:
       node: '>=0.10.0'
     resolution:
       integrity: sha1-3BXKHGcjh8p2vTesCjlbogQqLCg=
+  /get-value/3.0.1:
+    dependencies:
+      isobject: 3.0.1
+    dev: true
+    engines:
+      node: '>=6.0'
+    resolution:
+      integrity: sha512-mKZj9JLQrwMBtj5wxi6MH8Z5eSKaERpAwjg43dPtlGI1ZVEgH/qC7T8/6R2OBSUA+zzHBZgICsVJaEIV2tKTDA==
   /glob-parent/3.1.0:
     dependencies:
       is-glob: 3.1.0
@@ -1815,6 +1847,19 @@ packages:
     dev: true
     resolution:
       integrity: sha512-a30VEBm4PEdx1dRB7MFK7BejejvCvBronbLjht+sHuGYj8PHs7M/5Z+rt5lw551vZ7yfTCj4Vuyy3mSJytDWRQ==
+  /group-array/1.0.0:
+    dependencies:
+      arr-flatten: 1.1.0
+      for-own: 1.0.0
+      get-value: 3.0.1
+      kind-of: 6.0.3
+      split-string: 6.1.0
+      union-value: 2.0.1
+    dev: true
+    engines:
+      node: '>=8'
+    resolution:
+      integrity: sha512-PJresALe5TUzSIcdWKLdAKcdUDxv8du2EGueShgAL2xknbcTo5Bk1xbNaNhxpWxxAx/SV7N+5S0UyK7XV0+QhA==
   /gulp-cli/2.2.0:
     dependencies:
       ansi-colors: 1.1.0
@@ -1851,6 +1896,21 @@ packages:
       node: '>= 0.10'
     resolution:
       integrity: sha1-Yz0WyV2IUEYorQJmVmPO5aR5M1M=
+  /gulp-inject/5.0.5:
+    dependencies:
+      ansi-colors: 4.1.1
+      arrify: 2.0.1
+      escape-string-regexp: 2.0.0
+      fancy-log: 1.3.3
+      group-array: 1.0.0
+      plugin-error: 1.0.1
+      stream-to-array: 2.3.0
+      through2: 3.0.1
+    dev: true
+    engines:
+      node: '>=8'
+    resolution:
+      integrity: sha512-5bGMjqleXUHPu4CI1pnVzHtwyMy+Zt8EMo1RFwNsOpidPxwjFwyLgmsRZWGMMI8UenJMJRjURqwznfFmqb5wgw==
   /gulp-plumber/1.2.1:
     dependencies:
       chalk: 1.1.3
@@ -1873,6 +1933,12 @@ packages:
     dev: true
     resolution:
       integrity: sha512-Wtl6vH7a+8IS/fU5W9IbOpcaLqKxd5L1DUOzaPmlnCbX1CrG0aWdwVnC3Spn8th0m8D59YbysV5zPUe1n/GJYg==
+  /gulp-rename/2.0.0:
+    dev: true
+    engines:
+      node: '>=4'
+    resolution:
+      integrity: sha512-97Vba4KBzbYmR5VBs9mWmK+HwIf5mj+/zioxfZhOKeXtx5ZjBk57KFlePf5nxq9QsTtFl0ejnHE3zTC9MHXqyQ==
   /gulp/4.0.2:
     dependencies:
       glob-watcher: 5.0.3
@@ -2502,6 +2568,12 @@ packages:
       node: '>=0.10.0'
     resolution:
       integrity: sha512-s5kLOcnH0XqDO+FvuaLX8DDjZ18CGFk7VygH40QoKPUQhW4e2rvM0rwUq0t8IQDOwYSeLK01U90OjzBTme2QqA==
+  /kind-of/6.0.3:
+    dev: true
+    engines:
+      node: '>=0.10.0'
+    resolution:
+      integrity: sha512-dcS1ul+9tmeD95T+x28/ehLgd9mENa3LsvDTtzm3vyBEO7RPptvAD+t44WVXaUjTBRcrpFeFlC8WCruUR456hw==
   /last-run/1.1.1:
     dependencies:
       default-resolution: 2.0.0
@@ -3929,6 +4001,16 @@ packages:
     dev: true
     resolution:
       integrity: sha512-tQtKA9WIAhBF3+VLAseyMqZeBjW0AHJoxOtYqSUZNJxauErmLbVm2FW1y+J/YA9dUrAC39ITejlZWhVIwawkKw==
+  /readable-stream/3.5.0:
+    dependencies:
+      inherits: 2.0.4
+      string_decoder: 1.3.0
+      util-deprecate: 1.0.2
+    dev: true
+    engines:
+      node: '>= 6'
+    resolution:
+      integrity: sha512-gSz026xs2LfxBPudDuI41V1lka8cxg64E66SGe78zJlsUofOg/yqwezdIcdfwik6B4h8LFmWPA9ef9X3FiNFLA==
   /readdirp/2.2.1:
     dependencies:
       graceful-fs: 4.2.3
@@ -4211,6 +4293,14 @@ packages:
       node: '>=0.10.0'
     resolution:
       integrity: sha512-JxHc1weCN68wRY0fhCoXpyK55m/XPHafOmK4UWD7m2CI14GMcFypt4w/0+NV5f/ZMby2F6S2wwA7fgynh9gWSw==
+  /set-value/3.0.1:
+    dependencies:
+      is-plain-object: 2.0.4
+    dev: true
+    engines:
+      node: '>=6.0'
+    resolution:
+      integrity: sha512-w6n3GUPYAWQj4ZyHWzD7K2FnFXHx9OTwJYbWg+6nXjG8sCLfs9DGv+KlqglKIIJx+ks7MlFuwFW2RBPb+8V+xg==
   /setprototypeof/1.1.0:
     dev: true
     resolution:
@@ -4395,6 +4485,12 @@ packages:
       node: '>=0.10.0'
     resolution:
       integrity: sha512-NzNVhJDYpwceVVii8/Hu6DKfD2G+NrQHlS/V/qgv763EYudVwEcMQNxd2lh+0VrUByXN/oJkl5grOhYWvQUYiw==
+  /split-string/6.1.0:
+    dev: true
+    engines:
+      node: '>=8.6'
+    resolution:
+      integrity: sha512-9UBdnmnvx2NLLd4bMs7CEKK+wSzbujVv3ONyorkP1o8M3pVJQtXDO1cN19xD1JJs6ltOrtPrkUND0HzLSinUcA==
   /sprintf-js/1.0.3:
     dev: true
     resolution:
@@ -4452,6 +4548,12 @@ packages:
     hasBin: true
     resolution:
       integrity: sha1-rdV8jXzHOoFjDTHNVdOWHPr7qcM=
+  /stream-to-array/2.3.0:
+    dependencies:
+      any-promise: 1.3.0
+    dev: true
+    resolution:
+      integrity: sha1-u/azn19D7DC8cbq8s3VXrOzzQ1M=
   /string-width/1.0.2:
     dependencies:
       code-point-at: 1.1.0
@@ -4486,6 +4588,12 @@ packages:
     dev: true
     resolution:
       integrity: sha512-n/ShnvDi6FHbbVfviro+WojiFzv+s8MPMHBczVePfUpDJLwoLT0ht1l4YwBCbi8pJAveEEdnkHyPyTP/mzRfwg==
+  /string_decoder/1.3.0:
+    dependencies:
+      safe-buffer: 5.2.0
+    dev: true
+    resolution:
+      integrity: sha512-hkRX8U1WjJFd8LsDJ2yQ/wWWxaopEsABU1XfkM8A+j0+85JAGppt16cr1Whg6KIbb4okU6Mql6BOj+uup/wKeA==
   /strip-ansi/3.0.1:
     dependencies:
       ansi-regex: 2.1.1
@@ -4597,6 +4705,12 @@ packages:
     dev: true
     resolution:
       integrity: sha512-/mrRod8xqpA+IHSLyGCQ2s8SPHiCDEeQJSep1jqLYeEUClOFG2Qsh+4FU6G9VeqpZnGW/Su8LQGc4YKni5rYSQ==
+  /through2/3.0.1:
+    dependencies:
+      readable-stream: 3.5.0
+    dev: true
+    resolution:
+      integrity: sha512-M96dvTalPT3YbYLaKaCuwu+j06D/8Jfib0o/PxbVt6Amhv3dUAtW6rTV1jPgJSBG83I/e04Y6xkVdVhSRhi0ww==
   /time-stamp/1.1.0:
     dev: true
     engines:
@@ -4729,6 +4843,15 @@ packages:
       node: '>=0.10.0'
     resolution:
       integrity: sha512-tJfXmxMeWYnczCVs7XAEvIV7ieppALdyepWMkHkwciRpZraG/xwT+s2JN8+pr1+8jCRf80FFzvr+MpQeeoF4Xg==
+  /union-value/2.0.1:
+    dependencies:
+      get-value: 3.0.1
+      set-value: 3.0.1
+    dev: true
+    engines:
+      node: '>=6'
+    resolution:
+      integrity: sha512-NmcRHHhUy1qWmp6yYWsaURV2qwfS24TmTtO9S9x0L41wCNNVBQFD3toOzO0cd8SsNrFhbw/O0iYO5uffXGYocw==
   /uniq/1.0.1:
     dev: true
     resolution:
@@ -5024,8 +5147,10 @@ specifiers:
   esm: ^3.2.25
   gulp: ^4.0.2
   gulp-concat: ^2.6.1
+  gulp-inject: ^5.0.5
   gulp-plumber: ^1.2.1
   gulp-postcss: ^8.0.0
+  gulp-rename: ^2.0.0
   modern-normalize: ^0.5.0
   postcss-import: ^12.0.1
   postcss-preset-env: ^6.7.0
