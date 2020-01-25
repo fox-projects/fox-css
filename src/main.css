@@ -8,7 +8,7 @@
   box-sizing: border-box;
 }
 
-html {
+html, body {
   height: 100%;
   color: $html-text-color;
   background-color: $html-bg-color;
