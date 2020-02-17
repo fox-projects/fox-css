@@ -37,8 +37,7 @@ use fox-css to style your semantic html. no need to memorize class names. light 
 
 ```js
 // npm i -S fox-css
-
-import ./node_modules/fox-css/dist/fox.dark.min.css
+import "./node_modules/fox-css/dist/fox.dark.min.css"
 ```
 
 ## contributing
