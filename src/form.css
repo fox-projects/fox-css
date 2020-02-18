@@ -1,16 +1,32 @@
 form {
   border-radius: $border-radius;
-  padding: 5px;
+  padding: $ws-small;
   border: $border-thickness solid $border-color-light;
 }
 
+label + input, label input {
+  display: block;
+}
+
+label + input[type='checkbox'], label input[type='checkbox'],
+label + input[type='radio'], label input[type='radio'] {
+  display: initial;
+}
+
+input, select, fieldset {
+  margin: 0 0 $ws-medium;
+}
+
+input[type='submit'] {
+  margin: 0;
+}
+
 input, select, textarea {
+  color: $html-text-color;
   border: $border-thickness solid $border-color-light;
   border-radius: $border-radius;
-  padding: calc($ws-medium * 0.8);
-  margin: $ws-small $ws-small $ws-small 0;
+  padding: 8px;
   background: $form-input-bg-color;
-  color: $html-text-color;
 }
 
 textarea {
@@ -25,12 +41,11 @@ input[type='submit'] {
   cursor: pointer;
 }
 
-
 input[type='radio'], input[type='checkbox'] {
   appearance: none;
   position: relative;
-  top: 10px;
-  cursor: pointer;     
+  top: 15px;
+  cursor: pointer;
 }
 
 input[type='radio'] {
@@ -38,10 +53,19 @@ input[type='radio'] {
 }
 
 input[type='checkbox'] {
-  border-radius: 1px;
+  border-radius: 2px;
 }
 
 input[type='radio']:checked, input[type='checkbox']:checked {
   background-color: $bg-3;
   transition: all 0.1s ease-in;
+}
+
+fieldset {
+  border: $border-thickness solid $border-color-light;
+  border-radius: $border-radius;
+}
+
+legend {
+  padding: $ws-small;
 }

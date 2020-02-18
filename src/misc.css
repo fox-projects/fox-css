@@ -24,16 +24,11 @@ figure {
   margin: $ws-small;
 }
 
-fieldset {
+summary {
+  padding: $ws-small;
+}
+
+summary {
   border: $border-thickness solid $border-color-light;
   border-radius: $border-radius;
-  margin: 0;
-}
-
-legend {
-  padding: $ws-small;
-}
-
-summary, details {
-  padding: $ws-small;
 }
