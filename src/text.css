@@ -64,16 +64,20 @@ ins {
 }
 
 dl {
+  margin-block-start: 0;
+  margin-block-end: $ws-medium;
   border: $border-thickness solid $border-color-light;
   padding: $ws-medium;
   border-radius: $border-radius;
 }
 
 dt {
+  margin-bottom: $ws-small;
   border-bottom: $border-thickness solid $border-color-light;
 }
 
 dd {
+  margin-bottom: $ws-medium;
   margin-left: 40px;
 }
 

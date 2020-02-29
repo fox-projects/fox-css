@@ -9,7 +9,7 @@ main {
 
 section, article, aside, nav, blockquote, span, dd, dt, samp, button {
   padding: $ws-medium;
-  margin: $ws-medium $ws-medium $ws-medium 0;
+  /* margin: $ws-medium $ws-medium 0 0; */
   border-radius: $border-radius;
   background-color: $bg-1;
   overflow: auto;
@@ -63,17 +63,6 @@ aside {
   background-color: $bg-1;
 }
 
-@media(max-width: $aside-display-bounds) {
-  aside {
-    float: none;
-    display: none;
-  }
-
-  .flex {
-    flex-direction: column;
-  }
-}
-
 // flex
 .flex {
   display: flex;
@@ -83,3 +72,22 @@ aside {
   flex: 1;
 }
 
+.flex > * ~ * {
+  margin-left: 10px;
+}
+
+@media(max-width: $aside-display-bounds) {
+  aside {
+    float: none;
+    display: none;
+  }
+
+  .flex {
+    flex-direction: column;
+  }
+
+  .flex > * ~ * {
+    margin-left: unset;
+    margin-top: 10px;
+  }
+}

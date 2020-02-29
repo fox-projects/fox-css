@@ -14,19 +14,19 @@ use fox-css to style your semantic html. no need to memorize class names. light 
 ### via cdn
 
 ```html
-# default theme (dark)
+<!-- default theme (dark) -->
 <link
   rel="stylesheet"
   href="https://cdn.jsdelivr.net/npm/fox-css/dist/fox.min.css"
 >
 
-# dark theme
+<!-- dark theme -->
 <link
   rel="stylesheet"
   href="https://cdn.jsdelivr.net/npm/fox-css/dist/fox.dark.min.css"
 >
 
-# light theme
+<!-- light theme -->
 <link
   rel="stylesheet"
   href="https://cdn.jsdelivr.net/npm/fox-css/dist/fox.light.min.css"
