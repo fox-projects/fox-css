@@ -9,7 +9,7 @@ main {
 
 section, article, aside, nav, blockquote, span, dd, dt, samp, button {
   padding: $ws-medium;
-  /* margin: $ws-medium $ws-medium 0 0; */
+  margin-bottom: $ws-medium;
   border-radius: $border-radius;
   background-color: $bg-1;
   overflow: auto;
@@ -17,6 +17,7 @@ section, article, aside, nav, blockquote, span, dd, dt, samp, button {
 
 // darken background if nested
 section article, article section, article aside, section aside {
+  margin-bottom: unset;
   background: $bg-2;
 }
 

@@ -72,13 +72,17 @@ dl {
 }
 
 dt {
-  margin-bottom: $ws-small;
+  margin-bottom: $ws-medium;
   border-bottom: $border-thickness solid $border-color-light;
 }
 
 dd {
-  margin-bottom: $ws-medium;
+  margin-bottom: $ws-large;
   margin-left: 40px;
+}
+
+dd:last-child {
+  margin-bottom: unset;
 }
 
 pre {
