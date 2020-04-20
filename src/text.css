@@ -1,9 +1,9 @@
 h1, h2, h3, h4, h5, h6 {
-  margin-bottom: $ws-medium;
+  margin: 0 0 $ws-medium 0;
 }
 
 p {
-  margin-bottom: $ws-medium;
+  margin: 0 0 $ws-medium 0;
 }
 
 a {
@@ -23,7 +23,7 @@ a:active {
 }
 
 ul, ol {
-  padding-left: $ws-large;
+  padding: 0 0 0 $ws-large;
   border-radius: $border-radius;
   border: $border-thickness solid $border-color-light;
 }
@@ -64,6 +64,7 @@ ins {
 }
 
 dl {
+  margin-block-start: 0;
   margin-block-end: $ws-medium;
   border: $border-thickness solid $border-color-light;
   padding: $ws-medium;

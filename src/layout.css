@@ -7,7 +7,7 @@ main {
   display: block;
 }
 
-section, article, aside, blockquote, span, dd, dt, samp, button {
+section, article, aside, nav, blockquote, span, dd, dt, samp, button {
   padding: $ws-medium;
   margin-bottom: $ws-medium;
   border-radius: $border-radius;
@@ -76,13 +76,6 @@ aside {
 .flex > * ~ * {
   margin-left: 10px;
 }
-
-// overeager truthiness
-/* @supports (gap: 0) {
-   .flex {
-     gap: 10px;
-   }
-} */
 
 @media(max-width: $aside-display-bounds) {
   aside {
