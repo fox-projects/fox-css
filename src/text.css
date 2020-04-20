@@ -1,9 +1,9 @@
 h1, h2, h3, h4, h5, h6 {
-  margin: 5px 0;
+  margin-bottom: $ws-medium;
 }
 
 p {
-  margin: 10px 0;
+  margin-bottom: $ws-medium;
 }
 
 a {
@@ -23,13 +23,13 @@ a:active {
 }
 
 ul, ol {
-  padding: 0 0 0 20px;
+  padding-left: $ws-large;
   border-radius: $border-radius;
   border: $border-thickness solid $border-color-light;
 }
 
 li {
-  margin: 10px;
+  margin: $ws-medium;
 }
 
 blockquote {
@@ -64,23 +64,30 @@ ins {
 }
 
 dl {
+  margin-block-end: $ws-medium;
   border: $border-thickness solid $border-color-light;
-  padding: 10px;
+  padding: $ws-medium;
   border-radius: $border-radius;
 }
 
 dt {
+  margin-bottom: $ws-medium;
   border-bottom: $border-thickness solid $border-color-light;
 }
 
 dd {
+  margin-bottom: $ws-large;
   margin-left: 40px;
 }
 
+dd:last-child {
+  margin-bottom: unset;
+}
+
 pre {
-  padding: 5px;
-  margin: 5px;
-  border-radius: 5px;
+  padding: $ws-small;
+  margin: $ws-small $ws-small $ws-small 0;
+  border-radius: $ws-small;
   background: $bg-1;
   overflow: hidden;
 }
@@ -104,14 +111,14 @@ u {
 samp, button {
   display: inline-block;
   border: $border-thickness solid $border-color-dark;
-  margin: $ws-large 0;
+  margin: $ws-medium 0;
 }
 
 button {
   color: $html-text-color;
   background: inherit;
   cursor: pointer;
-  padding: $ws-small $ws-large;
+  padding: $ws-small $ws-medium;
 }
 
 button:hover {

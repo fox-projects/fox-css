@@ -1,3 +1,4 @@
+
 import { dest, parallel, series, src, watch } from "gulp";
 import concat from "gulp-concat";
 import postcss from "gulp-postcss";
@@ -10,8 +11,9 @@ const browserSync = bs.create();
 let postCssPlugins = [
   require("postcss-import")(),
   require("postcss-strip-inline-comments")(),
-  require("postcss-simple-vars")(), // sass-like variables
-  require("postcss-preset-env")(), // css future
+  require("postcss-simple-vars")(),
+  require("postcss-preset-env")(),
+  require("postcss-calc")(),
   require("autoprefixer")()
 ];
 
@@ -33,8 +35,6 @@ async function htmlReload() {
 }
 
 async function cssInject() {
-  let arg = process.argv[3];
-
   watch("src/*.css", { ignoreInitial: false }, async function cssInjectWatchArg() {
     src("src/theme.light.css")
       .pipe(plumber())
@@ -52,6 +52,6 @@ async function cssInject() {
   });
 }
 
-let serve = series(init, parallel(htmlReload, cssInject));
+const serve = series(init, parallel(htmlReload, cssInject));
 
 export default serve;

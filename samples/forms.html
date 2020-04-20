@@ -5,19 +5,19 @@
   <meta name='viewport' content='width=device-width, initial-scale=1.0'>
   <meta http-equiv='X-UA-Compatible' content='ie=edge'>
   <link id='stylesheet' rel='stylesheet' href='styles/fox.css'>
-  <title>forms</title>
+  <title>forms | fox-css</title>
 </head>
 <body>
   <header>
     <h1>fox-css</h1>
     <article>
       <h2>about fox-css</h2>
-      <p>fox-css styles your html so it doesnt look like total crap. semantic ways to auto layout your content. one class name. light and dark</p>
+      <p>use fox-css to style your semantic html. no need to memorize class names. light and dark</p>
     </article>
     
     <h2>navigation</h2>
     <nav>
-      <a href='basics.html'>basics</a>
+      <a href='core.html'>core</a>
       <a href='flex-and-aside.html'>flex-and-aside</a>
       <a href='forms.html'>forms</a>
       <a href='tables.html'>tables</a>
@@ -28,18 +28,30 @@
 
   <h1>forms</h1>
   <h2>form example 1</h2>
-  <form action='' method='get'>
+  <form action='/' method='get'>
     <div>
       <label for='name'>name</label>
-      <br>
       <input type='text' name='name' required>
     </div>
 
     <div>
       <label for='email'>email</label>
-      <br>
       <input type='email' name='email' required>
     </div>
+
+    <fieldset>
+      <legend>choose your favorite fox</legend>
+
+      <input type='radio' name='monster'>
+      <label for='kraken'>gray fox</label><br/>
+
+      <input type='radio' name='monster'>
+      <label for='sasquatch'>red fox</label><br/>
+
+      <input type='radio' name='monster'>
+      <label for='mothman'>arctic fox</label>
+    </fieldset>
+
     <div>
       <input type='submit' value='submit'>
     </div>
@@ -48,42 +60,41 @@
   <h2>form example 2</h2>
   <form action='' method='get'>
     <div>
-      <label for="name">name</label>
-      <br>
+      <label for='name'>name</label>
       <input type='text' name='name' required>
     </div>
 
-    <div">
+    <div>
       <label for='favorite fox'>choose your favorite fox</label>
-      <br>
       <div>
         <input type='radio' name='gender' value='male'>
         <label for='gender'>red fox</label>
-        <br><br>
+        <br>
         <img
-          src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Fox_-_British_Wildlife_Centre_%2817429406401%29.jpg/1280px-Fox_-_British_Wildlife_Centre_%2817429406401%29.jpg"
-          alt=""
-          width="100px"
+          src='https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Fox_-_British_Wildlife_Centre_%2817429406401%29.jpg/1280px-Fox_-_British_Wildlife_Centre_%2817429406401%29.jpg'
+          alt=''
+          width='100px'
         >
       </div>
       <div>
         <input type='radio' name='gender' value='female'>
         <label for='gender'>arctic fox</label>
-        <br><br>
+        <br>
         <img
-          src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Iceland-1979445_%28cropped_3%29.jpg/800px-Iceland-1979445_%28cropped_3%29.jpg"
-          alt=""
-          width="100px"
+          src='https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Iceland-1979445_%28cropped_3%29.jpg/800px-Iceland-1979445_%28cropped_3%29.jpg'
+          alt=''
+          width='100px'
         >
       </div>
       <div>
         <input type='radio' name='gender' value='other'>
         <label for='gender'>gray fox</label>
-        <br><br>
+        <br>
         <img
-          src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Grey_Fox_%28Urocyon_cinereoargenteus%29.jpg/1280px-Grey_Fox_%28Urocyon_cinereoargenteus%29.jpg"
-          alt=""
-          width="100px"
+          src='https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Grey_Fox_%28Urocyon_cinereoargenteus%29.jpg/1280px-Grey_Fox_%28Urocyon_cinereoargenteus%29.jpg'
+          alt=''
+          width='100px'
+        >
       </div>
     </div>
 
@@ -91,22 +102,22 @@
       <label for='food'>favorite food</label>
       <div>
         <input type='checkbox' name='carrot'>
-        <label for="food">carrot</label>
+        <label for='food'>carrot</label>
       </div>
       <div>
         <input type='checkbox' name='nectarine'>
-        <label for="food">nectarine</label>
+        <label for='food'>nectarine</label>
       </div>
       <div>
         <input type='checkbox' name='grass'>
-        <label for="food">grass</label>
+        <label for='food'>grass</label>
         </div>
     </div>
 
     <div>
       <label for='fox-choose-group-1'>choose a scientific groups of foxes</label>
       <div>
-        <select name="fox-choose-group-1">
+        <select name='fox-choose-group-1'>
           <optgroup label='lycalopex'>
             <option>lycalopex culpaeus</option>
             <option>lycalopex fulvipes</option>
@@ -139,7 +150,7 @@
     </div>
 
     <div>
-      <label for='fox-choose-group-2'>type a scientific group of foxse</label>
+      <label for='fox-choose-group-2'>type a scientific group of foxes</label>
       <div>
         <input list='fox-choose-group-list' name='fox-choose-group-2'>
         <datalist id='fox-choose-group-list'>
@@ -169,7 +180,7 @@
     </div>
 
     <div>
-        <label for='thoughts'>any other thoughts</label>
+        <label for='thoughts'>any other thoughts?</label>
       <div>
         <textarea name='thoughts' rows='5' cols='33'></textarea>
       </div>
@@ -178,7 +189,6 @@
       <input type='submit' value='submit'>
     </div>
   </form>
-
   <footer>
     <div>© 2019 foo bar</div>
   </footer>

@@ -5,7 +5,7 @@ table {
 }
 
 caption {
-  padding: 10px 0;
+  padding: $ws-medium 0;
   background-color: $bg-1;
 }
 
@@ -15,7 +15,7 @@ section caption, article caption {
 
 th,
 td {
-  padding: 10px;
+  padding: $ws-large;
   border-radius: $border-radius;
   text-align: left;
   border: $border-thickness solid $border-color-light;

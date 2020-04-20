@@ -5,19 +5,19 @@
   <meta name='viewport' content='width=device-width, initial-scale=1.0'>
   <meta http-equiv='X-UA-Compatible' content='ie=edge'>
   <link id='stylesheet' rel='stylesheet' href='styles/fox.css'>
-  <title>fox-css</title>
+  <title>core | fox-css</title>
 </head>
 <body>
   <header>
     <h1>fox-css</h1>
     <article>
       <h2>about fox-css</h2>
-      <p>fox-css styles your html so it doesn't look like total crap. semantic ways to auto layout your content. one class name. light and dark</p>
+      <p>use fox-css to style your semantic html. no need to memorize class names. light and dark</p>
     </article>
 
     <h2>navigation</h2>
     <nav>
-      <a href='basics.html'>basics</a>
+      <a href='core.html'>core</a>
       <a href='flex-and-aside.html'>flex-and-aside</a>
       <a href='forms.html'>forms</a>
       <a href='tables.html'>tables</a>
@@ -26,16 +26,15 @@
 
   <hr>
 
-  <h1>basics</h1>
+  <h1>core</h1>
   <p>fox-css styles all html elements to make them look adequate. nothing fancy. we <u>recomend</u> you place content inside <code>&lt;section&gt;</code> and <code>&lt;article&gt;</code> elements
 
   <section>
     <h2>section</h2>
     <article>
       <h3>article</h3>
-      <p><em>do not</em> nest more than once</p>
+      <p>nest <code>&lt;article&gt;</code>'s, <code>&lt;section&gt;</code>'s, and <code>&lt;aside&gt;</code>'s <em>2 times or less</em></p>
       <div>
-        <h3>good</h3>
 <pre>
 &lt;body&gt;
   &lt;main&gt;
@@ -46,20 +45,6 @@
     &lt;article&gt;
   &lt;main&gt;
 &lt;body&gt;
-</pre>
-      </div>
-      <div>
-        <h3>bad</h3>
-<pre>
-  &lt;body&gt;
-    &lt;article&gt;
-      &lt;article&gt;
-        &lt;article&gt;
-
-        &lt;article&gt;
-      &lt;article&gt;
-    &lt;article&gt;
-  &lt;body&gt;
 </pre>
       </div>
     
@@ -108,7 +93,7 @@
   _/|  \-''- _ /
 __-' { |          \
 /             \
-/       "o.  |o }
+/       'o.  |o }
 |            \ ;
               ',
     \_         __\
@@ -122,7 +107,7 @@ __-' { |          \
 
   <h2>insertions and deletions</h2>
   <section class='flex'>
-    <div>
+    <article>
       <pre>
 26.   &lt;script&gt;
 
@@ -143,8 +128,8 @@ __-' { |          \
 41.   }
 42.   &lt;/script&gt;
       </pre>
-    </div>
-    <div>
+    </article>
+    <article>
       <pre>
 26.   &lt;script&gt;
 <ins>27.   import { mapstate } from 'vuex'</ins>
@@ -165,7 +150,7 @@ __-' { |          \
 40.   }
 41.   &lt;/script&gt;
       </pre>
-    </div>
+    </article>
   </section>
   
 
@@ -174,28 +159,11 @@ __-' { |          \
 
   <h2>details, summary</h2>
   <details>
-    <summary>Details</summary>
-    Something small enough to escape casual notice.
+    <summary>did you know that...</summary>
+    the red fox is the most common type of fox?
   </details>
 
-  
-  <h2>fieldsets</h2>
-  <form>
-    <fieldset>
-      <legend>choose your favorite monster</legend>
-  
-      <input type='radio' name='monster'>
-      <label for='kraken'>kraken</label><br/>
-  
-      <input type='radio' name='monster'>
-      <label for='sasquatch'>sasquatch</label><br/>
-  
-      <input type='radio' name='monster'>
-      <label for='mothman'>mothman</label>
-    </fieldset>
-  </form>
-
-
+  <br>
   <h2>footers</h2>
   <footer>
     <p>foxtrot</p>

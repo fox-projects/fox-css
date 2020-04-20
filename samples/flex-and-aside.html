@@ -5,19 +5,19 @@
   <meta name='viewport' content='width=device-width, initial-scale=1.0'>
   <meta http-equiv='X-UA-Compatible' content='ie=edge'>
   <link id='stylesheet' rel='stylesheet' href='styles/fox.css'>
-  <title>Document</title>
+  <title>flex and aside | fox-css</title>
 </head>
 <body>
   <header>
     <h1>fox-css</h1>
     <article>
       <h2>about fox-css</h2>
-      <p>fox-css styles your html so it doesnt look like total crap. semantic ways to auto layout your content. one class name. light and dark</p>
+      <p>use fox-css to style your semantic html. no need to memorize class names. light and dark</p>
     </article>
     
     <h2>navigation</h2>
     <nav>
-      <a href='basics.html'>basics</a>
+      <a href='core.html'>core</a>
       <a href='flex-and-aside.html'>flex and aside</a>
       <a href='forms.html'>forms</a>
       <a href='tables.html'>tables</a>
@@ -29,43 +29,38 @@
   <h1>flex</h1>
   <p>add <code>.flex</code> to split the content into segments. number of segments equal to number of children of <code>.flex</code>. If the width is 700px or less, <code>flex-direction</code> becomes <code>column</code>.</p>
   <h2>flex example 1</h2>
-  <section class="flex">
-    <div>
+  <section class='flex'>
+    <article>
       <h3>left</h3>
       <p>alfa</p>
-    </div>
-    <div>
+    </article>
+    <article>
       <h3>right</h3>
       <p>bravo</p>
-    </div>
+    </article>
   </section>
 
   <h2>flex example 2</h2>
-  <section class="flex">
-    <div>
-      <figure>
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/San_Joaquin_kit_fox_male.jpg/1280px-San_Joaquin_kit_fox_male.jpg" alt="">
-      </figure>
+  <p>note that the differences in height are due to the non-constant aspect ratio across the images</p>
+  <section class='flex'>
+    <figure>
+      <img src='https://cdn.pixabay.com/photo/2016/01/03/06/20/red-fox-1119118_960_720.jpg' alt='fox walking through snow'>
+      <figcaption>
+        fox walking through snow
+      </figcaption>
+    </figure>
+    <figure>
+      <img src='https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/San_Joaquin_kit_fox_male.jpg/1280px-San_Joaquin_kit_fox_male.jpg' alt='fox waiting patiently'>
       <figcaption>
         fox waiting patiently
       </figcaption>
-    </div>
-    <div>
-      <figure>
-          <img src='https://cdn.pixabay.com/photo/2016/01/03/06/20/red-fox-1119118_960_720.jpg' alt='fox walking through snow'>
-          <figcaption>
-            fox walking through snow
-          </figcaption>
-        </figure>
-    </div>
-    <div>
-      <figure>
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Lycalopex_gymnocercus.jpg/1280px-Lycalopex_gymnocercus.jpg" alt="fox turning around">
-      </figure>
+    </figure>
+    <figure>
+      <img src='https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Lycalopex_gymnocercus.jpg/1280px-Lycalopex_gymnocercus.jpg' alt='fox turning around'>
       <figcaption>
         fox turning around
       </figcaption>
-    </div>
+    </figure>
   </section>
 
   <h1>asides</h1>

@@ -1,30 +1,25 @@
 import { dest, src } from "gulp";
-import concat from "gulp-concat";
+import rename from "gulp-rename";
 import postcss from "gulp-postcss";
 import scss from "postcss-scss";
 import del from "del";
 
 let postCssPlugins = [
-  require("postcss-import")(),
-  require("postcss-strip-inline-comments"),
-  require("postcss-preset-env")(), // css future
-  require("postcss-simple-vars")(), // sass-like variables
-  require("autoprefixer")(),
   require("cssnano")()
 ];
 
 async function build() {
   del.sync(["dist/*", "!dist"]);
-  src("src/theme.light.css")
-    .pipe(concat("fox.light.min.css"))
+  src("site/dark/styles/fox.css")
     .pipe(postcss(postCssPlugins, { syntax: scss }))
+    .pipe(rename("fox.light.min.css"))
     .pipe(dest("dist"));
 
-  src("src/theme.dark.css")
-    .pipe(concat("fox.dark.min.css"))
+  src("site/dark/styles/fox.css")
     .pipe(postcss(postCssPlugins, { syntax: scss }))
+    .pipe(rename("fox.dark.min.css"))
     .pipe(dest("dist"))
-    .pipe(concat("fox.min.css"))
+    .pipe(rename("fox.min.css"))
     .pipe(dest("dist"))
 }
 
