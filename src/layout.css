@@ -7,6 +7,10 @@ main {
   display: block;
 }
 
+body + section, body + article, body + nav {
+  margin-top: $ws-medium;
+}
+
 section, article, aside, nav, blockquote, span, dd, dt, samp, button {
   padding: $ws-medium;
   margin-bottom: $ws-medium;
