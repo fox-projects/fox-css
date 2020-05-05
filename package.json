@@ -5,6 +5,7 @@
   "scripts": {
     "serve": "gulp --require esm serve",
     "build": "gulp --require esm build",
+    "np": "np",
     "postversion": "pnpm run build && git push origin dev && ./deploy.sh && git push --tags && pnpm publish"
   },
   "repository": {
@@ -38,7 +39,6 @@
     "browser-sync": "^2.26.7",
     "cssnano": "^4.1.10",
     "del": "^5.1.0",
-    "doiuse": "^4.2.0",
     "esm": "^3.2.25",
     "gulp": "^4.0.2",
     "gulp-concat": "^2.6.1",
@@ -46,6 +46,7 @@
     "gulp-postcss": "^8.0.0",
     "gulp-rename": "^2.0.0",
     "modern-normalize": "^0.6.0",
+    "np": "^6.2.3",
     "postcss-calc": "^7.0.2",
     "postcss-import": "^12.0.1",
     "postcss-preset-env": "^6.7.0",
