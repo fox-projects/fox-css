@@ -6,7 +6,7 @@
     "serve": "gulp --require esm serve",
     "build": "gulp --require esm build",
     "np": "np --any-branch",
-    "postversion": "pnpm run build && git push origin dev && ./deploy.sh && git push --tags && pnpm publish"
+    "old-postversion": "pnpm run build && git push origin dev && ./deploy.sh && git push --tags && pnpm publish"
   },
   "repository": {
     "type": "git",
