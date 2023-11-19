@@ -1,20 +1,26 @@
-
-import { dest, parallel, series, src, watch } from "gulp";
+import gulp from 'gulp'
+const { dest, parallel, series, src, watch } = gulp
 import concat from "gulp-concat";
 import postcss from "gulp-postcss";
 import plumber from "gulp-plumber";
 import scss from "postcss-scss";
 import bs from "browser-sync"
+import postcssImport from "postcss-import"
+import postcssStripInlineComments from "postcss-strip-inline-comments"
+import postcssSimpleVars from "postcss-simple-vars"
+import postcssPresetEnv from "postcss-preset-env"
+import postcssCalc from "postcss-calc"
+import autoprefixer from 'autoprefixer'
 
 const browserSync = bs.create();
 
 let postCssPlugins = [
-	require("postcss-import")(),
-	require("postcss-strip-inline-comments")(),
-	require("postcss-simple-vars")(),
-	require("postcss-preset-env")(),
-	require("postcss-calc")(),
-	require("autoprefixer")()
+	postcssImport,
+	postcssStripInlineComments,
+	postcssSimpleVars,
+	postcssPresetEnv,
+	postcssCalc,
+	autoprefixer
 ];
 
 async function init() {

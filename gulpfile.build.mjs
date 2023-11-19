@@ -1,15 +1,17 @@
-import { dest, src } from "gulp";
+import gulp from 'gulp'
+const { dest, src } = gulp
 import rename from "gulp-rename";
 import postcss from "gulp-postcss";
 import scss from "postcss-scss";
-import del from "del";
+import { deleteSync } from "del";
+import cssnano from "cssnano"
 
 let postCssPlugins = [
-	require("cssnano")()
+	cssnano
 ];
 
 async function build() {
-	del.sync(["dist/*", "!dist"]);
+	deleteSync(["dist/*", "!dist"]);
 	src("site/dark/styles/fox.css")
 		.pipe(postcss(postCssPlugins, { syntax: scss }))
 		.pipe(rename("fox.light.min.css"))
