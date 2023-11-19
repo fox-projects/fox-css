@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/eankeen/fox-css.git"
+    "url": "git+https://github.com/fox-projects/fox-css.git"
   },
   "keywords": [
     "css",
@@ -24,9 +24,9 @@
   "author": "Edwin Kofler",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/eankeen/fox-css/issues"
+    "url": "https://github.com/fox-projects/fox-css/issues"
   },
-  "homepage": "https://github.com/eankeen/fox-css#readme",
+  "homepage": "https://github.com/fox-projects/fox-css#readme",
   "engines": {
     "node": ">=12.10"
   },
@@ -35,6 +35,7 @@
     "dist"
   ],
   "devDependencies": {
+    "@hyperupcall/prettier-config": "^0.7.0",
     "autoprefixer": "^9.7.5",
     "browser-sync": "^2.26.7",
     "cssnano": "^4.1.10",
@@ -52,6 +53,8 @@
     "postcss-preset-env": "^6.7.0",
     "postcss-scss": "^2.0.0",
     "postcss-simple-vars": "^5.0.2",
-    "postcss-strip-inline-comments": "^0.1.5"
+    "postcss-strip-inline-comments": "^0.1.5",
+    "prettier": "^3.1.0",
+    "prettier-plugin-pkg": "^0.18.0"
   }
 }
