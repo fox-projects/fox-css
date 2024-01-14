@@ -15,9 +15,17 @@ body {
  * since we only add margin-block-end and margin-inline-end padding, the first
  * elements on the page will not have margin-block-start margings. this fixes
  * that, giving space to first elements
+ * TODO: golf
  */
-TODO: golf
-body > section, body > article, body > aside, body > nav, body > blockquote, body > span, body > dd, body > dt, body > button {
+body > section,
+body > article,
+body > aside,
+body > nav,
+body > blockquote,
+body > span,
+body > dd,
+body > dt,
+body > button {
 	margin-top: var(--ws-medium);
 }
 
@@ -32,7 +40,6 @@ article,
 aside,
 nav,
 blockquote,
-span,
 dd,
 dt,
 samp,
@@ -80,8 +87,8 @@ body > footer {
 
 body > footer > * {
 	background-color: var(--bg-1);
-	margin: var(--ws-medium);
-	padding: calc(var(--ws-medium) * 0.8) var(--ws-large);
+	margin: var(--ws-small);
+	padding: var(--ws-small) var(--ws-medium);
 	border-radius: var(--border-radius);
 }
 

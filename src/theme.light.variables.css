@@ -1,6 +1,6 @@
 :root {
 	--html-text-color: var(--oc-gray-9);
-	--html-bg-color: var(--oc-gray-0);
+	--html-bg-color: var(--oc-white);
 
 	/* background levels */
 	--bg-0: var(--oc-gray-0);
@@ -14,10 +14,10 @@
 	--border-color-dark: var(--oc-gray-8);
 
 	/* a */
-	--a-normal: var(--oc-blue-7);
-	--a-hover: var(--oc-grape-7);
-	--a-visited: var(--oc-grape-7);
-	--a-active: var(--oc-grape-7);
+	--a-normal: var(--oc-blue-5);
+	--a-visited: var(--oc-grape-3);
+	--a-hover: var(--oc-grape-8);
+	--a-active: var(--oc-grape-8);
 
 	/* ins, del */
 	--del-bg-color: var(--oc-red-2);

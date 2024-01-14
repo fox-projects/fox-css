@@ -13,10 +13,10 @@
 	--border-color-dark: var(--oc-gray-4);
 
 	/* a */
-	--a-normal: var(--oc-blue-7);
-	--a-hover: var(--oc-grape-7);
-	--a-visited: var(--oc-grape-7);
-	--a-active: var(--oc-grape-7);
+	--a-normal: var(--oc-blue-6);
+	--a-visited: var(--oc-grape-8);
+	--a-hover: var(--oc-grape-3);
+	--a-active: var(--oc-grape-3);
 
 	/* ins, del */
 	--del-bg-color: var(--oc-red-8);

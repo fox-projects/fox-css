@@ -8,7 +8,6 @@ import bs from 'browser-sync'
 import autoprefixer from 'autoprefixer'
 import rename from 'gulp-rename'
 import { deleteSync } from 'del'
-import cssnano from 'cssnano'
 
 export const serve = (() => {
 	const browserSync = bs.create()
@@ -53,7 +52,7 @@ export const serve = (() => {
 })()
 
 export async function build() {
-	let postCssPlugins = [postcssImport, autoprefixer, cssnano]
+	let postCssPlugins = [postcssImport, autoprefixer]
 
 	deleteSync(['dist/*', '!dist'])
 	src('site/dark/styles/fox.css')
