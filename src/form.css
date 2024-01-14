@@ -1,67 +1,76 @@
 form {
-  border-radius: $border-radius;
-  padding: $ws-small;
-  border: $border-thickness solid $border-color-light;
+	border-radius: var(--border-radius);
+	padding: var(--ws-small);
+	border: var(--border-thickness) solid var(--border-color-light);
 }
 
-label + input, label input {
-  display: block;
+label + input,
+label input {
+	display: block;
 }
 
-label + input[type='checkbox'], label input[type='checkbox'],
-label + input[type='radio'], label input[type='radio'] {
-  display: initial;
+label + input[type='checkbox'],
+label input[type='checkbox'],
+label + input[type='radio'],
+label input[type='radio'] {
+	display: initial;
 }
 
-input, select, fieldset {
-  margin: 0 0 $ws-medium;
+input,
+select,
+fieldset {
+	margin: 0 0 var(--ws-medium);
 }
 
-input, select, textarea {
-  color: $html-text-color;
-  border: $border-thickness solid $border-color-light;
-  border-radius: $border-radius;
-  padding: 8px;
-  background: $form-input-bg-color;
+input,
+select,
+textarea {
+	color: var(--html-text-color);
+	border: var(--border-thickness) solid var(--border-color-light);
+	border-radius: var(--border-radius);
+	padding: 8px;
+	background: var(--form-input-bg-color);
 }
 
 textarea {
-  width: 100%;
+	width: 100%;
 }
 
 select {
-  appearance: none;
+	appearance: none;
 }
 
 input[type='submit'] {
-  cursor: pointer;
+	cursor: pointer;
 }
 
-input[type='radio'], input[type='checkbox'] {
-  appearance: none;
-  position: relative;
-  top: 15px;
-  cursor: pointer;
+input[type='radio'],
+input[type='checkbox'] {
+	appearance: none;
+	position: relative;
+	top: 15px;
+	cursor: pointer;
 }
 
 input[type='radio'] {
-  border-radius: 50px;
+	border-radius: 50px;
 }
 
 input[type='checkbox'] {
-  border-radius: 2px;
+	border-radius: 2px;
 }
 
-input[type='radio']:checked, input[type='checkbox']:checked {
-  background-color: $bg-3;
-  transition: all 0.1s ease-in;
+input[type='radio']:checked,
+input[type='checkbox']:checked {
+	background-color: var(--bg-3);
+	transition: all 0.1s ease-in;
 }
 
 fieldset {
-  border: $border-thickness solid $border-color-light;
-  border-radius: $border-radius;
+	border: var(--border-thickness) solid var(--border-color-light);
+	border-radius: var(--border-radius);
 }
 
 legend {
-  padding: $ws-small;
+	padding: var(--ws-small);
 }

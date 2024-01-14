@@ -1,128 +1,136 @@
-h1, h2, h3, h4, h5, h6 {
-  margin: 0 0 $ws-medium 0;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: 0 0 var(--ws-medium) 0;
 }
 
 p {
-  margin: 0 0 $ws-medium 0;
+	margin: 0 0 var(--ws-medium) 0;
 }
 
 a {
-  color: $a-normal;
+	color: var(--a-normal);
 }
 
 a:hover {
-  color: $a-hover;
+	color: var(--a-hover);
 }
 
 a:visited {
-  color: $a-visited;
+	color: var(--a-visited);
 }
 
 a:active {
-  color: $a-active;
+	color: var(--a-active);
 }
 
-ul, ol {
-  padding: 0 0 0 $ws-large;
-  border-radius: $border-radius;
-  border: $border-thickness solid $border-color-light;
+ul,
+ol {
+	padding: 0 0 0 var(--ws-large);
+	border-radius: var(--border-radius);
+	border: var(--border-thickness) solid var(--border-color-light);
 }
 
 li {
-  margin: $ws-medium;
+	margin: var(--ws-medium);
 }
 
 blockquote {
-  background-color: $bg-1;
-  border-radius: $border-radius;
+	background-color: var(--bg-1);
+	border-radius: var(--border-radius);
 }
 
 blockquote p::before {
-    content: '\201C';
+	content: '\201C';
 }
 
 blockquote p::after {
-    content: '\201D';
+	content: '\201D';
 }
 
 blockquote > footer {
-  padding-left: 20px;
+	padding-left: 20px;
 }
 
-del, ins {
-  border-radius: $border-radius;
-  text-decoration: none;
-  padding: 0.5px;
+del,
+ins {
+	border-radius: var(--border-radius);
+	text-decoration: none;
+	padding: 0.5px;
 }
 
 del {
-  background: $del-bg-color;
+	background: var(--del-bg-color);
 }
 
 ins {
-  background: $ins-bg-color;
+	background: var(--ins-bg-color);
 }
 
 dl {
-  margin-block-start: 0;
-  margin-block-end: $ws-medium;
-  border: $border-thickness solid $border-color-light;
-  padding: $ws-medium;
-  border-radius: $border-radius;
+	margin-block-start: 0;
+	margin-block-end: var(--ws-medium);
+	border: var(--border-thickness) solid var(--border-color-light);
+	padding: var(--ws-medium);
+	border-radius: var(--border-radius);
 }
 
 dt {
-  margin-bottom: $ws-medium;
-  border-bottom: $border-thickness solid $border-color-light;
+	margin-bottom: var(--ws-medium);
+	border-bottom: var(--border-thickness) solid var(--border-color-light);
 }
 
 dd {
-  margin-bottom: $ws-large;
-  margin-left: 40px;
+	margin-bottom: var(--ws-large);
+	margin-left: 40px;
 }
 
 dd:last-child {
-  margin-bottom: unset;
+	margin-bottom: unset;
 }
 
 pre {
-  padding: $ws-small;
-  margin: $ws-small $ws-small $ws-small 0;
-  border-radius: $ws-small;
-  background: $bg-1;
-  overflow: hidden;
+	padding: var(--ws-small);
+	margin: var(--ws-small) var(--ws-small) var(--ws-small) 0;
+	border-radius: var(--ws-small);
+	background: var(--bg-1);
+	overflow: hidden;
 }
 
 mark {
-  padding: 1px 3px;
-  background: $mark-bg-color;
-  border-radius: $border-radius;
+	padding: 1px 3px;
+	background: var(--mark-bg-color);
+	border-radius: var(--border-radius);
 }
 
 kbd {
-  border-radius: 5px;
-  padding: 2px;
-  border: calc($border-thickness / 2) solid $border-color-dark;
+	border-radius: 5px;
+	padding: 2px;
+	border: calc(var(--border-thickness) / 2) solid var(--border-color-dark);
 }
 
 u {
-  text-decoration: $u-underline-color wavy underline;
+	text-decoration: var(--u-underline-color) wavy underline;
 }
 
-samp, button {
-  display: inline-block;
-  border: $border-thickness solid $border-color-dark;
-  margin: $ws-medium 0;
+samp,
+button {
+	display: inline-block;
+	border: var(--border-thickness) solid var(--border-color-dark);
+	margin: var(--ws-medium) 0;
 }
 
 button {
-  color: $html-text-color;
-  background: inherit;
-  cursor: pointer;
-  padding: $ws-small $ws-medium;
+	color: var(--html-text-color);
+	background: inherit;
+	cursor: pointer;
+	padding: var(--ws-small) var(--ws-medium);
 }
 
 button:hover {
-  color: $bg-0;
-  background: $border-color-dark;
+	color: var(--bg-0);
+	background: var(--border-color-dark);
 }

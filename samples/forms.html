@@ -1,196 +1,199 @@
-<!DOCTYPE html>
-<html lang='en'>
-<head>
-  <meta charset='UTF-8'>
-  <meta name='viewport' content='width=device-width, initial-scale=1.0'>
-  <meta http-equiv='X-UA-Compatible' content='ie=edge'>
-  <link id='stylesheet' rel='stylesheet' href='styles/fox.css'>
-  <title>forms | fox-css</title>
-</head>
-<body>
-  <header>
-    <h1>fox-css</h1>
-    <article>
-      <h2>about fox-css</h2>
-      <p>use fox-css to style your semantic html. no need to memorize class names. light and dark</p>
-    </article>
-    
-    <h2>navigation</h2>
-    <nav>
-      <a href='core.html'>core</a>
-      <a href='flex-and-aside.html'>flex-and-aside</a>
-      <a href='forms.html'>forms</a>
-      <a href='tables.html'>tables</a>
-    </nav>
-  </header>
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<link id="stylesheet" rel="stylesheet" href="styles/fox.css" />
+		<title>forms | fox-css</title>
+	</head>
+	<body>
+		<header>
+			<h1>fox-css</h1>
+			<article>
+				<h2>about fox-css</h2>
+				<p>
+					use fox-css to style your semantic html. no need to memorize class names. light
+					and dark
+				</p>
+			</article>
 
-  <hr>
+			<h2>navigation</h2>
+			<nav>
+				<a href="core.html">core</a>
+				<a href="flex-and-aside.html">flex-and-aside</a>
+				<a href="forms.html">forms</a>
+				<a href="tables.html">tables</a>
+			</nav>
+		</header>
 
-  <h1>forms</h1>
-  <h2>form example 1</h2>
-  <form action='/' method='get'>
-    <div>
-      <label for='name'>name</label>
-      <input type='text' name='name' required>
-    </div>
+		<hr />
 
-    <div>
-      <label for='email'>email</label>
-      <input type='email' name='email' required>
-    </div>
+		<h1>forms</h1>
+		<h2>form example 1</h2>
+		<form action="/" method="get">
+			<div>
+				<label for="name">name</label>
+				<input type="text" name="name" required />
+			</div>
 
-    <fieldset>
-      <legend>choose your favorite fox</legend>
+			<div>
+				<label for="email">email</label>
+				<input type="email" name="email" required />
+			</div>
 
-      <input type='radio' name='monster'>
-      <label for='kraken'>gray fox</label><br/>
+			<fieldset>
+				<legend>choose your favorite fox</legend>
 
-      <input type='radio' name='monster'>
-      <label for='sasquatch'>red fox</label><br/>
+				<input type="radio" name="monster" />
+				<label for="kraken">gray fox</label><br />
 
-      <input type='radio' name='monster'>
-      <label for='mothman'>arctic fox</label>
-    </fieldset>
+				<input type="radio" name="monster" />
+				<label for="sasquatch">red fox</label><br />
 
-    <div>
-      <input type='submit' value='submit'>
-    </div>
-  </form>
+				<input type="radio" name="monster" />
+				<label for="mothman">arctic fox</label>
+			</fieldset>
 
-  <h2>form example 2</h2>
-  <form action='' method='get'>
-    <div>
-      <label for='name'>name</label>
-      <input type='text' name='name' required>
-    </div>
+			<div>
+				<input type="submit" value="submit" />
+			</div>
+		</form>
 
-    <div>
-      <label for='favorite fox'>choose your favorite fox</label>
-      <div>
-        <input type='radio' name='gender' value='male'>
-        <label for='gender'>red fox</label>
-        <br>
-        <img
-          src='https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Fox_-_British_Wildlife_Centre_%2817429406401%29.jpg/1280px-Fox_-_British_Wildlife_Centre_%2817429406401%29.jpg'
-          alt=''
-          width='100px'
-        >
-      </div>
-      <div>
-        <input type='radio' name='gender' value='female'>
-        <label for='gender'>arctic fox</label>
-        <br>
-        <img
-          src='https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Iceland-1979445_%28cropped_3%29.jpg/800px-Iceland-1979445_%28cropped_3%29.jpg'
-          alt=''
-          width='100px'
-        >
-      </div>
-      <div>
-        <input type='radio' name='gender' value='other'>
-        <label for='gender'>gray fox</label>
-        <br>
-        <img
-          src='https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Grey_Fox_%28Urocyon_cinereoargenteus%29.jpg/1280px-Grey_Fox_%28Urocyon_cinereoargenteus%29.jpg'
-          alt=''
-          width='100px'
-        >
-      </div>
-    </div>
+		<h2>form example 2</h2>
+		<form action="" method="get">
+			<div>
+				<label for="name">name</label>
+				<input type="text" name="name" required />
+			</div>
 
-    <div>
-      <label for='food'>favorite food</label>
-      <div>
-        <input type='checkbox' name='carrot'>
-        <label for='food'>carrot</label>
-      </div>
-      <div>
-        <input type='checkbox' name='nectarine'>
-        <label for='food'>nectarine</label>
-      </div>
-      <div>
-        <input type='checkbox' name='grass'>
-        <label for='food'>grass</label>
-        </div>
-    </div>
+			<div>
+				<label for="favorite fox">choose your favorite fox</label>
+				<div>
+					<input type="radio" name="gender" value="male" />
+					<label for="gender">red fox</label>
+					<br />
+					<img
+						src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Fox_-_British_Wildlife_Centre_%2817429406401%29.jpg/1280px-Fox_-_British_Wildlife_Centre_%2817429406401%29.jpg"
+						alt=""
+						width="100px"
+					/>
+				</div>
+				<div>
+					<input type="radio" name="gender" value="female" />
+					<label for="gender">arctic fox</label>
+					<br />
+					<img
+						src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Iceland-1979445_%28cropped_3%29.jpg/800px-Iceland-1979445_%28cropped_3%29.jpg"
+						alt=""
+						width="100px"
+					/>
+				</div>
+				<div>
+					<input type="radio" name="gender" value="other" />
+					<label for="gender">gray fox</label>
+					<br />
+					<img
+						src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Grey_Fox_%28Urocyon_cinereoargenteus%29.jpg/1280px-Grey_Fox_%28Urocyon_cinereoargenteus%29.jpg"
+						alt=""
+						width="100px"
+					/>
+				</div>
+			</div>
 
-    <div>
-      <label for='fox-choose-group-1'>choose a scientific groups of foxes</label>
-      <div>
-        <select name='fox-choose-group-1'>
-          <optgroup label='lycalopex'>
-            <option>lycalopex culpaeus</option>
-            <option>lycalopex fulvipes</option>
-            <option>lycalopex griseus</option>
-            <option>lycalopex gymnocercus</option>
-            <option>lycalopex sechurae</option>
-            <option>lycalopex vetulus</option>
-          </optgroup>
-          <optgroup label='urocyon'>
-            <option>urocyon cinereoargenteus</option>
-            <option>urocyon littoralis</option>
-            <option>urocyon sp.</option>
-          </optgroup>
-          <optgroup label='vulpes'>
-            <option>vulpes lagopus</option>
-            <option>vulpes vulpes</option>
-            <option>vulpes velox</option>
-            <option>vulpes macrotis</option>
-            <option>vulpes corsac</option>
-            <option>vulpes chama</option>
-            <option>vulpes pallida</option>
-            <option>vulpes bengalensis</option>
-            <option>vulpes ferrilata</option>
-            <option>vulpes cana</option>
-            <option>vulpes rueppelli</option>
-            <option>vulpes zerda</option>
-          </optgroup>
-        </select>
-      </div>
-    </div>
+			<div>
+				<label for="food">favorite food</label>
+				<div>
+					<input type="checkbox" name="carrot" />
+					<label for="food">carrot</label>
+				</div>
+				<div>
+					<input type="checkbox" name="nectarine" />
+					<label for="food">nectarine</label>
+				</div>
+				<div>
+					<input type="checkbox" name="grass" />
+					<label for="food">grass</label>
+				</div>
+			</div>
 
-    <div>
-      <label for='fox-choose-group-2'>type a scientific group of foxes</label>
-      <div>
-        <input list='fox-choose-group-list' name='fox-choose-group-2'>
-        <datalist id='fox-choose-group-list'>
-          <option value='lycalopex culpaeus'>
-          <option value='lycalopex fulvipes'>
-          <option value='lycalopex griseus'>
-          <option value='lycalopex gymnocercus'>
-          <option value='lycalopex sechurae'>
-          <option value='lycalopex vetulus'>
-          <option value='urocyon cinereoargenteus'>
-          <option value='urocyon littoralis'>
-          <option value='urocyon sp.'>
-          <option value='vulpes lagopus'>
-          <option value='vulpes vulpes'>
-          <option value='vulpes velox'>
-          <option value='vulpes macrotis'>
-          <option value='vulpes corsac'>
-          <option value='vulpes chama'>
-          <option value='vulpes pallida'>
-          <option value='vulpes bengalensis'>
-          <option value='vulpes ferrilata'>
-          <option value='vulpes cana'>
-          <option value='vulpes rueppelli'>
-          <option value='vulpes zerda'>
-        </datalist>
-      </div>
-    </div>
+			<div>
+				<label for="fox-choose-group-1">choose a scientific groups of foxes</label>
+				<div>
+					<select name="fox-choose-group-1">
+						<optgroup label="lycalopex">
+							<option>lycalopex culpaeus</option>
+							<option>lycalopex fulvipes</option>
+							<option>lycalopex griseus</option>
+							<option>lycalopex gymnocercus</option>
+							<option>lycalopex sechurae</option>
+							<option>lycalopex vetulus</option>
+						</optgroup>
+						<optgroup label="urocyon">
+							<option>urocyon cinereoargenteus</option>
+							<option>urocyon littoralis</option>
+							<option>urocyon sp.</option>
+						</optgroup>
+						<optgroup label="vulpes">
+							<option>vulpes lagopus</option>
+							<option>vulpes vulpes</option>
+							<option>vulpes velox</option>
+							<option>vulpes macrotis</option>
+							<option>vulpes corsac</option>
+							<option>vulpes chama</option>
+							<option>vulpes pallida</option>
+							<option>vulpes bengalensis</option>
+							<option>vulpes ferrilata</option>
+							<option>vulpes cana</option>
+							<option>vulpes rueppelli</option>
+							<option>vulpes zerda</option>
+						</optgroup>
+					</select>
+				</div>
+			</div>
 
-    <div>
-        <label for='thoughts'>any other thoughts?</label>
-      <div>
-        <textarea name='thoughts' rows='5' cols='33'></textarea>
-      </div>
-    </div>
-    <div>
-      <input type='submit' value='submit'>
-    </div>
-  </form>
-  <footer>
-    <div>© 2019 foo bar</div>
-  </footer>
-</body>
+			<div>
+				<label for="fox-choose-group-2">type a scientific group of foxes</label>
+				<div>
+					<input list="fox-choose-group-list" name="fox-choose-group-2" />
+					<datalist id="fox-choose-group-list">
+						<option value="lycalopex culpaeus"></option>
+						<option value="lycalopex fulvipes"></option>
+						<option value="lycalopex griseus"></option>
+						<option value="lycalopex gymnocercus"></option>
+						<option value="lycalopex sechurae"></option>
+						<option value="lycalopex vetulus"></option>
+						<option value="urocyon cinereoargenteus"></option>
+						<option value="urocyon littoralis"></option>
+						<option value="urocyon sp."></option>
+						<option value="vulpes lagopus"></option>
+						<option value="vulpes vulpes"></option>
+						<option value="vulpes velox"></option>
+						<option value="vulpes macrotis"></option>
+						<option value="vulpes corsac"></option>
+						<option value="vulpes chama"></option>
+						<option value="vulpes pallida"></option>
+						<option value="vulpes bengalensis"></option>
+						<option value="vulpes ferrilata"></option>
+						<option value="vulpes cana"></option>
+						<option value="vulpes rueppelli"></option>
+						<option value="vulpes zerda"></option>
+					</datalist>
+				</div>
+			</div>
+
+			<div>
+				<label for="thoughts">any other thoughts?</label>
+				<div>
+					<textarea name="thoughts" rows="5" cols="33"></textarea>
+				</div>
+			</div>
+			<div>
+				<input type="submit" value="submit" />
+			</div>
+		</form>
+		<footer>
+			<div>© 2019 foo bar</div>
+		</footer>
+	</body>
 </html>

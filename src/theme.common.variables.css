@@ -1,14 +1,16 @@
-// shared \\
-$border-radius: 5px;
+:root {
+	/* shared */
+	--border-radius: 5px;
 
-// the <aside> element disappears when the screen is
-// less than or equal to this pixel length
-$aside-display-bounds: 700px;
+	/* the <aside> element disappears when the screen is */
+	/* less than or equal to this pixel length */
+	--aside-display-bounds: 700px;
 
-// borders
-$border-thickness: 2px;
+	/* borders */
+	--border-thickness: 2px;
 
-// whitespace
-$ws-small: 5px;
-$ws-medium: calc($ws-small * 2);
-$ws-large: calc($ws-medium * 2);
+	/* whitespace */
+	--ws-small: 5px;
+	--ws-medium: calc(var(--ws-small) * 2);
+	--ws-large: calc(var(--ws-medium) * 2);
+}

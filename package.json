@@ -2,16 +2,24 @@
 	"name": "fox-css",
 	"version": "0.12.0",
 	"type": "module",
-	"description": "quickly style semantic html without the hassle",
+	"description": "Quickly style semantic html without the hassle.",
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/fox-projects/fox-css.git"
+		"url": "https://github.com/fox-projects/fox-css.git"
 	},
-	"scripts": {
-		"serve": "gulp serve",
-		"build": "gulp build",
-		"np": "np --any-branch"
+	"homepage": "https://github.com/fox-projects/fox-css#readme",
+	"bugs": {
+		"url": "https://github.com/fox-projects/fox-css/issues"
 	},
+	"author": "Edwin Kofler <edwin@kofler.dev> (https://edwinkofler.com)",
+	"private": true,
+	"engines": {
+		"node": ">=18"
+	},
+	"main": "dist/fox.min.css",
+	"files": [
+		"dist"
+	],
 	"keywords": [
 		"css",
 		"semantic",
@@ -21,43 +29,35 @@
 		"style",
 		"modern"
 	],
-	"author": "Edwin Kofler",
-	"license": "MIT",
-	"bugs": {
-		"url": "https://github.com/fox-projects/fox-css/issues"
+	"scripts": {
+		"build": "gulp build",
+		"format": "prettier --check .",
+		"lint": "eslint .",
+		"serve": "gulp serve"
 	},
-	"homepage": "https://github.com/fox-projects/fox-css#readme",
-	"engines": {
-		"node": ">=18"
-	},
-	"main": "dist/fox.min.css",
-	"files": [
-		"dist"
-	],
 	"devDependencies": {
+		"@eslint-community/eslint-plugin-eslint-comments": "^4.1.0",
+		"@hyperupcall/eslint-config": "^0.11.0",
+		"@hyperupcall/markdownlint-config": "^0.3.2",
 		"@hyperupcall/prettier-config": "^0.7.0",
 		"autoprefixer": "^10.4.16",
-		"browser-sync": "^2.29.3",
-		"cssnano": "^6.0.1",
+		"browser-sync": "^3.0.2",
+		"cssnano": "^6.0.3",
 		"del": "^7.1.0",
 		"gulp": "^4.0.2",
 		"gulp-cli": "^2.3.0",
 		"gulp-concat": "^2.6.1",
 		"gulp-plumber": "^1.2.1",
-		"gulp-postcss": "^9.0.1",
+		"gulp-postcss": "^9.1.0",
 		"gulp-rename": "^2.0.0",
+		"markdownlint": "^0.33.0",
 		"modern-normalize": "^2.0.0",
-		"np": "^8.0.4",
-		"postcss-calc": "^9.0.1",
-		"postcss-import": "^15.1.0",
-		"postcss-preset-env": "^9.3.0",
-		"postcss-scss": "^4.0.9",
-		"postcss-simple-vars": "^7.0.1",
-		"postcss-strip-inline-comments": "^0.1.5",
-		"prettier": "^3.1.0",
-		"prettier-plugin-pkg": "^0.18.0",
-		"eslint": "^8.54.0",
-		"eslint-config-prettier": "^9.0.0",
-		"@hyperupcall/eslint-config": "^0.3.0"
-	}
+		"postcss-import": "^16.0.0",
+		"prettier": "^3.2.2",
+		"prettier-plugin-pkg": "^0.18.0"
+	},
+	"markdownlint-cli2": {
+		"extends": "./node_modules/@hyperupcall/markdownlint-config/.markdownlint.json"
+	},
+	"prettier": "@hyperupcall/prettier-config"
 }

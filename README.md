@@ -10,29 +10,26 @@ Quickly style HTML without the hassle.
 
 ```html
 <!-- default theme (dark) -->
-<link
-  rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/fox-css/dist/fox.min.css"
->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fox-css/dist/fox.min.css" />
 
 <!-- dark theme -->
 <link
-  rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/fox-css/dist/fox.dark.min.css"
->
+	rel="stylesheet"
+	href="https://cdn.jsdelivr.net/npm/fox-css/dist/fox.dark.min.css"
+/>
 
 <!-- light theme -->
 <link
-  rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/fox-css/dist/fox.light.min.css"
->
+	rel="stylesheet"
+	href="https://cdn.jsdelivr.net/npm/fox-css/dist/fox.light.min.css"
+/>
 ```
 
 ### Via Bundler
 
 ```js
-// npm i -S fox-css
-import "./node_modules/fox-css/dist/fox.dark.min.css"
+/* npm i -S fox-css */
+import './node_modules/fox-css/dist/fox.dark.min.css'
 ```
 
 ## Contributing

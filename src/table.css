@@ -1,26 +1,30 @@
 table {
-  width: 100%;
-  border-collapse: collapse;
-  border-spacing: 0;
+	width: 100%;
+	border-collapse: collapse;
+	border-spacing: 0;
 }
 
 caption {
-  padding: $ws-medium 0;
-  background-color: $bg-1;
+	padding: var(--ws-medium) 0;
+	background-color: var(--bg-1);
 }
 
-section caption, article caption {
-  background-color: $bg-2;
+section caption,
+article caption {
+	background-color: var(--bg-2);
 }
 
 th,
 td {
-  padding: $ws-large;
-  border-radius: $border-radius;
-  text-align: left;
-  border: $border-thickness solid $border-color-light;
+	padding: var(--ws-large);
+	border-radius: var(--border-radius);
+	text-align: left;
+	border: var(--border-thickness) solid var(--border-color-light);
 }
 
-section th, section td, article th, article td {
-  border: $border-thickness solid $bg-2;
+section th,
+section td,
+article th,
+article td {
+	border: var(--border-thickness) solid var(--bg-2);
 }

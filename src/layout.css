@@ -1,102 +1,126 @@
 body {
-  margin: 0 10px;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+	margin: 0 10px;
+	font-family:
+		system-ui,
+		-apple-system,
+		BlinkMacSystemFont,
+		'Segoe UI',
+		Roboto,
+		Helvetica,
+		Arial,
+		sans-serif;
 }
 
-// since we only add margin-block-end and margin-inline-end padding, the first
-// elements on the page will not have margin-block-start margings. this fixes
-// that, giving space to first elements
-// TODO: golf
+/**
+ * since we only add margin-block-end and margin-inline-end padding, the first
+ * elements on the page will not have margin-block-start margings. this fixes
+ * that, giving space to first elements
+ */
+TODO: golf
 body > section, body > article, body > aside, body > nav, body > blockquote, body > span, body > dd, body > dt, body > button {
-  margin-top: $ws-medium;
+	margin-top: var(--ws-medium);
 }
 
-body + section, body + article, body + nav {
-  margin-top: $ws-medium;
+body + section,
+body + article,
+body + nav {
+	margin-top: var(--ws-medium);
 }
 
-section, article, aside, nav, blockquote, span, dd, dt, samp, button {
-  padding: $ws-medium;
-  margin-bottom: $ws-medium;
-  border-radius: $border-radius;
-  background-color: $bg-1;
-  overflow: auto;
+section,
+article,
+aside,
+nav,
+blockquote,
+span,
+dd,
+dt,
+samp,
+button {
+	padding: var(--ws-medium);
+	margin-bottom: var(--ws-medium);
+	border-radius: var(--border-radius);
+	background-color: var(--bg-1);
+	overflow: auto;
 }
 
-// darken background if nested
-section article, article section, article aside, section aside {
-  margin-bottom: unset;
-  background: $bg-2;
+/* darken background if nested */
+section article,
+article section,
+article aside,
+section aside {
+	margin-bottom: unset;
+	background: var(--bg-2);
 }
 
-// nav
+/* nav */
 nav {
-  display: flex;
-  margin-bottom: $ws-medium;
-  background: $bg-0;
+	display: flex;
+	margin-bottom: var(--ws-medium);
+	background: var(--bg-0);
 }
 
 nav > * {
-  display: inline;
-  background: $bg-1;
-  margin-right: $ws-medium;
-  padding: calc($ws-medium * 0.8) $ws-large;
-  border-radius: $border-radius;
+	display: inline;
+	background: var(--bg-1);
+	margin-right: var(--ws-medium);
+	padding: calc(var(--ws-medium) * 0.8) var(--ws-large);
+	border-radius: var(--border-radius);
 }
 
 nav * {
-  text-decoration: none;
+	text-decoration: none;
 }
 
-// footer
+/* footer */
 body > footer {
-  display: flex;
-  justify-content: center;
+	display: flex;
+	justify-content: center;
 }
 
 body > footer > * {
-  background-color: $bg-1;
-  margin: $ws-medium;
-  padding: calc($ws-medium * 0.8) $ws-large;
-  border-radius: $border-radius;
+	background-color: var(--bg-1);
+	margin: var(--ws-medium);
+	padding: calc(var(--ws-medium) * 0.8) var(--ws-large);
+	border-radius: var(--border-radius);
 }
 
 body > footer * {
-  text-decoration: none;
+	text-decoration: none;
 }
 
-// aside view
+/* aside view */
 aside {
-  max-width: 35%;
-  float: right;
-  background-color: $bg-1;
+	max-width: 35%;
+	float: right;
+	background-color: var(--bg-1);
 }
 
-// flex
+/* flex */
 .flex {
-  display: flex;
+	display: flex;
 }
 
 .flex > * {
-  flex: 1;
+	flex: 1;
 }
 
 .flex > * ~ * {
-  margin-left: 10px;
+	margin-left: 10px;
 }
 
-@media(max-width: $aside-display-bounds) {
-  aside {
-    float: none;
-    display: none;
-  }
+@media (max-width: var(--aside-display-bounds)) {
+	aside {
+		float: none;
+		display: none;
+	}
 
-  .flex {
-    flex-direction: column;
-  }
+	.flex {
+		flex-direction: column;
+	}
 
-  .flex > * ~ * {
-    margin-left: unset;
-    margin-top: 10px;
-  }
+	.flex > * ~ * {
+		margin-left: unset;
+		margin-top: 10px;
+	}
 }
