@@ -1,27 +1,27 @@
 # fox-css
 
-## Introduction
+## introduction
 
-Quickly style HTML without the hassle.
+quickly style HTML without the hassle.
 
-## Usage
+## usage
 
 ### Via CDN
 
 ```html
-<!-- default theme (dark) -->
+<!-- default theme (light) -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fox-css/dist/fox.min.css" />
 
 <!-- dark theme -->
 <link
 	rel="stylesheet"
-	href="https://cdn.jsdelivr.net/npm/fox-css/dist/fox.dark.min.css"
+	href="https://cdn.jsdelivr.net/npm/fox-css/dist/fox-dark.min.css"
 />
 
 <!-- light theme -->
 <link
 	rel="stylesheet"
-	href="https://cdn.jsdelivr.net/npm/fox-css/dist/fox.light.min.css"
+	href="https://cdn.jsdelivr.net/npm/fox-css/dist/fox-light.min.css"
 />
 ```
 
@@ -29,18 +29,5 @@ Quickly style HTML without the hassle.
 
 ```js
 /* npm i -S fox-css */
-import './node_modules/fox-css/dist/fox.dark.min.css'
-```
-
-## Contributing
-
-```sh
-git clone https://github.com/fox-projects/fox-css
-cd fox-css
-
-pnpm install
-pnpm run serve
-
-# release
-pnpm version patch
+import './node_modules/fox-css/dist/fox-dark.min.css'
 ```

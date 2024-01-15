@@ -32,12 +32,12 @@ export const serve = (() => {
 
 	async function cssInject() {
 		watch('src/*.css', { ignoreInitial: false }, async function cssInjectCb() {
-			src('src/theme.light.css')
+			src('src/theme-light.css')
 				.pipe(postcss(postCssPlugins))
 				.pipe(dest('site/light/styles'))
 				.pipe(browserSync.stream())
 
-			src('src/theme.dark.css')
+			src('src/theme-dark.css')
 				.pipe(postcss(postCssPlugins))
 				.pipe(dest('site/dark/styles'))
 				.pipe(browserSync.stream())
@@ -53,14 +53,14 @@ export async function build() {
 	deleteSync(['dist/*', '!dist'])
 	src('site/dark/styles/fox.css')
 		.pipe(postcss(postCssPlugins))
-		.pipe(rename('fox.light.min.css'))
+		.pipe(rename('fox-light.min.css'))
+		.pipe(dest('dist'))
+		.pipe(rename('fox-min.css'))
 		.pipe(dest('dist'))
 
 	src('site/dark/styles/fox.css')
 		.pipe(postcss(postCssPlugins))
-		.pipe(rename('fox.dark.min.css'))
-		.pipe(dest('dist'))
-		.pipe(rename('fox.min.css'))
+		.pipe(rename('fox-dark.min.css'))
 		.pipe(dest('dist'))
 }
 
