@@ -1,239 +1,302 @@
-<!DOCTYPE html>
-<html lang='en'>
-<head>
-  <meta charset='UTF-8'>
-  <meta name='viewport' content='width=device-width, initial-scale=1.0'>
-  <meta http-equiv='X-UA-Compatible' content='ie=edge'>
-  <link id='stylesheet' rel='stylesheet' href='styles/fox.css'>
-  <title>tables | fox-css</title>
-</head>
-<body>
-  <header>
-    <h1>fox-css</h1>
-    <article>
-      <h2>about fox-css</h2>
-      <p>use fox-css to style your semantic html. no need to memorize class names. light and dark</p>
-    </article>
-    
-    <h2>navigation</h2>
-    <nav>
-      <a href='core.html'>core</a>
-      <a href='flex-and-aside.html'>flex-and-aside</a>
-      <a href='forms.html'>forms</a>
-      <a href='tables.html'>tables</a>
-    </nav>
-  </header>
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<link id="stylesheet" rel="stylesheet" href="styles/fox.css" />
+		<title>tables | fox-css</title>
+	</head>
+	<body>
+		<header>
+			<h1>fox-css</h1>
+			<article>
+				<h2>about fox-css</h2>
+				<p>
+					use fox-css to style your semantic html. no need to memorize class names. light
+					and dark
+				</p>
+			</article>
 
-  <hr>
+			<h2>navigation</h2>
+			<nav>
+				<a href="core.html">core</a>
+				<a href="flex-and-aside.html">flex-and-aside</a>
+				<a href="forms.html">forms</a>
+				<a href="tables.html">tables</a>
+				<a href="xdg-base-dir-spec.html">XDG Base Directory Specification</a>
+			</nav>
+		</header>
 
-  <h1>tables</h1>
-  <h2>table example 1</h2>
-  <table>
-    <thead>
-      <tr>
-        <th colspan='6'>colors</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>red</td>
-        <td>orange</td>
-        <td>yellow</td>
-        <td>green</td>
-        <td>blue</td>
-        <td>purple</td>
-      </tr>
-    </tbody>
-  </table>
+		<hr />
 
+		<h1>tables</h1>
+		<h2>table example 1</h2>
+		<table>
+			<thead>
+				<tr>
+					<th colspan="6">colors</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>red</td>
+					<td>orange</td>
+					<td>yellow</td>
+					<td>green</td>
+					<td>blue</td>
+					<td>purple</td>
+				</tr>
+			</tbody>
+		</table>
 
-  <h2>table example 2</h2>
-  <section>
-    <table>
-      <caption>table of state nicknames</caption>
-      <thead>
-        <tr>
-          <th>state</th>
-          <th scope='col'>nickname</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <th scope='row'>alaska</th>
-          <td>the last frontier</td>
-        </tr>
-        <tr>
-          <th scope='row'>arizona</th>
-          <td>the grand canyon state</td>
-        </tr>
-        <tr>
-          <th scope='row'>arkansas</th>
-          <td>natural state</td>
-        </tr>
-        <tr>
-          <th scope='row'>california</th>
-          <td>golden state</td>
-        </tr>
-      </tbody>
-    </table>  
-  </section>
-  
+		<h2>table example 2</h2>
+		<section>
+			<table>
+				<caption>
+					table of state nicknames
+				</caption>
+				<thead>
+					<tr>
+						<th>state</th>
+						<th scope="col">nickname</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<th scope="row">alaska</th>
+						<td>the last frontier</td>
+					</tr>
+					<tr>
+						<th scope="row">arizona</th>
+						<td>the grand canyon state</td>
+					</tr>
+					<tr>
+						<th scope="row">arkansas</th>
+						<td>natural state</td>
+					</tr>
+					<tr>
+						<th scope="row">california</th>
+						<td>golden state</td>
+					</tr>
+				</tbody>
+			</table>
+		</section>
 
-  <h2>table example 3*</h2>
-  <p>*uses <code>style='width: 40vw;'</code> on the 'photograph' columns</p>
-  <table>
-    <caption>table of foxes</caption>
-    <colgroup>
-      <col>
-      <col>
-      <col style='width: 40vw;'>
-    </colgroup>
-    <thead>
-      <tr>
-        <th scope='column'>name</th>
-        <th scope='column'>scientific name</th>
-        <th scope='column'>photograph</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <th scope='row'>crab-eating fox</th>
-        <td>cerdocyn thous</td>
-        <td>
-          <img src='https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Crab-eating_Fox.JPG/1024px-Crab-eating_Fox.JPG' alt=''>
-        </td>
-      </tr>
-      <tr>
-        <th scope='row'>andean fox</th>
-        <td>lycalopex culpeaus</td>
-        <td>
-          <img src='https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Culpeo_MC.jpg/1280px-Culpeo_MC.jpg' alt=''>
-        </td>
-      </tr>
-      <tr>
-        <th scope='row'>darwins fox</th>
-        <td>lycalopex fulvipes</td>
-        <td>
-          <img src='https://upload.wikimedia.org/wikipedia/commons/8/87/Pseudalopex_fulvipes.jpg' alt=''>
-        </td>
-      </tr>
-      <tr>
-        <th scope='row'>south american gray fox</th>
-        <td>lycalopex griseus</td>
-        <td>
-          <img src='https://upload.wikimedia.org/wikipedia/commons/3/3f/Zorrito_Chile.JPG' alt=''>
-        </td>
-      </tr>
-      <tr>
-        <th scope='row'>sechuran fox</th>
-        <td>lycalopex sechurae</td>
-        <td>
-          <img src='https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Sechuran_fox.jpg/220px-Sechuran_fox.jpg' alt=''>
-        </td>
-      </tr>
-      <tr>
-        <th scope='row'>hoary fox</th>
-        <td>lycalopex vetulus</td>
-        <td>
-          <img src='https://upload.wikimedia.org/wikipedia/commons/5/5a/Lycalopex_vetulus_Carlos_Henrique_2.jpeg' alt=''>
-        </td>
-      </tr>
-      <tr>
-        <th scope='row'>arctic fox</th>
-        <td>vulpes lagopus</td>
-        <td>
-          <img src='https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Iceland-1979445_%28cropped_3%29.jpg/800px-Iceland-1979445_%28cropped_3%29.jpg' alt=''>
-        </td>
-      </tr>
-      <tr>
-        <th scope='row'>red fox</th>
-        <td>vulpes vulpes</td>
-        <td>
-          <img src='https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Fox_-_British_Wildlife_Centre_%2817429406401%29.jpg/1280px-Fox_-_British_Wildlife_Centre_%2817429406401%29.jpg' alt=''>
-        </td>
-      </tr>
-      <tr>
-        <th scoe='row'>swift fox</th>
-        <td>vulpes velox</td>
-        <td>
-          <img src='https://upload.wikimedia.org/wikipedia/commons/c/cc/Swift_Fox_Colorado_Wolf_and_Wildlife_cropped.jpg' alt=''>
-        </td>
-      </tr>
-      <tr>
-        <th scope='row'>corsac fox</th>
-        <td>vulpes corsac</td>
-        <td>
-          <img src='https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Vulpes_corsac.jpg/800px-Vulpes_corsac.jpg' alt=''>
-        </td>
-      </tr>
-      <tr>
-        <th scope='row'>cape fox</th>
-        <td>vulpes chama</td>
-        <td>
-          <img src='https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Vulpes_chama_%28Etosha%29.jpg/1280px-Vulpes_chama_%28Etosha%29.jpg' alt=''>
-        </td>
-      </tr>
-      <tr>
-        <th scope='row'>pale fox</th>
-        <td>vulpes pallida</td>
-        <td>
-          <img src='https://upload.wikimedia.org/wikipedia/commons/1/16/Keulemans_pale_fox.png' alt=''>
-        </td>
-      </tr>
-      <tr>
-        <th scope='row'>tibetan sand fox</th>
-        <td>vulpes ferrilata</td>
-        <td>
-          <img src='https://upload.wikimedia.org/wikipedia/commons/b/b1/Tibet_Fox.jpg' alt=''>
-        </td>
-      </tr>
-      <tr>
-        <th scope='row'>blandfords fox</th>
-        <td>vulpes cana</td>
-        <td>
-          <img src='https://upload.wikimedia.org/wikipedia/commons/e/eb/Blandford%27s_fox_1.jpg' alt=''>
-        </td>
-      </tr>
-      <tr>
-        <th scope='row'>rüppells fox</th>
-        <td>vulpes rueppellii</td>
-        <td>
-          <img src='https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/R%C3%BCppell%27s_fox.jpg/1280px-R%C3%BCppell%27s_fox.jpg' alt=''>
-        </td>
-      </tr>
-      <tr>
-        <th scope='row'>fennec fox</th>
-        <td>vulpes zerda</td>
-        <td>
-          <img src='https://upload.wikimedia.org/wikipedia/commons/9/9c/Fennec_Fox.jpg' alt=''>
-        </td>
-      </tr>
-      <tr>
-        <th scope='row'>gray fox</th>
-        <td>urocyon cinereoargenteus</td>
-        <td>
-          <img src='https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Grey_Fox_%28Urocyon_cinereoargenteus%29.jpg/1280px-Grey_Fox_%28Urocyon_cinereoargenteus%29.jpg' alt=''>
-        </td>
-      </tr>
-      <tr>
-        <th scope='row'>island fox</th>
-        <td>urocyon littoralis</td>
-        <td>
-          <img src='https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Urocyon_littoralis_%28Island_fox%29_FWS_001.jpg/1280px-Urocyon_littoralis_%28Island_fox%29_FWS_001.jpg' alt=''>
-        </td>
-      </tr>
-      <tr>
-        <th scope='row'>bat-eared for</th>
-        <td>otocyon megalotis</td>
-        <td>
-          <img src='https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Otocyon_megalotis_-_Etosha_2014.jpg/1280px-Otocyon_megalotis_-_Etosha_2014.jpg' alt=''>
-        </td>
-      </tr>
-    </tbody>
-  </table>
+		<h2>table example 3*</h2>
+		<p>*uses <code>style='width: 40vw;'</code> on the 'photograph' columns</p>
+		<table>
+			<caption>
+				table of foxes
+			</caption>
+			<colgroup>
+				<col />
+				<col />
+				<col style="width: 40vw" />
+			</colgroup>
+			<thead>
+				<tr>
+					<th scope="column">name</th>
+					<th scope="column">scientific name</th>
+					<th scope="column">photograph</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<th scope="row">crab-eating fox</th>
+					<td>cerdocyn thous</td>
+					<td>
+						<img
+							src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Crab-eating_Fox.JPG/1024px-Crab-eating_Fox.JPG"
+							alt=""
+						/>
+					</td>
+				</tr>
+				<tr>
+					<th scope="row">andean fox</th>
+					<td>lycalopex culpeaus</td>
+					<td>
+						<img
+							src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Culpeo_MC.jpg/1280px-Culpeo_MC.jpg"
+							alt=""
+						/>
+					</td>
+				</tr>
+				<tr>
+					<th scope="row">darwins fox</th>
+					<td>lycalopex fulvipes</td>
+					<td>
+						<img
+							src="https://upload.wikimedia.org/wikipedia/commons/8/87/Pseudalopex_fulvipes.jpg"
+							alt=""
+						/>
+					</td>
+				</tr>
+				<tr>
+					<th scope="row">south american gray fox</th>
+					<td>lycalopex griseus</td>
+					<td>
+						<img
+							src="https://upload.wikimedia.org/wikipedia/commons/3/3f/Zorrito_Chile.JPG"
+							alt=""
+						/>
+					</td>
+				</tr>
+				<tr>
+					<th scope="row">sechuran fox</th>
+					<td>lycalopex sechurae</td>
+					<td>
+						<img
+							src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Sechuran_fox.jpg/220px-Sechuran_fox.jpg"
+							alt=""
+						/>
+					</td>
+				</tr>
+				<tr>
+					<th scope="row">hoary fox</th>
+					<td>lycalopex vetulus</td>
+					<td>
+						<img
+							src="https://upload.wikimedia.org/wikipedia/commons/5/5a/Lycalopex_vetulus_Carlos_Henrique_2.jpeg"
+							alt=""
+						/>
+					</td>
+				</tr>
+				<tr>
+					<th scope="row">arctic fox</th>
+					<td>vulpes lagopus</td>
+					<td>
+						<img
+							src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Iceland-1979445_%28cropped_3%29.jpg/800px-Iceland-1979445_%28cropped_3%29.jpg"
+							alt=""
+						/>
+					</td>
+				</tr>
+				<tr>
+					<th scope="row">red fox</th>
+					<td>vulpes vulpes</td>
+					<td>
+						<img
+							src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Fox_-_British_Wildlife_Centre_%2817429406401%29.jpg/1280px-Fox_-_British_Wildlife_Centre_%2817429406401%29.jpg"
+							alt=""
+						/>
+					</td>
+				</tr>
+				<tr>
+					<th scoe="row">swift fox</th>
+					<td>vulpes velox</td>
+					<td>
+						<img
+							src="https://upload.wikimedia.org/wikipedia/commons/c/cc/Swift_Fox_Colorado_Wolf_and_Wildlife_cropped.jpg"
+							alt=""
+						/>
+					</td>
+				</tr>
+				<tr>
+					<th scope="row">corsac fox</th>
+					<td>vulpes corsac</td>
+					<td>
+						<img
+							src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Vulpes_corsac.jpg/800px-Vulpes_corsac.jpg"
+							alt=""
+						/>
+					</td>
+				</tr>
+				<tr>
+					<th scope="row">cape fox</th>
+					<td>vulpes chama</td>
+					<td>
+						<img
+							src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Vulpes_chama_%28Etosha%29.jpg/1280px-Vulpes_chama_%28Etosha%29.jpg"
+							alt=""
+						/>
+					</td>
+				</tr>
+				<tr>
+					<th scope="row">pale fox</th>
+					<td>vulpes pallida</td>
+					<td>
+						<img
+							src="https://upload.wikimedia.org/wikipedia/commons/1/16/Keulemans_pale_fox.png"
+							alt=""
+						/>
+					</td>
+				</tr>
+				<tr>
+					<th scope="row">tibetan sand fox</th>
+					<td>vulpes ferrilata</td>
+					<td>
+						<img
+							src="https://upload.wikimedia.org/wikipedia/commons/b/b1/Tibet_Fox.jpg"
+							alt=""
+						/>
+					</td>
+				</tr>
+				<tr>
+					<th scope="row">blandfords fox</th>
+					<td>vulpes cana</td>
+					<td>
+						<img
+							src="https://upload.wikimedia.org/wikipedia/commons/e/eb/Blandford%27s_fox_1.jpg"
+							alt=""
+						/>
+					</td>
+				</tr>
+				<tr>
+					<th scope="row">rüppells fox</th>
+					<td>vulpes rueppellii</td>
+					<td>
+						<img
+							src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/R%C3%BCppell%27s_fox.jpg/1280px-R%C3%BCppell%27s_fox.jpg"
+							alt=""
+						/>
+					</td>
+				</tr>
+				<tr>
+					<th scope="row">fennec fox</th>
+					<td>vulpes zerda</td>
+					<td>
+						<img
+							src="https://upload.wikimedia.org/wikipedia/commons/9/9c/Fennec_Fox.jpg"
+							alt=""
+						/>
+					</td>
+				</tr>
+				<tr>
+					<th scope="row">gray fox</th>
+					<td>urocyon cinereoargenteus</td>
+					<td>
+						<img
+							src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Grey_Fox_%28Urocyon_cinereoargenteus%29.jpg/1280px-Grey_Fox_%28Urocyon_cinereoargenteus%29.jpg"
+							alt=""
+						/>
+					</td>
+				</tr>
+				<tr>
+					<th scope="row">island fox</th>
+					<td>urocyon littoralis</td>
+					<td>
+						<img
+							src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Urocyon_littoralis_%28Island_fox%29_FWS_001.jpg/1280px-Urocyon_littoralis_%28Island_fox%29_FWS_001.jpg"
+							alt=""
+						/>
+					</td>
+				</tr>
+				<tr>
+					<th scope="row">bat-eared for</th>
+					<td>otocyon megalotis</td>
+					<td>
+						<img
+							src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Otocyon_megalotis_-_Etosha_2014.jpg/1280px-Otocyon_megalotis_-_Etosha_2014.jpg"
+							alt=""
+						/>
+					</td>
+				</tr>
+			</tbody>
+		</table>
 
-  <footer>
-    <div>© 2019 foo bar</div>
-  </footer>
-</body>
+		<footer>
+			<div>© 2019 foo bar</div>
+		</footer>
+	</body>
 </html>

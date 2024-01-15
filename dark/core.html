@@ -1,41 +1,52 @@
-<!DOCTYPE html>
-<html lang='en'>
-<head>
-  <meta charset='UTF-8'>
-  <meta name='viewport' content='width=device-width, initial-scale=1.0'>
-  <meta http-equiv='X-UA-Compatible' content='ie=edge'>
-  <link id='stylesheet' rel='stylesheet' href='styles/fox.css'>
-  <title>core | fox-css</title>
-</head>
-<body>
-  <header>
-    <h1>fox-css</h1>
-    <article>
-      <h2>about fox-css</h2>
-      <p>use fox-css to style your semantic html. no need to memorize class names. light and dark</p>
-    </article>
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<link id="stylesheet" rel="stylesheet" href="styles/fox.css" />
+		<title>core | fox-css</title>
+	</head>
+	<body>
+		<header>
+			<h1>fox-css</h1>
+			<article>
+				<h2>about fox-css</h2>
+				<p>
+					use fox-css to style your semantic html. no need to memorize class names. light
+					and dark
+				</p>
+			</article>
 
-    <h2>navigation</h2>
-    <nav>
-      <a href='core.html'>core</a>
-      <a href='flex-and-aside.html'>flex-and-aside</a>
-      <a href='forms.html'>forms</a>
-      <a href='tables.html'>tables</a>
-    </nav>
-  </header>
+			<h2>navigation</h2>
+			<nav>
+				<a href="core.html">core</a>
+				<a href="flex-and-aside.html">flex-and-aside</a>
+				<a href="forms.html">forms</a>
+				<a href="tables.html">tables</a>
+				<a href="xdg-base-dir-spec.html">XDG Base Directory Specification</a>
+			</nav>
+		</header>
 
-  <hr>
+		<hr />
 
-  <h1>core</h1>
-  <p>fox-css styles all html elements to make them look adequate. nothing fancy. we <u>recomend</u> you place content inside <code>&lt;section&gt;</code> and <code>&lt;article&gt;</code> elements
+		<h1>core</h1>
+		<p>
+			fox-css styles all html elements to make them look adequate. nothing fancy. we
+			<u>recomend</u> you place content inside <code>&lt;section&gt;</code> and
+			<code>&lt;article&gt;</code> elements
+		</p>
 
-  <section>
-    <h2>section</h2>
-    <article>
-      <h3>article</h3>
-      <p>nest <code>&lt;article&gt;</code>'s, <code>&lt;section&gt;</code>'s, and <code>&lt;aside&gt;</code>'s <em>2 times or less</em></p>
-      <div>
-<pre>
+		<section>
+			<h2>section</h2>
+			<article>
+				<h3>article</h3>
+				<p>
+					nest <code>&lt;article&gt;</code>'s, <code>&lt;section&gt;</code>'s, and
+					<code>&lt;aside&gt;</code>'s <em>2 times or less</em>
+				</p>
+				<div>
+					<pre>
 &lt;body&gt;
   &lt;main&gt;
     &lt;article&gt;
@@ -45,49 +56,52 @@
     &lt;article&gt;
   &lt;main&gt;
 &lt;body&gt;
-</pre>
-      </div>
-    
-    </article>
-  </section>
-  
-  <h1>single elements</h1>
-  <h2>quotes</h2>
-  <blockquote cite='https://www.huxley.net/bnw/four.html'>
-    <p>are you saying that because he's a sloth he can't be fast? i thought in zootopia, anyone could be anything</p>
-    <footer>nick wilde, <cite>zootopia</cite></footer>
-  </blockquote>
+</pre
+					>
+				</div>
+			</article>
+		</section>
 
+		<h1>single elements</h1>
+		<h2>quotes</h2>
+		<figure>
+			<blockquote cite="https://www.huxley.net/bnw/four.html">
+				<p>
+					are you saying that because he's a sloth he can't be fast? i thought in
+					zootopia, anyone could be anything
+				</p>
+			</blockquote>
+			<figcaption>nick wilde, <cite>zootopia</cite></figcaption>
+		</figure>
 
-  <h2>terms and definitions</h2>
-  <dl>
-    <dt>term 1</dt>
-    <dd>definition 1</dd>
+		<h2>terms and definitions</h2>
+		<dl>
+			<dt>term 1</dt>
+			<dd>definition 1</dd>
 
-    <dt>term 2</dt>
-    <dd>definition 2</dd>
-  </dl>
+			<dt>term 2</dt>
+			<dd>definition 2</dd>
+		</dl>
 
-  <h2>lists</h2>
-  <ol>
-      <li>ordered list item 2</li>
-      <li>ordered list item 1</li>
-      <li>ordered list item 3</li>
-      <li>ordered list item 4</li>
-      <li>ordered list item 5</li>
-  </ol>
+		<h2>lists</h2>
+		<ol>
+			<li>ordered list item 2</li>
+			<li>ordered list item 1</li>
+			<li>ordered list item 3</li>
+			<li>ordered list item 4</li>
+			<li>ordered list item 5</li>
+		</ol>
 
-  <ul>
-    <li>unordered item 1</li>
-    <li>unordered item 2</li>
-    <li>unordered item 3</li>
-    <li>unordered item 4</li>
-    <li>unordered item 5</li>
-  </ul>
+		<ul>
+			<li>unordered item 1</li>
+			<li>unordered item 2</li>
+			<li>unordered item 3</li>
+			<li>unordered item 4</li>
+			<li>unordered item 5</li>
+		</ul>
 
-
-  <h2>preformatted text</h2>
-  <pre>
+		<h2>preformatted text</h2>
+		<pre>
     _
     / \      _-'
   _/|  \-''- _ /
@@ -102,13 +116,13 @@ __-' { |          \
       /
     _'
   _-'
-  </pre>
+  </pre
+		>
 
-
-  <h2>insertions and deletions</h2>
-  <section class='flex'>
-    <article>
-      <pre>
+		<h2>insertions and deletions</h2>
+		<section class="flex">
+			<article>
+				<pre>
 26.   &lt;script&gt;
 
 27.   import navitem from '@/components/navigation/navitem'
@@ -128,9 +142,9 @@ __-' { |          \
 41.   }
 42.   &lt;/script&gt;
       </pre>
-    </article>
-    <article>
-      <pre>
+			</article>
+			<article>
+				<pre>
 26.   &lt;script&gt;
 <ins>27.   import { mapstate } from 'vuex'</ins>
 28.   import navitem from '@/components/navigation/navitem'
@@ -150,29 +164,25 @@ __-' { |          \
 40.   }
 41.   &lt;/script&gt;
       </pre>
-    </article>
-  </section>
-  
+			</article>
+		</section>
 
-  
+		<h2>details, summary</h2>
+		<details>
+			<summary>did you know that...</summary>
+			the red fox is the most common type of fox?
+		</details>
 
+		<br />
+		<h2>footers</h2>
+		<footer>
+			<p>foxtrot</p>
+			<p><a href="#">link</a></p>
+			<p>quebec</p>
+		</footer>
 
-  <h2>details, summary</h2>
-  <details>
-    <summary>did you know that...</summary>
-    the red fox is the most common type of fox?
-  </details>
-
-  <br>
-  <h2>footers</h2>
-  <footer>
-    <p>foxtrot</p>
-    <p><a href='#'>link</a></p>
-    <p>quebec</p>
-  </footer>
-
-  <footer>
-    <div>© 2019 foo bar</div>
-  </footer>
-</body>
+		<footer>
+			<div>© 2019 foo bar</div>
+		</footer>
+	</body>
 </html>
