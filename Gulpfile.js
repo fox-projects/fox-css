@@ -1,8 +1,6 @@
 import gulp from 'gulp'
 const { dest, parallel, series, src, watch } = gulp
-import concat from 'gulp-concat'
 import postcss from 'gulp-postcss'
-import plumber from 'gulp-plumber'
 import postcssImport from 'postcss-import'
 import bs from 'browser-sync'
 import autoprefixer from 'autoprefixer'
@@ -12,7 +10,7 @@ import { deleteSync } from 'del'
 export const serve = (() => {
 	const browserSync = bs.create()
 
-	let postCssPlugins = [postcssImport, autoprefixer]
+	let postCssPlugins = [postcssImport]
 
 	async function init() {
 		browserSync.init({ server: 'site' })
@@ -24,24 +22,22 @@ export const serve = (() => {
 				.pipe(dest('site/dark'))
 				.pipe(dest('site/light'))
 
-			src('samples/index.html').pipe(dest('site'))
+			// prettier-ignore
+			src('samples/index.html')
+				.pipe(dest('site'))
 
 			browserSync.reload()
 		})
 	}
 
 	async function cssInject() {
-		watch('src/*.css', { ignoreInitial: false }, async function cssInjectWatchCb() {
+		watch('src/*.css', { ignoreInitial: false }, async function cssInjectCb() {
 			src('src/theme.light.css')
-				.pipe(plumber())
-				.pipe(concat('fox.css'))
 				.pipe(postcss(postCssPlugins))
 				.pipe(dest('site/light/styles'))
 				.pipe(browserSync.stream())
 
 			src('src/theme.dark.css')
-				.pipe(plumber())
-				.pipe(concat('fox.css'))
 				.pipe(postcss(postCssPlugins))
 				.pipe(dest('site/dark/styles'))
 				.pipe(browserSync.stream())

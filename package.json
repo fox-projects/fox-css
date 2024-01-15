@@ -12,7 +12,8 @@
 		"url": "https://github.com/fox-projects/fox-css/issues"
 	},
 	"author": "Edwin Kofler <edwin@kofler.dev> (https://edwinkofler.com)",
-	"private": true,
+	"license": "MPL-2.0",
+	"private": false,
 	"engines": {
 		"node": ">=18"
 	},
@@ -45,8 +46,6 @@
 		"del": "^7.1.0",
 		"gulp": "^4.0.2",
 		"gulp-cli": "^2.3.0",
-		"gulp-concat": "^2.6.1",
-		"gulp-plumber": "^1.2.1",
 		"gulp-postcss": "^9.1.0",
 		"gulp-rename": "^2.0.0",
 		"markdownlint": "^0.33.0",
@@ -55,8 +54,16 @@
 		"prettier": "^3.2.2",
 		"prettier-plugin-pkg": "^0.18.0"
 	},
+	"browserslist": [
+		"last 2 versions",
+		"not dead",
+		"not ie <= 11"
+	],
 	"markdownlint-cli2": {
 		"extends": "./node_modules/@hyperupcall/markdownlint-config/.markdownlint.json"
 	},
-	"prettier": "@hyperupcall/prettier-config"
+	"prettier": "@hyperupcall/prettier-config",
+	"dependencies": {
+		"open-color": "^1.9.1"
+	}
 }
