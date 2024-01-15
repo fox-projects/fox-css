@@ -6,11 +6,13 @@ quickly style HTML without the hassle.
 
 ## usage
 
-### Via CDN
+### via cdn
 
 ```html
 <!-- default theme (light) -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fox-css/dist/fox.min.css" />
+<link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/fox-css/dist/fox.min.css"
+/>
 
 <!-- dark theme -->
 <link
@@ -25,7 +27,7 @@ quickly style HTML without the hassle.
 />
 ```
 
-### Via Bundler
+### via bundler
 
 ```js
 /* npm i -S fox-css */

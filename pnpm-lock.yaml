@@ -4,11 +4,6 @@ settings:
   autoInstallPeers: true
   excludeLinksFromLockfile: false
 
-dependencies:
-  open-color:
-    specifier: ^1.9.1
-    version: 1.9.1
-
 devDependencies:
   '@eslint-community/eslint-plugin-eslint-comments':
     specifier: ^4.1.0
@@ -37,6 +32,9 @@ devDependencies:
   gulp-cli:
     specifier: ^2.3.0
     version: 2.3.0
+  gulp-concat:
+    specifier: ^2.6.1
+    version: 2.6.1
   gulp-postcss:
     specifier: ^9.1.0
     version: 9.1.0(postcss@8.4.31)
@@ -49,6 +47,9 @@ devDependencies:
   modern-normalize:
     specifier: ^2.0.0
     version: 2.0.0
+  open-color:
+    specifier: ^1.9.1
+    version: 1.9.1
   postcss-import:
     specifier: ^16.0.0
     version: 16.0.0(postcss@8.4.31)
@@ -826,6 +827,12 @@ packages:
       inherits: 2.0.4
       readable-stream: 2.3.7
       typedarray: 0.0.6
+    dev: true
+
+  /concat-with-sourcemaps@1.1.0:
+    resolution: {integrity: sha512-4gEjHJFT9e+2W/77h/DS5SGUgwDaOwprX8L/gl5+3ixnzkVJJsZWDSelmN3Oilw3LNDZjZV0yqH1hLG3k6nghg==}
+    dependencies:
+      source-map: 0.6.1
     dev: true
 
   /connect-history-api-fallback@1.6.0:
@@ -1761,6 +1768,15 @@ packages:
       - supports-color
     dev: true
 
+  /gulp-concat@2.6.1:
+    resolution: {integrity: sha512-a2scActrQrDBpBbR3WUZGyGS1JEPLg5PZJdIa7/Bi3GuKAmPYDK6SFhy/NZq5R8KsKKFvtfR0fakbUCcKGCCjg==}
+    engines: {node: '>= 0.10'}
+    dependencies:
+      concat-with-sourcemaps: 1.1.0
+      through2: 2.0.5
+      vinyl: 2.2.0
+    dev: true
+
   /gulp-postcss@9.1.0(postcss@8.4.31):
     resolution: {integrity: sha512-a843mcKPApfeI987uqQbc8l50xXeWIXBsiVvYxtCI5XtVAMzTi/HnU2qzQpGwkB/PAOfsLV8OsqDv2iJZ9qvdw==}
     engines: {node: '>=18'}
@@ -2658,7 +2674,7 @@ packages:
 
   /open-color@1.9.1:
     resolution: {integrity: sha512-vCseG/EQ6/RcvxhUcGJiHViOgrtz4x0XbZepXvKik66TMGkvbmjeJrKFyBEx6daG5rNyyd14zYXhz0hZVwQFOw==}
-    dev: false
+    dev: true
 
   /opn@5.3.0:
     resolution: {integrity: sha512-bYJHo/LOmoTd+pfiYhfZDnf9zekVJrY+cnS2a5F2x+w5ppvTqObojTP7WiFG+kVZs9Inw+qQ/lw7TroWwhdd2g==}
@@ -3396,6 +3412,11 @@ packages:
 
   /source-map@0.5.7:
     resolution: {integrity: sha1-igOdLRAh0i0eoUyA2OpGi6LvP8w=}
+    engines: {node: '>=0.10.0'}
+    dev: true
+
+  /source-map@0.6.1:
+    resolution: {integrity: sha512-UjgapumWlbMhkBgzT7Ykc5YXUT46F0iKu8SGXq0bcwP5dz/h0Plj6enJqjz1Zbq2l5WaqYnrVbwWOWMyF3F47g==}
     engines: {node: '>=0.10.0'}
     dev: true
 

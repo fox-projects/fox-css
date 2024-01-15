@@ -2,6 +2,7 @@ import gulp from 'gulp'
 const { dest, parallel, series, src, watch } = gulp
 import postcss from 'gulp-postcss'
 import postcssImport from 'postcss-import'
+import concat from 'gulp-concat'
 import bs from 'browser-sync'
 import autoprefixer from 'autoprefixer'
 import rename from 'gulp-rename'
@@ -33,11 +34,13 @@ export const serve = (() => {
 	async function cssInject() {
 		watch('src/*.css', { ignoreInitial: false }, async function cssInjectCb() {
 			src('src/theme-light.css')
+				.pipe(concat('fox.css'))
 				.pipe(postcss(postCssPlugins))
 				.pipe(dest('site/light/styles'))
 				.pipe(browserSync.stream())
 
 			src('src/theme-dark.css')
+				.pipe(concat('fox.css'))
 				.pipe(postcss(postCssPlugins))
 				.pipe(dest('site/dark/styles'))
 				.pipe(browserSync.stream())

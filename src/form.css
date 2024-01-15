@@ -19,7 +19,7 @@ label input[type='radio'] {
 input,
 select,
 fieldset {
-	margin: 0 0 var(--ws-medium);
+	margin-block-start: var(--ws-medium);
 }
 
 input,

@@ -10,7 +10,7 @@
 	--border-thickness: 2px;
 
 	/* whitespace */
-	--ws-small: 5px;
+	--ws-small: 6px;
 	--ws-medium: calc(var(--ws-small) * 2);
 	--ws-large: calc(var(--ws-medium) * 2);
 }
@@ -25,6 +25,7 @@
 
 html,
 body {
+	font-size: 18px;
 	color: var(--html-text-color);
 	background-color: var(--html-bg-color);
 	line-height: 1.5;
