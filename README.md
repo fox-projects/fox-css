@@ -1,31 +1,31 @@
 # fox-css
 
-## introduction
+## Introduction
 
-quickly style HTML without the hassle.
+Quickly style HTML without the hassle.
 
-## usage
+## Usage
 
-### via cdn
+### Via CDN
 
 ```html
-<!-- default theme (light) -->
+<!-- Default Theme (light) -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fox-css/dist/fox.min.css" />
 
-<!-- dark theme -->
+<!-- Dark Theme -->
 <link
 	rel="stylesheet"
 	href="https://cdn.jsdelivr.net/npm/fox-css/dist/fox-dark.min.css"
 />
 
-<!-- light theme -->
+<!-- Tight Theme -->
 <link
 	rel="stylesheet"
 	href="https://cdn.jsdelivr.net/npm/fox-css/dist/fox-light.min.css"
 />
 ```
 
-### via bundler
+### Via Bundler
 
 ```js
 /* npm i -S fox-css */
