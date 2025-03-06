@@ -1,0 +1,81 @@
+@import 'modern-normalize/modern-normalize';
+@import 'open-color';
+@import './main.css';
+@import './layout.css';
+@import './text.css';
+@import './table.css';
+@import './form.css';
+@import './misc.css';
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		--html-text-color: var(--oc-gray-0);
+		--html-bg-color: var(--oc-gray-9);
+
+		/* background levels */
+		--bg-0: var(--oc-gray-9);
+		--bg-1: var(--oc-gray-8);
+		--bg-2: var(--oc-gray-7);
+		--bg-3: var(--oc-gray-6);
+
+		/* borders */
+		--border-color-light: var(--oc-gray-8);
+		--border-color-dark: var(--oc-gray-4);
+
+		/* a */
+		--a-normal: var(--oc-blue-6);
+		--a-visited: var(--oc-grape-8);
+		--a-hover: var(--oc-grape-3);
+		--a-active: var(--oc-grape-3);
+
+		/* ins, del */
+		--del-bg-color: var(--oc-red-8);
+		--ins-bg-color: var(--oc-green-8);
+
+		/* mark */
+		--mark-bg-color: var(--oc-yellow-7);
+
+		/* u */
+		--u-underline-color: var(--oc-red-4);
+
+		/* form */
+		--form-input-bg-color: var(--oc-gray-7);
+	}
+}
+
+@media (prefers-color-scheme: light) {
+	:root {
+		--html-text-color: var(--oc-gray-9);
+		--html-bg-color: var(--oc-white);
+
+		/* background levels */
+		--bg-0: var(--oc-gray-0);
+		--bg-1: var(--oc-gray-1);
+		--bg-2: var(--oc-gray-2);
+		--bg-3: var(--oc-gray-3);
+
+		/* borders */
+		--border-color-light: var(--oc-gray-3);
+		--border-color-medium: var(--oc-gray-4);
+		--border-color-dark: var(--oc-gray-8);
+
+		/* a */
+		--a-normal: var(--oc-blue-5);
+		--a-visited: var(--oc-grape-3);
+		--a-hover: var(--oc-grape-8);
+		--a-active: var(--oc-grape-8);
+
+		/* ins, del */
+		--del-bg-color: var(--oc-red-2);
+		--ins-bg-color: var(--oc-green-2);
+
+		/* mark */
+		--mark-bg-color: var(--oc-yellow-2);
+
+		/* u */
+		--u-underline-color: var(--oc-red-4);
+
+		/* form */
+		--form-input-bg-color: var(--oc-white);
+	}
+}

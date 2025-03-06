@@ -20,8 +20,9 @@ export const serve = (() => {
 	async function htmlReload() {
 		watch(['samples/*.html'], { ignoreInitial: false }, async function htmlReloadCb() {
 			src(['samples/*.html', '!samples/index.html'])
-				.pipe(dest('site/dark'))
 				.pipe(dest('site/light'))
+				.pipe(dest('site/dark'))
+				.pipe(dest('site/both'))
 
 			// prettier-ignore
 			src('samples/index.html')
@@ -43,6 +44,12 @@ export const serve = (() => {
 				.pipe(concat('fox.css'))
 				.pipe(postcss(postCssPlugins))
 				.pipe(dest('site/dark/styles'))
+				.pipe(browserSync.stream())
+
+			src('src/theme-both.css')
+				.pipe(concat('fox.css'))
+				.pipe(postcss(postCssPlugins))
+				.pipe(dest('site/both/styles'))
 				.pipe(browserSync.stream())
 		})
 	}
