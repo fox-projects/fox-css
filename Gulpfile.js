@@ -61,11 +61,16 @@ export async function build() {
 	let postCssPlugins = [postcssImport, autoprefixer]
 
 	deleteSync(['dist/*', '!dist'])
+	src('site/both/styles/fox.css')
+		.pipe(postcss(postCssPlugins))
+		.pipe(rename('fox-min.css'))
+		.pipe(dest('dist'))
+		.pipe(rename('fox.min.css'))
+		.pipe(dest('dist'))
+
 	src('site/light/styles/fox.css')
 		.pipe(postcss(postCssPlugins))
 		.pipe(rename('fox-light.min.css'))
-		.pipe(dest('dist'))
-		.pipe(rename('fox-min.css'))
 		.pipe(dest('dist'))
 
 	src('site/dark/styles/fox.css')
