@@ -10,9 +10,7 @@ quickly style HTML without the hassle.
 
 ```html
 <!-- default theme (light) -->
-<link rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/fox-css/dist/fox.min.css"
-/>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fox-css/dist/fox.min.css" />
 
 <!-- dark theme -->
 <link

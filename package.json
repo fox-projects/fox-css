@@ -33,14 +33,17 @@
 	"scripts": {
 		"build": "gulp build",
 		"format": "prettier --check .",
-		"lint": "eslint .",
+		"format:fix": "prettier --write .",
+		"lint": "hyperupcall-scripts-nodejs lint",
 		"serve": "gulp serve"
 	},
 	"devDependencies": {
-		"@eslint-community/eslint-plugin-eslint-comments": "^4.1.0",
+		"@eslint/eslintrc": "^3.3.0",
+		"@eslint/js": "^9.21.0",
 		"@hyperupcall/eslint-config": "^0.11.0",
 		"@hyperupcall/markdownlint-config": "^0.3.2",
 		"@hyperupcall/prettier-config": "^0.7.0",
+		"@hyperupcall/scripts-nodejs": "0.2.3",
 		"autoprefixer": "^10.4.16",
 		"browser-sync": "^3.0.2",
 		"del": "^7.1.0",
